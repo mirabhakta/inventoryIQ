@@ -1,3 +1,0 @@
-method_name,mae,rmse,mase,selected_winner
-lightgbm_global_lag,5.889,7.646,0.715,True
-chronos2_small,6.190,8.067,0.752,False

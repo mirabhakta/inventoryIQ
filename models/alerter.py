@@ -5,7 +5,7 @@ Scans retail_clean.csv for three categories of red flags:
 2. Demand decline    - products whose recent average is falling vs their longer average
 3. Margin alerts     - products losing money for consecutive periods (profit data only)
 
-run_all_alerts() combines all three and exports data/alerts.csv for the dashboard.
+run_all_alerts() combines all three detectors into one DataFrame for the API.
 """
 
 from pathlib import Path
@@ -13,12 +13,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from utils.schema import OPTIONAL_COLUMNS
-
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-CLEAN_CSV_PATH = PROJECT_ROOT / "data" / "retail_clean.csv"
-ALERTS_CSV_PATH = PROJECT_ROOT / "data" / "alerts.csv"
+SAMPLE_CSV_PATH = PROJECT_ROOT / "data" / "sample_sales.csv"
 
 
 def detect_anomalies(df: pd.DataFrame, threshold: float = 2.0) -> pd.DataFrame:
@@ -180,22 +177,21 @@ def detect_margin_alerts(df: pd.DataFrame, margin_threshold: float = 0.0) -> pd.
     return pd.DataFrame(results)
 
 
-def run_all_alerts(df: pd.DataFrame, thresholds: dict = {}) -> pd.DataFrame:
+def run_all_alerts(df: pd.DataFrame, thresholds: dict | None = None) -> pd.DataFrame:
     """
-    Runs all three alert detectors, combines results, sorts by severity,
-    and exports data/alerts.csv for the dashboard.
+    Runs all three alert detectors and combines the results.
 
     Args:
-        df: Clean retail DataFrame loaded from retail_clean.csv
+        df: Clean retail DataFrame
         thresholds: Optional overrides for alert sensitivity from the sidebar
                     Keys: 'anomaly_std', 'decline_pct', 'margin_floor'
 
     Returns:
         Combined DataFrame sorted by severity descending.
-        Side effect: writes data/alerts.csv
     """
     import warnings
 
+    thresholds = thresholds or {}
     anomalies = detect_anomalies(df, threshold=thresholds.get("anomaly_std", 2.0))
     declines = detect_demand_decline(df, decline_pct=thresholds.get("decline_pct", 0.20))
     margins = detect_margin_alerts(df, margin_threshold=thresholds.get("margin_floor", 0.0))
@@ -210,7 +206,12 @@ def run_all_alerts(df: pd.DataFrame, thresholds: dict = {}) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    df = pd.read_csv(CLEAN_CSV_PATH)
+    import sys
+
+    sys.path.insert(0, str(PROJECT_ROOT))
+    from utils.processor import load_and_clean_data
+
+    df = load_and_clean_data(pd.read_csv(SAMPLE_CSV_PATH))
     alerts = run_all_alerts(df)
     print(alerts.head(10))
     print(f"Total alerts: {len(alerts)}")
