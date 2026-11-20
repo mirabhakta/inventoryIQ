@@ -3,6 +3,8 @@ LA Tech Rising | Spring 2026 | Mentor: Ritesh Verma
 
 A reusable retail forecasting engine that ingests historical sales data, forecasts future demand, flags unusual patterns, and generates plain-English summaries using the Gemini API.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mirabhakta/inventoryIQ)
+
 ## Team
 
 | Role | Name | Primary Ownership |
@@ -152,6 +154,15 @@ Regenerate it at any time with:
 ```bash
 python scripts/generate_sample_data.py
 ```
+
+## Deployment
+
+The API ships as a Docker image and the UI as a Vite static build. The included
+`render.yaml` and `frontend/vercel.json` deploy both services with a health check,
+an explicit CORS allowlist, and SPA routing.
+
+See **[DEPLOY.md](DEPLOY.md)** for the Render + Vercel steps, environment variables,
+and the post-deploy checklist.
 
 ## Features
 - Upload retail CSV or Excel (`.xlsx`) files up to 10 MB / 50,000 rows

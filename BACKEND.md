@@ -23,17 +23,28 @@ A ready-to-upload example is available at `data/sample_sales.csv`.
 - File endpoints accept `multipart/form-data` with a field named `file`.
 - Supported formats: `.csv` and `.xlsx`. Limits: **10 MB** and **50,000 rows**.
 - Filters are repeatable query parameters: `store`, `category`, `region`.
+- CORS is an explicit allowlist, not a wildcard. Set `ALLOWED_ORIGINS` to the
+  comma-separated browser origins that may call the API.
 - Error responses use FastAPI's `{"detail": "..."}` shape:
   - `400` — unsupported type, empty file, or unreadable content
   - `413` — file too large
   - `422` — invalid data, no rows match the filters, or an out-of-range horizon
   - `503` — the AI summary is not configured or Gemini is unavailable
 
+## Configuration
+
+| Variable | Required | Default | Purpose |
+|---|---|---|---|
+| `GEMINI_API_KEY` | No | — | Enables `POST /summary`; `/health` reports `ai_configured` |
+| `GEMINI_MODEL` | No | `gemini-3.8-flash` | Summary model |
+| `ALLOWED_ORIGINS` | No | `http://localhost:5173` | Comma-separated CORS allowlist |
+
 ## Endpoints
 
 | Method | Route | Description |
 |---|---|---|
 | GET | `/` | Service status |
+| GET | `/health` | Liveness probe (`status`, `version`, `ai_configured`) |
 | POST | `/analyze` | Complete dashboard payload for the current filters |
 | POST | `/forecast/run` | Trains all four models and returns the benchmark |
 | POST | `/forecast/future` | Returns per-series future forecast records |
@@ -255,3 +266,7 @@ message. `GEMINI_MODEL` can override the default (`gemini-3.8-flash`).
   multi-tenant service.
 - Model training runs per request. The dashboard skips the benchmark on filter
   changes to keep interactions fast.
+- Cleaned datasets and `/analyze` payloads are cached in process memory for 15
+  minutes. The cache resets on restart and is not shared across instances.
+- CORS uses an exact origin allowlist; add the deployed frontend URL to
+  `ALLOWED_ORIGINS`.

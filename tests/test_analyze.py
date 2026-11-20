@@ -1,7 +1,9 @@
 import pandas as pd
 from fastapi.testclient import TestClient
 
+from api import analyze_routes
 from main import app
+from services import dataset_cache
 
 client = TestClient(app)
 
@@ -118,3 +120,37 @@ def test_analyze_rejects_filters_with_no_rows() -> None:
 
     assert response.status_code == 422
     assert "No rows match" in response.json()["detail"]
+
+
+def test_analyze_reuses_the_cached_payload(monkeypatch) -> None:
+    calls = {"count": 0}
+    real_analyze = analyze_routes.analyze_retail_data
+
+    def counted(*args, **kwargs):
+        calls["count"] += 1
+        return real_analyze(*args, **kwargs)
+
+    monkeypatch.setattr(analyze_routes, "analyze_retail_data", counted)
+    frame = retail_frame()
+
+    first = analyze(frame, future_days=7, include_benchmark="false")
+    second = analyze(frame, future_days=7, include_benchmark="false")
+
+    assert first["kpis"] == second["kpis"]
+    assert calls["count"] == 1
+
+
+def test_filters_reuse_the_cleaned_dataset(monkeypatch) -> None:
+    calls = {"count": 0}
+    real_clean = dataset_cache.load_and_clean_data
+
+    def counted(frame):
+        calls["count"] += 1
+        return real_clean(frame)
+
+    monkeypatch.setattr(dataset_cache, "load_and_clean_data", counted)
+
+    analyze(retail_frame(), future_days=7, include_benchmark="false", store=["1"])
+    analyze(retail_frame(), future_days=7, include_benchmark="false", store=["2"])
+
+    assert calls["count"] == 1

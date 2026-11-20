@@ -7,9 +7,14 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 
 from api.dependencies import uploaded_frame
 from services.analysis_service import analyze_retail_data
+from services.dataset_cache import (
+    analysis_cache_key,
+    cache_analysis,
+    get_cached_analysis,
+    get_cleaned_frame,
+)
 from utils.filters import filter_retail_frame
 from utils.forecasting import MAX_FUTURE_DAYS
-from utils.processor import load_and_clean_data
 
 router = APIRouter(tags=["analysis"])
 
@@ -23,14 +28,23 @@ async def analyze_dataset(
     category: list[str] = Query(default=[]),
     region: list[str] = Query(default=[]),
 ):
-    try:
-        cleaned = load_and_clean_data(df)
-        filtered = filter_retail_frame(cleaned, store, category, region)
-    except ValueError as exc:
-        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    cache_key = analysis_cache_key(
+        df,
+        future_days=future_days,
+        include_benchmark=include_benchmark,
+        stores=store,
+        categories=category,
+        regions=region,
+    )
+    if cache_key:
+        cached = get_cached_analysis(cache_key)
+        if cached is not None:
+            return cached
 
     try:
-        return analyze_retail_data(
+        cleaned = get_cleaned_frame(df)
+        filtered = filter_retail_frame(cleaned, store, category, region)
+        result = analyze_retail_data(
             cleaned,
             filtered,
             future_days=future_days,
@@ -38,3 +52,7 @@ async def analyze_dataset(
         )
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+    if cache_key:
+        cache_analysis(cache_key, result)
+    return result
