@@ -29,7 +29,7 @@ def get_gemini_client():
 
 def build_payload(trend, model_name, accuracy, alerts_df, top_product=None, top_category=None):
     """
-    Andrew Garcia Leopold: build the exact payload shape app.py expects.
+    Andrew Garcia Leopold: build the exact payload shape the API expects.
     This keeps the dashboard connected to Sarah's Gemini summary function.
     """
     top_alerts = []
