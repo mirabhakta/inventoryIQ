@@ -170,3 +170,45 @@ def test_forecast_benchmark_runs_with_filters() -> None:
     body = response.json()
     assert "winner" in body
     assert body["comparison_table"]
+
+SUMMARY_PAYLOAD = {
+    "trend": "increasing",
+    "winner_model": "lightgbm_global_lag",
+    "mae": 12.3,
+    "total_sales": 673603.68,
+    "alert_count": 7,
+    "top_product": "Aurora Desk Lamp",
+    "top_category": "Home",
+}
+
+
+def test_summary_requires_configuration(monkeypatch) -> None:
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+
+    response = client.post("/summary", json=SUMMARY_PAYLOAD)
+
+    assert response.status_code == 503
+    assert "GEMINI_API_KEY" in response.json()["detail"]
+
+
+def test_summary_returns_generated_text(monkeypatch) -> None:
+    monkeypatch.setattr(
+        "api.summary_routes.generate_summary",
+        lambda payload: "Sales are increasing and the top product leads demand.",
+    )
+
+    response = client.post("/summary", json=SUMMARY_PAYLOAD)
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "summary": "Sales are increasing and the top product leads demand."
+    }
+
+
+def test_summary_rejects_overlong_fields() -> None:
+    response = client.post(
+        "/summary",
+        json={**SUMMARY_PAYLOAD, "top_product": "A" * 121},
+    )
+
+    assert response.status_code == 422
