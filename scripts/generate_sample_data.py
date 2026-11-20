@@ -95,7 +95,7 @@ def build_rows() -> list[list[object]]:
     for day_index in range(DAY_COUNT):
         current_date = START_DATE + timedelta(days=day_index)
         for store_id, region, store_factor in STORES:
-            for product_name, category, base, unit_price, margin in PRODUCTS:
+            for product_name, category, base, unit_price, _margin in PRODUCTS:
                 sales = daily_sales(product_name, base, day_index, store_factor, rng)
 
                 if (

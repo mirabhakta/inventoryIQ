@@ -6,10 +6,10 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-
 DEFAULT_GROUP_COLS = ["store", "item"]
 DEFAULT_TARGET_COL = "sales"
 DEFAULT_DATE_COL = "date"
+MAX_FUTURE_DAYS = 180
 LIGHTGBM_METHOD = "lightgbm_global_lag"
 SIMPLE_FUTURE_METHOD = "simple_last_value_future"
 FEATURE_REGRESSION_METHOD = "feature_based_regression"
@@ -32,6 +32,13 @@ class ForecastArtifact:
     method_name: str
     forecast_df: pd.DataFrame
     metrics: dict[str, float]
+
+
+# Category: Validation helpers
+# Summary: Rejects forecast horizons outside the supported range before any model work starts.
+def validate_future_days(future_days: int) -> None:
+    if not 1 <= future_days <= MAX_FUTURE_DAYS:
+        raise ValueError(f"future_days must be between 1 and {MAX_FUTURE_DAYS}.")
 
 
 # Category: Validation helpers
@@ -410,7 +417,7 @@ def _build_regression_training_frame(
     for window in rolling_windows:
         featured[f"rolling_mean_{window}"] = shifted_target.groupby(
             [featured[col] for col in group_cols]
-        ).transform(lambda series: series.rolling(window=window, min_periods=1).mean())
+        ).transform(lambda series, w=window: series.rolling(window=w, min_periods=1).mean())
 
     categorical_cols = [*group_cols, "day_of_week", "month"]
     numeric_cols = [
@@ -507,7 +514,7 @@ def _recursive_regression_predictions(
         date_predictions["prediction"] = predictions
         prediction_frames.append(date_predictions)
 
-        for key, prediction in zip(keys, predictions):
+        for key, prediction in zip(keys, predictions, strict=True):
             histories.setdefault(key, []).append(float(prediction))
 
     return pd.concat(prediction_frames, ignore_index=True)
@@ -534,10 +541,10 @@ def _build_lightgbm_training_frame(
     featured["_shifted_target"] = grouped_target.shift(1)
     for window in rolling_windows:
         featured[f"rolling_mean_{window}"] = featured.groupby(group_cols)["_shifted_target"].transform(
-            lambda series: series.rolling(window=window, min_periods=1).mean()
+            lambda series, w=window: series.rolling(window=w, min_periods=1).mean()
         )
         featured[f"rolling_std_{window}"] = featured.groupby(group_cols)["_shifted_target"].transform(
-            lambda series: series.rolling(window=window, min_periods=2).std()
+            lambda series, w=window: series.rolling(window=w, min_periods=2).std()
         )
 
     feature_cols = [
@@ -703,7 +710,7 @@ def _recursive_lightgbm_predictions(
         date_predictions["prediction"] = predictions
         prediction_frames.append(date_predictions)
 
-        for key, prediction in zip(keys, predictions):
+        for key, prediction in zip(keys, predictions, strict=True):
             histories.setdefault(key, []).append(float(prediction))
 
     return pd.concat(prediction_frames, ignore_index=True)
@@ -780,8 +787,7 @@ def build_lightgbm_future_forecast(
     rolling_windows: list[int] | None = None,
 ) -> pd.DataFrame:
     """Train LightGBM on all known rows and produce future-dated CSV rows."""
-    if future_days <= 0:
-        raise ValueError("future_days must be positive.")
+    validate_future_days(future_days)
 
     groups = group_cols or DEFAULT_GROUP_COLS
     lag_values = lags or LIGHTGBM_LAGS
@@ -824,8 +830,7 @@ def build_simple_future_forecast(
     date_col: str = DEFAULT_DATE_COL,
 ) -> pd.DataFrame:
     """Andrew Garcia Leopold: build a fast fallback forecast for small uploaded datasets."""
-    if future_days <= 0:
-        raise ValueError("future_days must be positive.")
+    validate_future_days(future_days)
 
     groups = group_cols or DEFAULT_GROUP_COLS
     prepared = prepare_forecast_input(df, groups, target_col, date_col)

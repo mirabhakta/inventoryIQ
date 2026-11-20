@@ -1,13 +1,10 @@
-import sys
-from pathlib import Path
-
 import pandas as pd
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
-
-from utils.processor import FILTER_OPTION_KEYS, generate_filter_options, validate_filter_options_shape
+from utils.processor import (
+    FILTER_OPTION_KEYS,
+    generate_filter_options,
+    validate_filter_options_shape,
+)
 
 
 def test_generate_filter_options_returns_sorted_values_and_date_range() -> None:

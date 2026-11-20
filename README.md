@@ -154,17 +154,39 @@ python scripts/generate_sample_data.py
 ```
 
 ## Features
-- Upload any retail sales CSV and get an analysis-ready dashboard
-- Schema mapping and clean dataset export for downstream pipeline stages
-- Demand forecasts for the next 1–3 months with model accuracy comparison
-- Automated alert panel flagging anomalies, declining demand, and margin losses
-- Plain-English AI summary generated on demand via the Gemini API
-- Interactive filters by date range, category, store, and region
+- Upload retail CSV or Excel (`.xlsx`) files up to 10 MB / 50,000 rows
+- Fuzzy schema mapping for common column names (`OrderDate`, `Sales Amnt`, `Units_Sold`…)
+- LightGBM demand forecasts for 30, 90, or 180 days, benchmarked against naive, rolling-average, and ridge baselines
+- Model comparison with MAE, RMSE, and MASE on a time-based holdout
+- Store-level alerts for sales anomalies, demand declines, and margin losses
+- Plain-English Gemini summary on demand; the app stays fully usable without a key
+- Server-side filters by store, category, region, and forecast horizon
+
+## How It Works
+
+1. `POST /analyze` decodes the upload, maps columns to the shared schema, applies filters, and returns KPIs, monthly history, product/store/category rankings, an aggregated forecast, alerts, and the model benchmark in one response.
+2. The React dashboard renders that payload directly. Changing a filter re-runs `/analyze` with the same file, and in-flight requests are cancelled so stale responses never win.
+3. `POST /summary` sends the current metrics to Gemini only when the user asks for a summary.
+
+## Screenshots
+
+![Dashboard overview](docs/screenshots/dashboard-overview.png)
+
+| Products | Analysis |
+| --- | --- |
+| ![Products](docs/screenshots/dashboard-products.png) | ![Analysis](docs/screenshots/dashboard-analysis.png) |
+
+<p align="center">
+  <img src="docs/screenshots/dashboard-mobile.png" width="280" alt="InventoryIQ dashboard on mobile" />
+</p>
 
 ## Security
 Never commit your `.env` file. It is excluded from version control via `.gitignore`.
 Start from `.env.example` instead. If a key is accidentally exposed, revoke it
 immediately in the Gemini console and generate a new one.
+
+The AI summary is optional. Without `GEMINI_API_KEY`, the dashboard shows a clear
+configuration message instead of failing.
 
 ## License
 

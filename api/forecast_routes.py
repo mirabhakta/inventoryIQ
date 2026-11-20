@@ -1,96 +1,80 @@
 """FastAPI routes for the forecast pipeline.
 
-!Thin routes! (all business logic lives in services/forecast_service.py).
+Thin routes: upload handling lives in ``api.dependencies``, filtering in
+``utils.filters``, and business logic in ``services.forecast_service``.
 """
 
 from __future__ import annotations
 
-import io
-from typing import List
-
 import pandas as pd
-from fastapi import APIRouter, HTTPException, UploadFile, File, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 
-from services.forecast_service import get_future_forecast, run_forecast_pipeline, shape_fast_kpi_payload
+from api.dependencies import uploaded_frame
+from services.forecast_service import (
+    get_future_forecast,
+    run_forecast_pipeline,
+    shape_fast_kpi_payload,
+)
+from utils.filters import filter_retail_frame
+from utils.forecasting import MAX_FUTURE_DAYS
 from utils.processor import load_and_clean_data
 
 router = APIRouter(prefix="/forecast", tags=["forecast"])
 
 
+def _clean_and_filter(
+    df: pd.DataFrame,
+    stores: list[str],
+    categories: list[str],
+    regions: list[str],
+) -> pd.DataFrame:
+    try:
+        cleaned = load_and_clean_data(df)
+        return filter_retail_frame(cleaned, stores, categories, regions)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
 @router.post("/run")
 async def run_forecast(
-    file: UploadFile = File(...),
-    horizon_days: int = 90,
-    store: List[int] = Query(default=[]),
-    category: List[str] = Query(default=[]),
+    df: pd.DataFrame = Depends(uploaded_frame),
+    horizon_days: int = Query(default=90, ge=30, le=365),
+    store: list[str] = Query(default=[]),
+    category: list[str] = Query(default=[]),
+    region: list[str] = Query(default=[]),
 ):
+    cleaned = _clean_and_filter(df, store, category, region)
     try:
-        contents = await file.read()
-        df = pd.read_csv(io.BytesIO(contents))
-    except Exception:
-        raise HTTPException(status_code=400, detail="Could not parse uploaded file as CSV.")
-
-    try:
-        df = load_and_clean_data(df)
-        if store:
-            df = df[df['store_id'].isin(store)]
-        if category:
-            df = df[df['category'].isin(category)]
-        result = run_forecast_pipeline(df, horizon_days=horizon_days)
-    except ValueError as e:
-        raise HTTPException(status_code=422, detail=str(e))
-
-    return result
+        return run_forecast_pipeline(cleaned, horizon_days=horizon_days)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
 @router.post("/future")
 async def future_forecast(
-    file: UploadFile = File(...),
-    future_days: int = 30,
+    df: pd.DataFrame = Depends(uploaded_frame),
+    future_days: int = Query(default=30, ge=1, le=MAX_FUTURE_DAYS),
     fast: bool = False,
-    store: List[int] = Query(default=[]),
-    category: List[str] = Query(default=[]),
+    store: list[str] = Query(default=[]),
+    category: list[str] = Query(default=[]),
+    region: list[str] = Query(default=[]),
 ):
+    cleaned = _clean_and_filter(df, store, category, region)
     try:
-        contents = await file.read()
-        df = pd.read_csv(io.BytesIO(contents))
-    except Exception:
-        raise HTTPException(status_code=400, detail="Could not parse uploaded file as CSV.")
-
-    try:
-        df = load_and_clean_data(df)
-        if store:
-            df = df[df['store_id'].isin(store)]
-        if category:
-            df = df[df['category'].isin(category)]
-        result = get_future_forecast(df, future_days=future_days, fast=fast)
-    except ValueError as e:
-        raise HTTPException(status_code=422, detail=str(e))
-
-    return result
+        return get_future_forecast(cleaned, future_days=future_days, fast=fast)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
 @router.post("/kpis")
 async def forecast_kpis(
-    file: UploadFile = File(...),
-    future_days: int = 30,
-    store: List[int] = Query(default=[]),
-    category: List[str] = Query(default=[]),
+    df: pd.DataFrame = Depends(uploaded_frame),
+    store: list[str] = Query(default=[]),
+    category: list[str] = Query(default=[]),
+    region: list[str] = Query(default=[]),
 ):
+    cleaned = _clean_and_filter(df, store, category, region)
     try:
-        contents = await file.read()
-        df = pd.read_csv(io.BytesIO(contents))
-    except Exception:
-        raise HTTPException(status_code=400, detail="Could not parse uploaded file as CSV.")
-
-    try:
-        df = load_and_clean_data(df)
-        if store:
-            df = df[df['store_id'].isin(store)]
-        if category:
-            df = df[df['category'].isin(category)]
-        kpis = shape_fast_kpi_payload(df)
-    except ValueError as e:
-        raise HTTPException(status_code=422, detail=str(e))
-
-    return kpis
+        return shape_fast_kpi_payload(cleaned)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
