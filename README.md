@@ -176,6 +176,10 @@ python scripts/generate_sample_data.py
 | --- | --- |
 | ![Products](docs/screenshots/dashboard-products.png) | ![Analysis](docs/screenshots/dashboard-analysis.png) |
 
+<p align="center">
+  <img src="docs/screenshots/dashboard-mobile.png" width="280" alt="InventoryIQ dashboard on mobile" />
+</p>
+
 ## Security
 Never commit your `.env` file. It is excluded from version control via `.gitignore`.
 Start from `.env.example` instead. If a key is accidentally exposed, revoke it
