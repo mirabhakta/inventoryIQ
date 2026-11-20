@@ -21,7 +21,7 @@ A ready-to-upload example is available at `data/sample_sales.csv`.
 ## Conventions
 
 - File endpoints accept `multipart/form-data` with a field named `file`.
-- Supported formats: `.csv` and `.xlsx`. Limits: **10 MB** and **50,000 rows**.
+- Supported formats: `.csv` and `.xlsx`. Limits: **10 MB** and **200,000 rows**.
 - Filters are repeatable query parameters: `store`, `category`, `region`.
 - CORS is an explicit allowlist, not a wildcard. Set `ALLOWED_ORIGINS` to the
   comma-separated browser origins that may call the API.
@@ -46,7 +46,7 @@ A ready-to-upload example is available at `data/sample_sales.csv`.
 | GET | `/` | Service status |
 | GET | `/health` | Liveness probe (`status`, `version`, `ai_configured`) |
 | POST | `/analyze` | Complete dashboard payload for the current filters |
-| POST | `/forecast/run` | Trains all four models and returns the benchmark |
+| POST | `/forecast/run` | Trains all four models and returns the benchmark (≤5,000 rows / 50 series) |
 | POST | `/forecast/future` | Returns per-series future forecast records |
 | POST | `/forecast/kpis` | Fast KPI summary without model training |
 | POST | `/alerts/run` | Runs all three alert detectors |
@@ -116,6 +116,7 @@ aggregates, a monthly forecast, alerts, and an optional benchmark.
     "metrics": { "mae": 38.795, "rmse": 167.376, "mase": 1.583 },
     "table": [{ "method_name": "lightgbm_global_lag", "mae": 38.795, "rmse": 167.376, "mase": 1.583 }]
   },
+  "benchmark_note": null,
   "alerts": { "items": [], "total": 0 }
 }
 ```
@@ -123,8 +124,13 @@ aggregates, a monthly forecast, alerts, and an optional benchmark.
 `meta.stores`, `categories`, `regions`, and `date_range` describe the **full**
 dataset so the sidebar does not collapse to the current selection.
 
-The forecast is returned as **monthly totals**, not one record per series per
-day. Use `/forecast/future` when you need the raw records.
+The forecast is returned as **monthly totals** computed from one aggregate
+daily-total series. This keeps the dashboard fast on large uploads; use
+`/forecast/future` when you need per-series records.
+
+The four-model benchmark runs only for uploads up to **5,000 rows / 50 series**.
+Above that, `benchmark` is `null`, `kpis.mae` is `null`, and `benchmark_note`
+explains why.
 
 ---
 
@@ -147,6 +153,10 @@ and returns the winner by MASE, then MAE, then RMSE.
 ```
 
 Query parameters: `horizon_days` (30–365, default 90) plus the standard filters.
+
+**Limit:** the full four-model comparison is available for uploads up to
+**5,000 rows / 50 series**. Larger uploads should use `/analyze`, which returns
+a fast forecast and skips the benchmark with a note.
 
 ---
 
@@ -260,10 +270,12 @@ message. `GEMINI_MODEL` can override the default (`gemini-3.8-flash`).
 
 ## Limitations
 
-- The hosted demo is sized for a single-instance deployment: 10 MB / 50k rows.
-- Forecasting is capped at 180 days.
-- No authentication or rate limiting; this is a portfolio demo, not a production
-  multi-tenant service.
+- The hosted demo is sized for a single 512 MB instance: 10 MB / 200,000 rows.
+- The dashboard forecasts the aggregate daily total so large uploads stay fast;
+  `/forecast/future` remains the per-series API.
+- The four-model benchmark runs only for uploads up to 5,000 rows / 50 series.
+- LightGBM is pinned to one thread to match the free tier; this avoids thread
+  thrashing and is faster on a fractional CPU.
 - Model training runs per request. The dashboard skips the benchmark on filter
   changes to keep interactions fast.
 - Cleaned datasets and `/analyze` payloads are cached in process memory for 15

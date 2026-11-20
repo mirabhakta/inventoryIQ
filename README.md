@@ -165,19 +165,21 @@ See **[DEPLOY.md](DEPLOY.md)** for the Render + Vercel steps, environment variab
 and the post-deploy checklist.
 
 ## Features
-- Upload retail CSV or Excel (`.xlsx`) files up to 10 MB / 50,000 rows
+- Upload retail CSV or Excel (`.xlsx`) files up to 10 MB / 200,000 rows
 - Fuzzy schema mapping for common column names (`OrderDate`, `Sales Amnt`, `Units_Sold`…)
-- LightGBM demand forecasts for 30, 90, or 180 days, benchmarked against naive, rolling-average, and ridge baselines
-- Model comparison with MAE, RMSE, and MASE on a time-based holdout
+- LightGBM demand forecasts for 30, 90, or 180 days, computed from the daily total so large uploads stay fast
+- Model accuracy comparison (MAE, RMSE, MASE) on uploads up to 5,000 rows / 50 series
 - Store-level alerts for sales anomalies, demand declines, and margin losses
 - Plain-English Gemini summary on demand; the app stays fully usable without a key
 - Server-side filters by store, category, region, and forecast horizon
 
 ## How It Works
 
-1. `POST /analyze` decodes the upload, maps columns to the shared schema, applies filters, and returns KPIs, monthly history, product/store/category rankings, an aggregated forecast, alerts, and the model benchmark in one response.
+1. `POST /analyze` decodes the upload, maps columns to the shared schema, applies filters, and returns KPIs, monthly history, product/store/category rankings, an aggregated forecast, alerts, and — for smaller uploads — the model benchmark in one response.
 2. The React dashboard renders that payload directly. Changing a filter re-runs `/analyze` with the same file, and in-flight requests are cancelled so stale responses never win.
 3. `POST /summary` sends the current metrics to Gemini only when the user asks for a summary.
+
+Large files are expected: the dashboard forecast uses one daily-total series, and the expensive four-model benchmark is skipped above 5,000 rows / 50 series with a note in the UI.
 
 ## Screenshots
 
