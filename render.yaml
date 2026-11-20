@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: inventoryiq-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: ALLOWED_ORIGINS
+        sync: false

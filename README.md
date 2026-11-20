@@ -153,6 +153,15 @@ Regenerate it at any time with:
 python scripts/generate_sample_data.py
 ```
 
+## Deployment
+
+The API ships as a Docker image and the UI as a Vite static build. The included
+`render.yaml` and `frontend/vercel.json` deploy both services with a health check,
+an explicit CORS allowlist, and SPA routing.
+
+See **[DEPLOY.md](DEPLOY.md)** for the Render + Vercel steps, environment variables,
+and the post-deploy checklist.
+
 ## Features
 - Upload retail CSV or Excel (`.xlsx`) files up to 10 MB / 50,000 rows
 - Fuzzy schema mapping for common column names (`OrderDate`, `Sales Amnt`, `Units_Sold`…)
