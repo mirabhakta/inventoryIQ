@@ -1,19 +1,35 @@
 # Secrets
 .env
+.env.*
+!.env.example
 
 # Python
 __pycache__/
 *.py[cod]
+*.egg-info/
 venv/
 .venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
 
 # Data files
 *.csv
+!data/sample_sales.csv
 *.xlsx
-!data/retail_clean.csv
-!data/forecastUpdated.csv
-!data/updatedForecast.csv
-!data/model_comparison.csv
+data/temp_*.csv
+
+# Generated model outputs
+outputs/
 
 # OS
 .DS_Store
@@ -24,10 +40,7 @@ Thumbs.db
 .idea/
 
 # Local launch/log files
-run_streamlit_local.cmd
 streamlit*.log
-# Local Codex/agent notes
-AGENTS.md
 
-# Ignore local test files
-utils/test_*.py
+# Local agent notes
+AGENTS.md

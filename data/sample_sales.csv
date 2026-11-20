@@ -1,0 +1,1801 @@
+Order Date,Store,Product,Category,Region,Units Sold,Sales,Profit
+2024-01-01,1,Aurora Desk Lamp,Home,West,12,403.06,112.86
+2024-01-01,1,Nimbus Mug,Kitchen,West,22,265.27,82.23
+2024-01-01,1,Cascade Backpack,Accessories,West,7,322.56,70.96
+2024-01-01,1,Vertex Keyboard,Electronics,West,6,575.24,103.54
+2024-01-01,1,Solstice Blanket,Home,West,8,334.5,86.97
+2024-01-01,2,Aurora Desk Lamp,Home,Central,12,403.33,112.93
+2024-01-01,2,Nimbus Mug,Kitchen,Central,23,274.37,85.05
+2024-01-01,2,Cascade Backpack,Accessories,Central,7,315.1,69.32
+2024-01-01,2,Vertex Keyboard,Electronics,Central,6,520.91,93.76
+2024-01-01,2,Solstice Blanket,Home,Central,7,280.52,72.94
+2024-01-01,3,Aurora Desk Lamp,Home,East,11,365.5,102.34
+2024-01-01,3,Nimbus Mug,Kitchen,East,19,227.08,70.4
+2024-01-01,3,Cascade Backpack,Accessories,East,6,293.6,64.59
+2024-01-01,3,Vertex Keyboard,Electronics,East,6,500.04,90.01
+2024-01-01,3,Solstice Blanket,Home,East,7,288.38,74.98
+2024-01-02,1,Aurora Desk Lamp,Home,West,13,452.0,126.56
+2024-01-02,1,Nimbus Mug,Kitchen,West,24,292.14,90.56
+2024-01-02,1,Cascade Backpack,Accessories,West,8,380.62,83.74
+2024-01-02,1,Vertex Keyboard,Electronics,West,7,616.89,111.04
+2024-01-02,1,Solstice Blanket,Home,West,8,351.17,91.3
+2024-01-02,2,Aurora Desk Lamp,Home,Central,13,458.85,128.48
+2024-01-02,2,Nimbus Mug,Kitchen,Central,22,266.59,82.64
+2024-01-02,2,Cascade Backpack,Accessories,Central,8,370.3,81.47
+2024-01-02,2,Vertex Keyboard,Electronics,Central,7,579.53,104.32
+2024-01-02,2,Solstice Blanket,Home,Central,8,321.96,83.71
+2024-01-02,3,Aurora Desk Lamp,Home,East,13,439.43,123.04
+2024-01-02,3,Nimbus Mug,Kitchen,East,23,274.48,85.09
+2024-01-02,3,Cascade Backpack,Accessories,East,7,324.28,71.34
+2024-01-02,3,Vertex Keyboard,Electronics,East,6,510.37,91.87
+2024-01-02,3,Solstice Blanket,Home,East,8,319.82,83.15
+2024-01-03,1,Aurora Desk Lamp,Home,West,15,500.14,140.04
+2024-01-03,1,Nimbus Mug,Kitchen,West,25,305.51,94.71
+2024-01-03,1,Cascade Backpack,Accessories,West,8,365.88,80.49
+2024-01-03,1,Vertex Keyboard,Electronics,West,7,652.89,117.52
+2024-01-03,1,Solstice Blanket,Home,West,9,365.12,94.93
+2024-01-03,2,Aurora Desk Lamp,Home,Central,14,478.61,134.01
+2024-01-03,2,Nimbus Mug,Kitchen,Central,25,305.41,94.68
+2024-01-03,2,Cascade Backpack,Accessories,Central,8,368.01,80.96
+2024-01-03,2,Vertex Keyboard,Electronics,Central,7,612.02,110.16
+2024-01-03,2,Solstice Blanket,Home,Central,8,341.58,88.81
+2024-01-03,3,Aurora Desk Lamp,Home,East,13,453.58,127.0
+2024-01-03,3,Nimbus Mug,Kitchen,East,23,277.8,86.12
+2024-01-03,3,Cascade Backpack,Accessories,East,7,341.59,75.15
+2024-01-03,3,Vertex Keyboard,Electronics,East,6,561.27,101.03
+2024-01-03,3,Solstice Blanket,Home,East,8,327.33,85.11
+2024-01-04,1,Aurora Desk Lamp,Home,West,15,494.85,138.56
+2024-01-04,1,Nimbus Mug,Kitchen,West,25,303.35,94.04
+2024-01-04,1,Cascade Backpack,Accessories,West,7,355.73,78.26
+2024-01-04,1,Vertex Keyboard,Electronics,West,6,566.49,101.97
+2024-01-04,1,Solstice Blanket,Home,West,8,323.57,84.13
+2024-01-04,2,Aurora Desk Lamp,Home,Central,12,418.25,117.11
+2024-01-04,2,Nimbus Mug,Kitchen,Central,24,289.47,89.73
+2024-01-04,2,Cascade Backpack,Accessories,Central,7,351.84,77.4
+2024-01-04,2,Vertex Keyboard,Electronics,Central,7,582.33,104.82
+2024-01-04,2,Solstice Blanket,Home,Central,8,343.42,89.29
+2024-01-04,3,Aurora Desk Lamp,Home,East,12,409.27,114.6
+2024-01-04,3,Nimbus Mug,Kitchen,East,20,243.86,75.6
+2024-01-04,3,Cascade Backpack,Accessories,East,7,324.3,71.35
+2024-01-04,3,Vertex Keyboard,Electronics,East,5,487.05,87.67
+2024-01-04,3,Solstice Blanket,Home,East,7,314.25,81.71
+2024-01-05,1,Aurora Desk Lamp,Home,West,12,424.77,118.93
+2024-01-05,1,Nimbus Mug,Kitchen,West,22,267.48,82.92
+2024-01-05,1,Cascade Backpack,Accessories,West,7,347.73,76.5
+2024-01-05,1,Vertex Keyboard,Electronics,West,6,517.35,93.12
+2024-01-05,1,Solstice Blanket,Home,West,7,314.58,81.79
+2024-01-05,2,Aurora Desk Lamp,Home,Central,12,391.28,109.56
+2024-01-05,2,Nimbus Mug,Kitchen,Central,22,260.91,80.88
+2024-01-05,2,Cascade Backpack,Accessories,Central,7,346.63,76.26
+2024-01-05,2,Vertex Keyboard,Electronics,Central,6,538.14,96.87
+2024-01-05,2,Solstice Blanket,Home,Central,7,300.07,78.02
+2024-01-05,3,Aurora Desk Lamp,Home,East,11,390.62,109.37
+2024-01-05,3,Nimbus Mug,Kitchen,East,19,229.61,71.18
+2024-01-05,3,Cascade Backpack,Accessories,East,6,287.43,63.24
+2024-01-05,3,Vertex Keyboard,Electronics,East,5,478.76,86.18
+2024-01-05,3,Solstice Blanket,Home,East,6,269.26,70.01
+2024-01-06,1,Aurora Desk Lamp,Home,West,11,387.81,108.59
+2024-01-06,1,Nimbus Mug,Kitchen,West,21,253.14,78.47
+2024-01-06,1,Cascade Backpack,Accessories,West,6,309.68,68.13
+2024-01-06,1,Vertex Keyboard,Electronics,West,6,538.87,97.0
+2024-01-06,1,Solstice Blanket,Home,West,7,303.29,78.85
+2024-01-06,2,Aurora Desk Lamp,Home,Central,12,409.98,114.8
+2024-01-06,2,Nimbus Mug,Kitchen,Central,22,260.04,80.61
+2024-01-06,2,Cascade Backpack,Accessories,Central,7,323.2,71.1
+2024-01-06,2,Vertex Keyboard,Electronics,Central,5,475.95,85.67
+2024-01-06,2,Solstice Blanket,Home,Central,7,291.97,75.91
+2024-01-06,3,Aurora Desk Lamp,Home,East,10,353.4,98.95
+2024-01-06,3,Nimbus Mug,Kitchen,East,18,214.71,66.56
+2024-01-06,3,Cascade Backpack,Accessories,East,6,292.23,64.29
+2024-01-06,3,Vertex Keyboard,Electronics,East,5,469.79,84.56
+2024-01-06,3,Solstice Blanket,Home,East,7,274.88,71.47
+2024-01-07,1,Aurora Desk Lamp,Home,West,13,436.91,122.34
+2024-01-07,1,Nimbus Mug,Kitchen,West,22,259.82,80.55
+2024-01-07,1,Cascade Backpack,Accessories,West,7,339.94,74.79
+2024-01-07,1,Vertex Keyboard,Electronics,West,6,557.33,100.32
+2024-01-07,1,Solstice Blanket,Home,West,8,318.77,82.88
+2024-01-07,2,Aurora Desk Lamp,Home,Central,11,374.6,104.89
+2024-01-07,2,Nimbus Mug,Kitchen,Central,22,265.25,82.23
+2024-01-07,2,Cascade Backpack,Accessories,Central,7,315.78,69.47
+2024-01-07,2,Vertex Keyboard,Electronics,Central,6,502.5,90.45
+2024-01-07,2,Solstice Blanket,Home,Central,7,289.37,75.24
+2024-01-07,3,Aurora Desk Lamp,Home,East,12,393.92,110.3
+2024-01-07,3,Nimbus Mug,Kitchen,East,20,242.75,75.25
+2024-01-07,3,Cascade Backpack,Accessories,East,6,277.84,61.12
+2024-01-07,3,Vertex Keyboard,Electronics,East,5,462.32,83.22
+2024-01-07,3,Solstice Blanket,Home,East,6,265.71,69.08
+2024-01-08,1,Aurora Desk Lamp,Home,West,14,479.85,134.36
+2024-01-08,1,Nimbus Mug,Kitchen,West,26,306.16,94.91
+2024-01-08,1,Cascade Backpack,Accessories,West,7,344.09,75.7
+2024-01-08,1,Vertex Keyboard,Electronics,West,6,564.65,101.64
+2024-01-08,1,Solstice Blanket,Home,West,7,314.18,81.69
+2024-01-08,2,Aurora Desk Lamp,Home,Central,14,460.14,128.84
+2024-01-08,2,Nimbus Mug,Kitchen,Central,25,296.15,91.81
+2024-01-08,2,Cascade Backpack,Accessories,Central,7,342.25,75.3
+2024-01-08,2,Vertex Keyboard,Electronics,Central,6,559.76,100.76
+2024-01-08,2,Solstice Blanket,Home,Central,7,314.29,81.71
+2024-01-08,3,Aurora Desk Lamp,Home,East,12,414.84,116.15
+2024-01-08,3,Nimbus Mug,Kitchen,East,20,241.68,74.92
+2024-01-08,3,Cascade Backpack,Accessories,East,6,303.32,66.73
+2024-01-08,3,Vertex Keyboard,Electronics,East,6,493.37,88.81
+2024-01-08,3,Solstice Blanket,Home,East,7,306.78,79.76
+2024-01-09,1,Aurora Desk Lamp,Home,West,14,462.13,129.4
+2024-01-09,1,Nimbus Mug,Kitchen,West,25,294.87,91.41
+2024-01-09,1,Cascade Backpack,Accessories,West,8,400.2,88.04
+2024-01-09,1,Vertex Keyboard,Electronics,West,7,615.25,110.74
+2024-01-09,1,Solstice Blanket,Home,West,8,352.6,91.68
+2024-01-09,2,Aurora Desk Lamp,Home,Central,14,487.32,136.45
+2024-01-09,2,Nimbus Mug,Kitchen,Central,23,278.27,86.26
+2024-01-09,2,Cascade Backpack,Accessories,Central,8,403.68,88.81
+2024-01-09,2,Vertex Keyboard,Electronics,Central,6,572.71,103.09
+2024-01-09,2,Solstice Blanket,Home,Central,9,365.86,95.12
+2024-01-09,3,Aurora Desk Lamp,Home,East,13,447.65,125.34
+2024-01-09,3,Nimbus Mug,Kitchen,East,23,281.64,87.31
+2024-01-09,3,Cascade Backpack,Accessories,East,8,364.01,80.08
+2024-01-09,3,Vertex Keyboard,Electronics,East,6,514.65,92.64
+2024-01-09,3,Solstice Blanket,Home,East,8,323.94,84.22
+2024-01-10,1,Aurora Desk Lamp,Home,West,15,494.87,138.56
+2024-01-10,1,Nimbus Mug,Kitchen,West,25,304.43,94.37
+2024-01-10,1,Cascade Backpack,Accessories,West,8,389.89,85.78
+2024-01-10,1,Vertex Keyboard,Electronics,West,7,623.77,112.28
+2024-01-10,1,Solstice Blanket,Home,West,9,383.17,99.62
+2024-01-10,2,Aurora Desk Lamp,Home,Central,15,500.32,140.09
+2024-01-10,2,Nimbus Mug,Kitchen,Central,27,318.81,98.83
+2024-01-10,2,Cascade Backpack,Accessories,Central,8,363.93,80.06
+2024-01-10,2,Vertex Keyboard,Electronics,Central,7,590.69,106.32
+2024-01-10,2,Solstice Blanket,Home,Central,8,353.31,91.86
+2024-01-10,3,Aurora Desk Lamp,Home,East,13,440.08,123.22
+2024-01-10,3,Nimbus Mug,Kitchen,East,22,264.66,82.04
+2024-01-10,3,Cascade Backpack,Accessories,East,8,363.69,80.01
+2024-01-10,3,Vertex Keyboard,Electronics,East,7,580.54,104.5
+2024-01-10,3,Solstice Blanket,Home,East,8,324.44,84.35
+2024-01-11,1,Aurora Desk Lamp,Home,West,14,465.94,130.46
+2024-01-11,1,Nimbus Mug,Kitchen,West,27,322.65,100.02
+2024-01-11,1,Cascade Backpack,Accessories,West,8,388.47,85.46
+2024-01-11,1,Vertex Keyboard,Electronics,West,7,578.91,104.2
+2024-01-11,1,Solstice Blanket,Home,West,8,329.39,85.64
+2024-01-11,2,Aurora Desk Lamp,Home,Central,14,459.21,128.58
+2024-01-11,2,Nimbus Mug,Kitchen,Central,25,298.26,92.46
+2024-01-11,2,Cascade Backpack,Accessories,Central,7,344.99,75.9
+2024-01-11,2,Vertex Keyboard,Electronics,Central,7,589.77,106.16
+2024-01-11,2,Solstice Blanket,Home,Central,8,329.43,85.65
+2024-01-11,3,Aurora Desk Lamp,Home,East,13,439.28,123.0
+2024-01-11,3,Nimbus Mug,Kitchen,East,23,278.43,86.31
+2024-01-11,3,Cascade Backpack,Accessories,East,7,312.99,68.86
+2024-01-11,3,Vertex Keyboard,Electronics,East,6,553.79,99.68
+2024-01-11,3,Solstice Blanket,Home,East,7,301.81,78.47
+2024-01-12,1,Aurora Desk Lamp,Home,West,13,456.04,127.69
+2024-01-12,1,Nimbus Mug,Kitchen,West,24,287.45,89.11
+2024-01-12,1,Cascade Backpack,Accessories,West,8,366.58,80.65
+2024-01-12,1,Vertex Keyboard,Electronics,West,6,518.76,93.38
+2024-01-12,1,Solstice Blanket,Home,West,8,334.04,86.85
+2024-01-12,2,Aurora Desk Lamp,Home,Central,12,412.85,115.6
+2024-01-12,2,Nimbus Mug,Kitchen,Central,23,279.92,86.78
+2024-01-12,2,Cascade Backpack,Accessories,Central,7,351.0,77.22
+2024-01-12,2,Vertex Keyboard,Electronics,Central,6,513.7,92.47
+2024-01-12,2,Solstice Blanket,Home,Central,7,308.15,80.12
+2024-01-12,3,Aurora Desk Lamp,Home,East,12,403.3,112.93
+2024-01-12,3,Nimbus Mug,Kitchen,East,19,229.14,71.03
+2024-01-12,3,Cascade Backpack,Accessories,East,6,288.82,63.54
+2024-01-12,3,Vertex Keyboard,Electronics,East,6,497.77,89.6
+2024-01-12,3,Solstice Blanket,Home,East,7,275.9,71.73
+2024-01-13,1,Aurora Desk Lamp,Home,West,11,389.72,109.12
+2024-01-13,1,Nimbus Mug,Kitchen,West,21,251.52,77.97
+2024-01-13,1,Cascade Backpack,Accessories,West,7,328.55,72.28
+2024-01-13,1,Vertex Keyboard,Electronics,West,6,523.57,94.24
+2024-01-13,1,Solstice Blanket,Home,West,8,315.1,81.93
+2024-01-13,2,Aurora Desk Lamp,Home,Central,11,379.49,106.26
+2024-01-13,2,Nimbus Mug,Kitchen,Central,21,250.14,77.54
+2024-01-13,2,Cascade Backpack,Accessories,Central,7,316.0,69.52
+2024-01-13,2,Vertex Keyboard,Electronics,Central,5,473.56,85.24
+2024-01-13,2,Solstice Blanket,Home,Central,7,277.93,72.26
+2024-01-13,3,Aurora Desk Lamp,Home,East,11,371.35,103.98
+2024-01-13,3,Nimbus Mug,Kitchen,East,18,218.17,67.63
+2024-01-13,3,Cascade Backpack,Accessories,East,6,296.13,65.15
+2024-01-13,3,Vertex Keyboard,Electronics,East,5,421.22,75.82
+2024-01-13,3,Solstice Blanket,Home,East,6,256.36,66.65
+2024-01-14,1,Aurora Desk Lamp,Home,West,12,418.22,117.1
+2024-01-14,1,Nimbus Mug,Kitchen,West,21,249.72,77.41
+2024-01-14,1,Cascade Backpack,Accessories,West,7,349.93,76.98
+2024-01-14,1,Vertex Keyboard,Electronics,West,6,557.19,100.29
+2024-01-14,1,Solstice Blanket,Home,West,7,294.4,76.54
+2024-01-14,2,Aurora Desk Lamp,Home,Central,11,390.92,109.46
+2024-01-14,2,Nimbus Mug,Kitchen,Central,22,263.7,81.75
+2024-01-14,2,Cascade Backpack,Accessories,Central,6,309.98,68.2
+2024-01-14,2,Vertex Keyboard,Electronics,Central,6,501.66,90.3
+2024-01-14,2,Solstice Blanket,Home,Central,7,289.1,75.17
+2024-01-14,3,Aurora Desk Lamp,Home,East,11,359.19,100.57
+2024-01-14,3,Nimbus Mug,Kitchen,East,18,220.12,68.24
+2024-01-14,3,Cascade Backpack,Accessories,East,6,270.75,59.56
+2024-01-14,3,Vertex Keyboard,Electronics,East,5,472.11,84.98
+2024-01-14,3,Solstice Blanket,Home,East,6,258.5,67.21
+2024-01-15,1,Aurora Desk Lamp,Home,West,12,419.67,117.51
+2024-01-15,1,Nimbus Mug,Kitchen,West,23,271.8,84.26
+2024-01-15,1,Cascade Backpack,Accessories,West,7,348.59,76.69
+2024-01-15,1,Vertex Keyboard,Electronics,West,7,584.65,105.24
+2024-01-15,1,Solstice Blanket,Home,West,8,318.15,82.72
+2024-01-15,2,Aurora Desk Lamp,Home,Central,12,422.97,118.43
+2024-01-15,2,Nimbus Mug,Kitchen,Central,22,258.26,80.06
+2024-01-15,2,Cascade Backpack,Accessories,Central,7,352.79,77.61
+2024-01-15,2,Vertex Keyboard,Electronics,Central,6,552.98,99.54
+2024-01-15,2,Solstice Blanket,Home,Central,7,293.71,76.36
+2024-01-15,3,Aurora Desk Lamp,Home,East,11,373.48,104.57
+2024-01-15,3,Nimbus Mug,Kitchen,East,20,234.97,72.84
+2024-01-15,3,Cascade Backpack,Accessories,East,7,318.39,70.05
+2024-01-15,3,Vertex Keyboard,Electronics,East,5,459.57,82.72
+2024-01-15,3,Solstice Blanket,Home,East,7,298.64,77.65
+2024-01-16,1,Aurora Desk Lamp,Home,West,13,448.38,125.55
+2024-01-16,1,Nimbus Mug,Kitchen,West,23,280.86,87.07
+2024-01-16,1,Cascade Backpack,Accessories,West,8,373.37,82.14
+2024-01-16,1,Vertex Keyboard,Electronics,West,7,616.38,110.95
+2024-01-16,1,Solstice Blanket,Home,West,8,348.59,90.63
+2024-01-16,2,Aurora Desk Lamp,Home,Central,13,436.91,122.34
+2024-01-16,2,Nimbus Mug,Kitchen,Central,24,291.34,90.31
+2024-01-16,2,Cascade Backpack,Accessories,Central,8,381.85,84.01
+2024-01-16,2,Vertex Keyboard,Electronics,Central,7,589.43,106.1
+2024-01-16,2,Solstice Blanket,Home,Central,8,348.6,90.64
+2024-01-16,3,Aurora Desk Lamp,Home,East,12,420.51,117.74
+2024-01-16,3,Nimbus Mug,Kitchen,East,21,256.59,79.54
+2024-01-16,3,Cascade Backpack,Accessories,East,7,331.22,72.87
+2024-01-16,3,Vertex Keyboard,Electronics,East,5,488.71,87.97
+2024-01-16,3,Solstice Blanket,Home,East,8,317.36,82.51
+2024-01-17,1,Aurora Desk Lamp,Home,West,15,504.77,141.33
+2024-01-17,1,Nimbus Mug,Kitchen,West,27,319.51,99.05
+2024-01-17,1,Cascade Backpack,Accessories,West,8,363.54,79.98
+2024-01-17,1,Vertex Keyboard,Electronics,West,7,617.55,111.16
+2024-01-17,1,Solstice Blanket,Home,West,9,362.82,94.33
+2024-01-17,2,Aurora Desk Lamp,Home,Central,14,460.53,128.95
+2024-01-17,2,Nimbus Mug,Kitchen,Central,24,286.23,88.73
+2024-01-17,2,Cascade Backpack,Accessories,Central,7,338.61,74.49
+2024-01-17,2,Vertex Keyboard,Electronics,Central,6,556.37,100.15
+2024-01-17,2,Solstice Blanket,Home,Central,8,321.24,83.52
+2024-01-17,3,Aurora Desk Lamp,Home,East,12,416.28,116.56
+2024-01-17,3,Nimbus Mug,Kitchen,East,22,259.27,80.37
+2024-01-17,3,Cascade Backpack,Accessories,East,7,321.33,70.69
+2024-01-17,3,Vertex Keyboard,Electronics,East,6,529.15,95.25
+2024-01-17,3,Solstice Blanket,Home,East,8,317.16,82.46
+2024-01-18,1,Aurora Desk Lamp,Home,West,12,424.16,118.76
+2024-01-18,1,Nimbus Mug,Kitchen,West,22,268.9,83.36
+2024-01-18,1,Cascade Backpack,Accessories,West,7,338.02,74.37
+2024-01-18,1,Vertex Keyboard,Electronics,West,7,579.9,104.38
+2024-01-18,1,Solstice Blanket,Home,West,8,316.22,82.22
+2024-01-18,2,Aurora Desk Lamp,Home,Central,12,414.34,116.01
+2024-01-18,2,Nimbus Mug,Kitchen,Central,22,261.5,81.07
+2024-01-18,2,Cascade Backpack,Accessories,Central,7,342.58,75.37
+2024-01-18,2,Vertex Keyboard,Electronics,Central,6,572.1,102.98
+2024-01-18,2,Solstice Blanket,Home,Central,8,318.43,82.79
+2024-01-18,3,Aurora Desk Lamp,Home,East,11,387.44,108.48
+2024-01-18,3,Nimbus Mug,Kitchen,East,21,253.47,78.57
+2024-01-18,3,Cascade Backpack,Accessories,East,6,309.71,68.14
+2024-01-18,3,Vertex Keyboard,Electronics,East,5,467.8,84.2
+2024-01-18,3,Solstice Blanket,Home,East,7,298.15,77.52
+2024-01-19,1,Aurora Desk Lamp,Home,West,13,426.65,119.46
+2024-01-19,1,Nimbus Mug,Kitchen,West,21,249.11,77.22
+2024-01-19,1,Cascade Backpack,Accessories,West,7,319.79,70.35
+2024-01-19,1,Vertex Keyboard,Electronics,West,6,519.13,93.44
+2024-01-19,1,Solstice Blanket,Home,West,7,301.17,78.3
+2024-01-19,2,Aurora Desk Lamp,Home,Central,11,357.03,99.97
+2024-01-19,2,Nimbus Mug,Kitchen,Central,21,249.47,77.33
+2024-01-19,2,Cascade Backpack,Accessories,Central,7,326.45,71.82
+2024-01-19,2,Vertex Keyboard,Electronics,Central,5,461.51,83.07
+2024-01-19,2,Solstice Blanket,Home,Central,6,266.81,69.37
+2024-01-19,3,Aurora Desk Lamp,Home,East,10,335.66,93.98
+2024-01-19,3,Nimbus Mug,Kitchen,East,20,238.68,73.99
+2024-01-19,3,Cascade Backpack,Accessories,East,6,266.99,58.74
+2024-01-19,3,Vertex Keyboard,Electronics,East,5,468.82,84.39
+2024-01-19,3,Solstice Blanket,Home,East,6,270.14,70.24
+2024-01-20,1,Aurora Desk Lamp,Home,West,11,386.4,108.19
+2024-01-20,1,Nimbus Mug,Kitchen,West,20,245.75,76.18
+2024-01-20,1,Cascade Backpack,Accessories,West,6,295.97,65.11
+2024-01-20,1,Vertex Keyboard,Electronics,West,5,486.16,87.51
+2024-01-20,1,Solstice Blanket,Home,West,6,260.76,67.8
+2024-01-20,2,Aurora Desk Lamp,Home,Central,10,334.39,93.63
+2024-01-20,2,Nimbus Mug,Kitchen,Central,20,234.69,72.75
+2024-01-20,2,Cascade Backpack,Accessories,Central,6,285.21,62.75
+2024-01-20,2,Vertex Keyboard,Electronics,Central,5,452.69,81.48
+2024-01-20,2,Solstice Blanket,Home,Central,6,266.2,69.21
+2024-01-20,3,Aurora Desk Lamp,Home,East,10,340.28,95.28
+2024-01-20,3,Nimbus Mug,Kitchen,East,18,214.1,66.37
+2024-01-20,3,Cascade Backpack,Accessories,East,6,271.42,59.71
+2024-01-20,3,Vertex Keyboard,Electronics,East,5,401.37,72.25
+2024-01-20,3,Solstice Blanket,Home,East,6,238.8,62.09
+2024-01-21,1,Aurora Desk Lamp,Home,West,11,386.38,108.19
+2024-01-21,1,Nimbus Mug,Kitchen,West,19,229.18,71.05
+2024-01-21,1,Cascade Backpack,Accessories,West,6,286.57,63.04
+2024-01-21,1,Vertex Keyboard,Electronics,West,5,479.12,86.24
+2024-01-21,1,Solstice Blanket,Home,West,7,292.18,75.97
+2024-01-21,2,Aurora Desk Lamp,Home,Central,10,340.5,95.34
+2024-01-21,2,Nimbus Mug,Kitchen,Central,20,234.29,72.63
+2024-01-21,2,Cascade Backpack,Accessories,Central,6,308.12,67.79
+2024-01-21,2,Vertex Keyboard,Electronics,Central,5,432.88,77.92
+2024-01-21,2,Solstice Blanket,Home,Central,6,267.29,69.5
+2024-01-21,3,Aurora Desk Lamp,Home,East,10,331.95,92.95
+2024-01-21,3,Nimbus Mug,Kitchen,East,17,208.02,64.48
+2024-01-21,3,Cascade Backpack,Accessories,East,6,268.95,59.17
+2024-01-21,3,Vertex Keyboard,Electronics,East,5,436.16,78.51
+2024-01-21,3,Solstice Blanket,Home,East,6,242.29,63.0
+2024-01-22,1,Aurora Desk Lamp,Home,West,12,408.04,114.25
+2024-01-22,1,Nimbus Mug,Kitchen,West,21,246.16,76.31
+2024-01-22,1,Cascade Backpack,Accessories,West,6,309.92,68.18
+2024-01-22,1,Vertex Keyboard,Electronics,West,6,559.27,100.67
+2024-01-22,1,Solstice Blanket,Home,West,8,320.92,83.44
+2024-01-22,2,Aurora Desk Lamp,Home,Central,12,420.44,117.72
+2024-01-22,2,Nimbus Mug,Kitchen,Central,20,239.81,74.34
+2024-01-22,2,Cascade Backpack,Accessories,Central,6,304.93,67.08
+2024-01-22,2,Vertex Keyboard,Electronics,Central,5,478.59,86.15
+2024-01-22,2,Solstice Blanket,Home,Central,7,286.2,74.41
+2024-01-22,3,Aurora Desk Lamp,Home,East,11,376.8,105.5
+2024-01-22,3,Nimbus Mug,Kitchen,East,20,243.1,75.36
+2024-01-22,3,Cascade Backpack,Accessories,East,6,300.31,66.07
+2024-01-22,3,Vertex Keyboard,Electronics,East,5,437.48,78.75
+2024-01-22,3,Solstice Blanket,Home,East,6,259.62,67.5
+2024-01-23,1,Aurora Desk Lamp,Home,West,14,462.82,129.59
+2024-01-23,1,Nimbus Mug,Kitchen,West,25,296.23,91.83
+2024-01-23,1,Cascade Backpack,Accessories,West,7,342.25,75.3
+2024-01-23,1,Vertex Keyboard,Electronics,West,6,533.03,95.95
+2024-01-23,1,Solstice Blanket,Home,West,8,319.21,83.0
+2024-01-23,2,Aurora Desk Lamp,Home,Central,13,430.33,120.49
+2024-01-23,2,Nimbus Mug,Kitchen,Central,24,284.78,88.28
+2024-01-23,2,Cascade Backpack,Accessories,Central,8,362.38,79.72
+2024-01-23,2,Vertex Keyboard,Electronics,Central,6,518.41,93.31
+2024-01-23,2,Solstice Blanket,Home,Central,7,312.06,81.14
+2024-01-23,3,Aurora Desk Lamp,Home,East,11,387.1,108.39
+2024-01-23,3,Nimbus Mug,Kitchen,East,22,259.09,80.32
+2024-01-23,3,Cascade Backpack,Accessories,East,6,294.08,64.7
+2024-01-23,3,Vertex Keyboard,Electronics,East,5,470.57,84.7
+2024-01-23,3,Solstice Blanket,Home,East,7,292.4,76.02
+2024-01-24,1,Aurora Desk Lamp,Home,West,13,454.26,127.19
+2024-01-24,1,Nimbus Mug,Kitchen,West,24,290.91,90.18
+2024-01-24,1,Cascade Backpack,Accessories,West,7,345.64,76.04
+2024-01-24,1,Vertex Keyboard,Electronics,West,7,600.25,108.05
+2024-01-24,1,Solstice Blanket,Home,West,8,339.8,88.35
+2024-01-24,2,Aurora Desk Lamp,Home,Central,12,411.7,115.28
+2024-01-24,2,Nimbus Mug,Kitchen,Central,24,285.93,88.64
+2024-01-24,2,Cascade Backpack,Accessories,Central,7,330.2,72.64
+2024-01-24,2,Vertex Keyboard,Electronics,Central,6,534.7,96.25
+2024-01-24,2,Solstice Blanket,Home,Central,7,298.22,77.54
+2024-01-24,3,Aurora Desk Lamp,Home,East,12,423.87,118.68
+2024-01-24,3,Nimbus Mug,Kitchen,East,20,245.26,76.03
+2024-01-24,3,Cascade Backpack,Accessories,East,7,324.44,71.38
+2024-01-24,3,Vertex Keyboard,Electronics,East,5,482.38,86.83
+2024-01-24,3,Solstice Blanket,Home,East,7,290.89,75.63
+2024-01-25,1,Aurora Desk Lamp,Home,West,12,416.16,116.52
+2024-01-25,1,Nimbus Mug,Kitchen,West,24,286.0,88.66
+2024-01-25,1,Cascade Backpack,Accessories,West,8,366.68,80.67
+2024-01-25,1,Vertex Keyboard,Electronics,West,6,563.32,101.4
+2024-01-25,1,Solstice Blanket,Home,West,8,321.91,83.7
+2024-01-25,2,Aurora Desk Lamp,Home,Central,12,418.85,117.28
+2024-01-25,2,Nimbus Mug,Kitchen,Central,21,251.14,77.85
+2024-01-25,2,Cascade Backpack,Accessories,Central,7,313.98,69.08
+2024-01-25,2,Vertex Keyboard,Electronics,Central,6,512.27,92.21
+2024-01-25,2,Solstice Blanket,Home,Central,7,286.19,74.41
+2024-01-25,3,Aurora Desk Lamp,Home,East,11,384.5,107.66
+2024-01-25,3,Nimbus Mug,Kitchen,East,20,236.27,73.24
+2024-01-25,3,Cascade Backpack,Accessories,East,6,305.32,67.17
+2024-01-25,3,Vertex Keyboard,Electronics,East,5,483.7,87.07
+2024-01-25,3,Solstice Blanket,Home,East,7,295.82,76.91
+2024-01-26,1,Aurora Desk Lamp,Home,West,11,373.66,104.63
+2024-01-26,1,Nimbus Mug,Kitchen,West,20,238.59,73.96
+2024-01-26,1,Cascade Backpack,Accessories,West,7,321.71,70.78
+2024-01-26,1,Vertex Keyboard,Electronics,West,6,503.91,90.7
+2024-01-26,1,Solstice Blanket,Home,West,7,292.94,76.17
+2024-01-26,2,Aurora Desk Lamp,Home,Central,11,366.64,102.66
+2024-01-26,2,Nimbus Mug,Kitchen,Central,19,228.1,70.71
+2024-01-26,2,Cascade Backpack,Accessories,Central,6,308.03,67.77
+2024-01-26,2,Vertex Keyboard,Electronics,Central,5,481.99,86.76
+2024-01-26,2,Solstice Blanket,Home,Central,7,281.36,73.15
+2024-01-26,3,Aurora Desk Lamp,Home,East,11,369.4,103.43
+2024-01-26,3,Nimbus Mug,Kitchen,East,19,233.12,72.27
+2024-01-26,3,Cascade Backpack,Accessories,East,5,262.68,57.79
+2024-01-26,3,Vertex Keyboard,Electronics,East,5,434.42,78.2
+2024-01-26,3,Solstice Blanket,Home,East,6,257.06,66.84
+2024-01-27,1,Aurora Desk Lamp,Home,West,11,364.96,102.19
+2024-01-27,1,Nimbus Mug,Kitchen,West,20,239.17,74.14
+2024-01-27,1,Cascade Backpack,Accessories,West,7,320.88,70.59
+2024-01-27,1,Vertex Keyboard,Electronics,West,6,492.19,88.6
+2024-01-27,1,Solstice Blanket,Home,West,7,280.03,72.81
+2024-01-27,2,Aurora Desk Lamp,Home,Central,11,360.49,100.94
+2024-01-27,2,Nimbus Mug,Kitchen,Central,19,227.62,70.56
+2024-01-27,2,Cascade Backpack,Accessories,Central,6,279.29,61.44
+2024-01-27,2,Vertex Keyboard,Electronics,Central,5,438.92,79.01
+2024-01-27,2,Solstice Blanket,Home,Central,7,276.65,71.93
+2024-01-27,3,Aurora Desk Lamp,Home,East,10,330.23,92.46
+2024-01-27,3,Nimbus Mug,Kitchen,East,19,223.98,69.43
+2024-01-27,3,Cascade Backpack,Accessories,East,5,256.82,56.5
+2024-01-27,3,Vertex Keyboard,Electronics,East,5,447.0,80.46
+2024-01-27,3,Solstice Blanket,Home,East,6,249.03,64.75
+2024-01-28,1,Aurora Desk Lamp,Home,West,12,398.63,111.62
+2024-01-28,1,Nimbus Mug,Kitchen,West,19,232.4,72.04
+2024-01-28,1,Cascade Backpack,Accessories,West,7,329.09,72.4
+2024-01-28,1,Vertex Keyboard,Electronics,West,6,509.74,91.75
+2024-01-28,1,Solstice Blanket,Home,West,7,278.61,72.44
+2024-01-28,2,Aurora Desk Lamp,Home,Central,11,365.33,102.29
+2024-01-28,2,Nimbus Mug,Kitchen,Central,20,234.73,72.77
+2024-01-28,2,Cascade Backpack,Accessories,Central,6,287.86,63.33
+2024-01-28,2,Vertex Keyboard,Electronics,Central,6,489.71,88.15
+2024-01-28,2,Solstice Blanket,Home,Central,7,287.14,74.66
+2024-01-28,3,Aurora Desk Lamp,Home,East,10,345.8,96.82
+2024-01-28,3,Nimbus Mug,Kitchen,East,19,231.44,71.75
+2024-01-28,3,Cascade Backpack,Accessories,East,6,265.97,58.51
+2024-01-28,3,Vertex Keyboard,Electronics,East,5,428.94,77.21
+2024-01-28,3,Solstice Blanket,Home,East,6,250.12,65.03
+2024-01-29,1,Aurora Desk Lamp,Home,West,13,457.39,128.07
+2024-01-29,1,Nimbus Mug,Kitchen,West,22,268.47,83.23
+2024-01-29,1,Cascade Backpack,Accessories,West,7,343.17,75.5
+2024-01-29,1,Vertex Keyboard,Electronics,West,6,543.72,97.87
+2024-01-29,1,Solstice Blanket,Home,West,8,331.25,86.12
+2024-01-29,2,Aurora Desk Lamp,Home,Central,13,431.52,120.83
+2024-01-29,2,Nimbus Mug,Kitchen,Central,23,270.33,83.8
+2024-01-29,2,Cascade Backpack,Accessories,Central,7,315.91,69.5
+2024-01-29,2,Vertex Keyboard,Electronics,Central,6,540.55,97.3
+2024-01-29,2,Solstice Blanket,Home,Central,7,300.31,78.08
+2024-01-29,3,Aurora Desk Lamp,Home,East,11,379.86,106.36
+2024-01-29,3,Nimbus Mug,Kitchen,East,21,249.77,77.43
+2024-01-29,3,Cascade Backpack,Accessories,East,6,286.25,62.98
+2024-01-29,3,Vertex Keyboard,Electronics,East,5,477.56,85.96
+2024-01-29,3,Solstice Blanket,Home,East,7,291.81,75.87
+2024-01-30,1,Aurora Desk Lamp,Home,West,13,453.83,127.07
+2024-01-30,1,Nimbus Mug,Kitchen,West,24,290.23,89.97
+2024-01-30,1,Cascade Backpack,Accessories,West,8,379.61,83.51
+2024-01-30,1,Vertex Keyboard,Electronics,West,7,597.62,107.57
+2024-01-30,1,Solstice Blanket,Home,West,8,339.02,88.15
+2024-01-30,2,Aurora Desk Lamp,Home,Central,13,438.46,122.77
+2024-01-30,2,Nimbus Mug,Kitchen,Central,24,284.53,88.21
+2024-01-30,2,Cascade Backpack,Accessories,Central,7,340.97,75.01
+2024-01-30,2,Vertex Keyboard,Electronics,Central,6,571.94,102.95
+2024-01-30,2,Solstice Blanket,Home,Central,8,343.6,89.34
+2024-01-30,3,Aurora Desk Lamp,Home,East,12,412.43,115.48
+2024-01-30,3,Nimbus Mug,Kitchen,East,20,243.28,75.42
+2024-01-30,3,Cascade Backpack,Accessories,East,7,352.34,77.51
+2024-01-30,3,Vertex Keyboard,Electronics,East,6,527.01,94.86
+2024-01-30,3,Solstice Blanket,Home,East,7,295.9,76.93
+2024-01-31,1,Aurora Desk Lamp,Home,West,13,457.9,128.21
+2024-01-31,1,Nimbus Mug,Kitchen,West,26,316.51,98.12
+2024-01-31,1,Cascade Backpack,Accessories,West,8,403.82,88.84
+2024-01-31,1,Vertex Keyboard,Electronics,West,7,621.6,111.89
+2024-01-31,1,Solstice Blanket,Home,West,8,331.17,86.1
+2024-01-31,2,Aurora Desk Lamp,Home,Central,14,466.26,130.55
+2024-01-31,2,Nimbus Mug,Kitchen,Central,23,279.65,86.69
+2024-01-31,2,Cascade Backpack,Accessories,Central,8,395.93,87.1
+2024-01-31,2,Vertex Keyboard,Electronics,Central,7,580.0,104.4
+2024-01-31,2,Solstice Blanket,Home,Central,9,358.09,93.1
+2024-01-31,3,Aurora Desk Lamp,Home,East,12,395.93,110.86
+2024-01-31,3,Nimbus Mug,Kitchen,East,24,282.15,87.47
+2024-01-31,3,Cascade Backpack,Accessories,East,8,364.83,80.26
+2024-01-31,3,Vertex Keyboard,Electronics,East,6,508.93,91.61
+2024-01-31,3,Solstice Blanket,Home,East,7,313.76,81.58
+2024-02-01,1,Aurora Desk Lamp,Home,West,14,489.22,136.98
+2024-02-01,1,Nimbus Mug,Kitchen,West,25,300.45,93.14
+2024-02-01,1,Cascade Backpack,Accessories,West,8,366.35,80.6
+2024-02-01,1,Vertex Keyboard,Electronics,West,6,557.1,100.28
+2024-02-01,1,Solstice Blanket,Home,West,8,320.64,83.37
+2024-02-01,2,Aurora Desk Lamp,Home,Central,14,464.66,130.11
+2024-02-01,2,Nimbus Mug,Kitchen,Central,23,280.81,87.05
+2024-02-01,2,Cascade Backpack,Accessories,Central,7,344.9,75.88
+2024-02-01,2,Vertex Keyboard,Electronics,Central,6,526.12,94.7
+2024-02-01,2,Solstice Blanket,Home,Central,7,312.94,81.37
+2024-02-01,3,Aurora Desk Lamp,Home,East,12,392.61,109.93
+2024-02-01,3,Nimbus Mug,Kitchen,East,23,270.09,83.73
+2024-02-01,3,Cascade Backpack,Accessories,East,7,333.62,73.4
+2024-02-01,3,Vertex Keyboard,Electronics,East,6,544.11,97.94
+2024-02-01,3,Solstice Blanket,Home,East,7,278.59,72.43
+2024-02-02,1,Aurora Desk Lamp,Home,West,12,419.82,117.55
+2024-02-02,1,Nimbus Mug,Kitchen,West,21,256.38,79.48
+2024-02-02,1,Cascade Backpack,Accessories,West,8,363.08,79.88
+2024-02-02,1,Vertex Keyboard,Electronics,West,6,539.74,97.15
+2024-02-02,1,Solstice Blanket,Home,West,7,306.02,79.56
+2024-02-02,2,Aurora Desk Lamp,Home,Central,12,416.46,116.61
+2024-02-02,2,Nimbus Mug,Kitchen,Central,22,261.76,81.15
+2024-02-02,2,Cascade Backpack,Accessories,Central,7,341.96,75.23
+2024-02-02,2,Vertex Keyboard,Electronics,Central,6,544.9,98.08
+2024-02-02,2,Solstice Blanket,Home,Central,7,289.89,75.37
+2024-02-02,3,Aurora Desk Lamp,Home,East,11,387.12,108.39
+2024-02-02,3,Nimbus Mug,Kitchen,East,21,250.77,77.74
+2024-02-02,3,Cascade Backpack,Accessories,East,6,292.21,64.29
+2024-02-02,3,Vertex Keyboard,Electronics,East,5,460.49,82.89
+2024-02-02,3,Solstice Blanket,Home,East,6,270.97,70.45
+2024-02-03,1,Aurora Desk Lamp,Home,West,12,402.02,112.57
+2024-02-03,1,Nimbus Mug,Kitchen,West,23,279.57,86.67
+2024-02-03,1,Cascade Backpack,Accessories,West,7,345.04,75.91
+2024-02-03,1,Vertex Keyboard,Electronics,West,6,511.24,92.02
+2024-02-03,1,Solstice Blanket,Home,West,8,316.92,82.4
+2024-02-03,2,Aurora Desk Lamp,Home,Central,12,403.25,112.91
+2024-02-03,2,Nimbus Mug,Kitchen,Central,21,250.99,77.81
+2024-02-03,2,Cascade Backpack,Accessories,Central,7,337.88,74.33
+2024-02-03,2,Vertex Keyboard,Electronics,Central,5,475.4,85.57
+2024-02-03,2,Solstice Blanket,Home,Central,7,289.21,75.2
+2024-02-03,3,Aurora Desk Lamp,Home,East,11,359.43,100.64
+2024-02-03,3,Nimbus Mug,Kitchen,East,19,228.46,70.82
+2024-02-03,3,Cascade Backpack,Accessories,East,6,303.86,66.85
+2024-02-03,3,Vertex Keyboard,Electronics,East,5,479.26,86.27
+2024-02-03,3,Solstice Blanket,Home,East,6,263.44,68.49
+2024-02-04,1,Aurora Desk Lamp,Home,West,13,448.49,125.58
+2024-02-04,1,Nimbus Mug,Kitchen,West,22,260.11,80.63
+2024-02-04,1,Cascade Backpack,Accessories,West,8,361.22,79.47
+2024-02-04,1,Vertex Keyboard,Electronics,West,6,503.45,90.62
+2024-02-04,1,Solstice Blanket,Home,West,8,321.0,83.46
+2024-02-04,2,Aurora Desk Lamp,Home,Central,13,425.84,119.23
+2024-02-04,2,Nimbus Mug,Kitchen,Central,22,258.82,80.23
+2024-02-04,2,Cascade Backpack,Accessories,Central,6,306.33,67.39
+2024-02-04,2,Vertex Keyboard,Electronics,Central,6,540.25,97.24
+2024-02-04,2,Solstice Blanket,Home,Central,7,280.73,72.99
+2024-02-04,3,Aurora Desk Lamp,Home,East,10,354.68,99.31
+2024-02-04,3,Nimbus Mug,Kitchen,East,20,242.32,75.12
+2024-02-04,3,Cascade Backpack,Accessories,East,6,307.73,67.7
+2024-02-04,3,Vertex Keyboard,Electronics,East,5,472.09,84.98
+2024-02-04,3,Solstice Blanket,Home,East,6,255.57,66.45
+2024-02-05,1,Aurora Desk Lamp,Home,West,13,458.58,128.4
+2024-02-05,1,Nimbus Mug,Kitchen,West,25,295.59,91.63
+2024-02-05,1,Cascade Backpack,Accessories,West,8,365.61,80.43
+2024-02-05,1,Vertex Keyboard,Electronics,West,7,599.18,107.85
+2024-02-05,1,Solstice Blanket,Home,West,8,352.52,91.66
+2024-02-05,2,Aurora Desk Lamp,Home,Central,14,462.97,129.63
+2024-02-05,2,Nimbus Mug,Kitchen,Central,24,292.31,90.62
+2024-02-05,2,Cascade Backpack,Accessories,Central,8,367.64,80.88
+2024-02-05,2,Vertex Keyboard,Electronics,Central,7,599.86,107.97
+2024-02-05,2,Solstice Blanket,Home,Central,7,314.38,81.74
+2024-02-05,3,Aurora Desk Lamp,Home,East,12,401.9,112.53
+2024-02-05,3,Nimbus Mug,Kitchen,East,22,259.23,80.36
+2024-02-05,3,Cascade Backpack,Accessories,East,7,349.01,76.78
+2024-02-05,3,Vertex Keyboard,Electronics,East,6,515.17,92.73
+2024-02-05,3,Solstice Blanket,Home,East,7,277.61,72.18
+2024-02-06,1,Aurora Desk Lamp,Home,West,16,533.99,149.52
+2024-02-06,1,Nimbus Mug,Kitchen,West,27,327.75,101.6
+2024-02-06,1,Cascade Backpack,Accessories,West,8,397.05,87.35
+2024-02-06,1,Vertex Keyboard,Electronics,West,7,623.21,112.18
+2024-02-06,1,Solstice Blanket,Home,West,9,367.24,95.48
+2024-02-06,2,Aurora Desk Lamp,Home,Central,13,452.5,126.7
+2024-02-06,2,Nimbus Mug,Kitchen,Central,26,308.44,95.62
+2024-02-06,2,Cascade Backpack,Accessories,Central,9,410.01,90.2
+2024-02-06,2,Vertex Keyboard,Electronics,Central,7,633.18,113.97
+2024-02-06,2,Solstice Blanket,Home,Central,9,373.57,97.13
+2024-02-06,3,Aurora Desk Lamp,Home,East,12,414.0,115.92
+2024-02-06,3,Nimbus Mug,Kitchen,East,24,291.57,90.39
+2024-02-06,3,Cascade Backpack,Accessories,East,8,373.85,82.25
+2024-02-06,3,Vertex Keyboard,Electronics,East,6,569.66,102.54
+2024-02-06,3,Solstice Blanket,Home,East,8,315.86,82.12
+2024-02-07,1,Aurora Desk Lamp,Home,West,15,513.07,143.66
+2024-02-07,1,Nimbus Mug,Kitchen,West,29,345.03,106.96
+2024-02-07,1,Cascade Backpack,Accessories,West,9,438.4,96.45
+2024-02-07,1,Vertex Keyboard,Electronics,West,7,644.8,116.06
+2024-02-07,1,Solstice Blanket,Home,West,9,371.75,96.66
+2024-02-07,2,Aurora Desk Lamp,Home,Central,14,463.63,129.82
+2024-02-07,2,Nimbus Mug,Kitchen,Central,25,296.46,91.9
+2024-02-07,2,Cascade Backpack,Accessories,Central,8,371.84,81.8
+2024-02-07,2,Vertex Keyboard,Electronics,Central,7,620.86,111.76
+2024-02-07,2,Solstice Blanket,Home,Central,9,377.9,98.25
+2024-02-07,3,Aurora Desk Lamp,Home,East,14,471.41,131.99
+2024-02-07,3,Nimbus Mug,Kitchen,East,22,268.4,83.21
+2024-02-07,3,Cascade Backpack,Accessories,East,8,362.78,79.81
+2024-02-07,3,Vertex Keyboard,Electronics,East,7,604.45,108.8
+2024-02-07,3,Solstice Blanket,Home,East,8,348.09,90.5
+2024-02-08,1,Aurora Desk Lamp,Home,West,15,496.85,139.12
+2024-02-08,1,Nimbus Mug,Kitchen,West,27,323.23,100.2
+2024-02-08,1,Cascade Backpack,Accessories,West,8,375.23,82.55
+2024-02-08,1,Vertex Keyboard,Electronics,West,7,610.8,109.94
+2024-02-08,1,Solstice Blanket,Home,West,9,379.04,98.55
+2024-02-08,2,Aurora Desk Lamp,Home,Central,15,495.17,138.65
+2024-02-08,2,Nimbus Mug,Kitchen,Central,24,289.59,89.77
+2024-02-08,2,Cascade Backpack,Accessories,Central,8,398.2,87.6
+2024-02-08,2,Vertex Keyboard,Electronics,Central,6,567.64,102.17
+2024-02-08,2,Solstice Blanket,Home,Central,8,336.42,87.47
+2024-02-08,3,Aurora Desk Lamp,Home,East,13,425.25,119.07
+2024-02-08,3,Nimbus Mug,Kitchen,East,21,257.19,79.73
+2024-02-08,3,Cascade Backpack,Accessories,East,7,331.41,72.91
+2024-02-08,3,Vertex Keyboard,Electronics,East,6,546.59,98.39
+2024-02-08,3,Solstice Blanket,Home,East,7,305.28,79.37
+2024-02-09,1,Aurora Desk Lamp,Home,West,13,428.75,120.05
+2024-02-09,1,Nimbus Mug,Kitchen,West,22,268.11,83.11
+2024-02-09,1,Cascade Backpack,Accessories,West,8,383.9,84.46
+2024-02-09,1,Vertex Keyboard,Electronics,West,7,582.11,104.78
+2024-02-09,1,Solstice Blanket,Home,West,7,314.8,81.85
+2024-02-09,2,Aurora Desk Lamp,Home,Central,13,441.02,123.48
+2024-02-09,2,Nimbus Mug,Kitchen,Central,22,259.41,80.42
+2024-02-09,2,Cascade Backpack,Accessories,Central,7,321.88,70.81
+2024-02-09,2,Vertex Keyboard,Electronics,Central,6,519.88,93.58
+2024-02-09,2,Solstice Blanket,Home,Central,7,311.18,80.91
+2024-02-09,3,Aurora Desk Lamp,Home,East,11,378.38,105.95
+2024-02-09,3,Nimbus Mug,Kitchen,East,21,246.79,76.5
+2024-02-09,3,Cascade Backpack,Accessories,East,7,326.55,71.84
+2024-02-09,3,Vertex Keyboard,Electronics,East,6,531.81,95.73
+2024-02-09,3,Solstice Blanket,Home,East,7,280.67,72.97
+2024-02-10,1,Aurora Desk Lamp,Home,West,12,408.96,114.51
+2024-02-10,1,Nimbus Mug,Kitchen,West,21,249.31,77.28
+2024-02-10,1,Cascade Backpack,Accessories,West,7,356.15,78.35
+2024-02-10,1,Vertex Keyboard,Electronics,West,6,531.42,95.65
+2024-02-10,1,Solstice Blanket,Home,West,8,323.38,84.08
+2024-02-10,2,Aurora Desk Lamp,Home,Central,11,379.81,106.35
+2024-02-10,2,Nimbus Mug,Kitchen,Central,20,238.57,73.96
+2024-02-10,2,Cascade Backpack,Accessories,Central,7,336.96,74.13
+2024-02-10,2,Vertex Keyboard,Electronics,Central,6,533.28,95.99
+2024-02-10,2,Solstice Blanket,Home,Central,7,305.17,79.34
+2024-02-10,3,Aurora Desk Lamp,Home,East,11,361.49,101.22
+2024-02-10,3,Nimbus Mug,Kitchen,East,19,232.78,72.16
+2024-02-10,3,Cascade Backpack,Accessories,East,6,292.95,64.45
+2024-02-10,3,Vertex Keyboard,Electronics,East,5,486.54,87.58
+2024-02-10,3,Solstice Blanket,Home,East,7,278.54,72.42
+2024-02-11,1,Aurora Desk Lamp,Home,West,13,448.6,125.61
+2024-02-11,1,Nimbus Mug,Kitchen,West,22,264.18,81.89
+2024-02-11,1,Cascade Backpack,Accessories,West,7,357.29,78.6
+2024-02-11,1,Vertex Keyboard,Electronics,West,6,570.89,102.76
+2024-02-11,1,Solstice Blanket,Home,West,8,327.58,85.17
+2024-02-11,2,Aurora Desk Lamp,Home,Central,12,406.07,113.7
+2024-02-11,2,Nimbus Mug,Kitchen,Central,21,254.52,78.9
+2024-02-11,2,Cascade Backpack,Accessories,Central,7,312.22,68.69
+2024-02-11,2,Vertex Keyboard,Electronics,Central,6,528.04,95.05
+2024-02-11,2,Solstice Blanket,Home,Central,7,300.55,78.14
+2024-02-11,3,Aurora Desk Lamp,Home,East,11,385.79,108.02
+2024-02-11,3,Nimbus Mug,Kitchen,East,21,254.12,78.78
+2024-02-11,3,Cascade Backpack,Accessories,East,6,308.1,67.78
+2024-02-11,3,Vertex Keyboard,Electronics,East,6,500.52,90.09
+2024-02-11,3,Solstice Blanket,Home,East,7,276.86,71.98
+2024-02-12,1,Aurora Desk Lamp,Home,West,14,491.4,137.59
+2024-02-12,1,Nimbus Mug,Kitchen,West,24,291.16,90.26
+2024-02-12,1,Cascade Backpack,Accessories,West,7,351.59,77.35
+2024-02-12,1,Vertex Keyboard,Electronics,West,6,551.86,99.33
+2024-02-12,1,Solstice Blanket,Home,West,8,320.78,83.4
+2024-02-12,2,Aurora Desk Lamp,Home,Central,13,441.27,123.56
+2024-02-12,2,Nimbus Mug,Kitchen,Central,22,262.29,81.31
+2024-02-12,2,Cascade Backpack,Accessories,Central,7,332.94,73.25
+2024-02-12,2,Vertex Keyboard,Electronics,Central,7,581.35,104.64
+2024-02-12,2,Solstice Blanket,Home,Central,7,309.34,80.43
+2024-02-12,3,Aurora Desk Lamp,Home,East,11,390.06,109.22
+2024-02-12,3,Nimbus Mug,Kitchen,East,21,256.95,79.65
+2024-02-12,3,Cascade Backpack,Accessories,East,6,310.12,68.23
+2024-02-12,3,Vertex Keyboard,Electronics,East,5,481.16,86.61
+2024-02-12,3,Solstice Blanket,Home,East,7,297.84,77.44
+2024-02-13,1,Aurora Desk Lamp,Home,West,14,487.68,136.55
+2024-02-13,1,Nimbus Mug,Kitchen,West,26,311.79,96.66
+2024-02-13,1,Cascade Backpack,Accessories,West,8,407.52,89.65
+2024-02-13,1,Vertex Keyboard,Electronics,West,7,652.76,117.5
+2024-02-13,1,Solstice Blanket,Home,West,8,344.26,89.51
+2024-02-13,2,Aurora Desk Lamp,Home,Central,13,457.65,128.14
+2024-02-13,2,Nimbus Mug,Kitchen,Central,25,299.29,92.78
+2024-02-13,2,Cascade Backpack,Accessories,Central,8,386.54,85.04
+2024-02-13,2,Vertex Keyboard,Electronics,Central,7,581.73,104.71
+2024-02-13,2,Solstice Blanket,Home,Central,9,358.75,93.27
+2024-02-13,3,Aurora Desk Lamp,Home,East,13,448.86,125.68
+2024-02-13,3,Nimbus Mug,Kitchen,East,23,280.93,87.09
+2024-02-13,3,Cascade Backpack,Accessories,East,7,346.15,76.15
+2024-02-13,3,Vertex Keyboard,Electronics,East,6,544.13,97.94
+2024-02-13,3,Solstice Blanket,Home,East,7,299.71,77.92
+2024-02-14,1,Aurora Desk Lamp,Home,West,16,528.54,147.99
+2024-02-14,1,Nimbus Mug,Kitchen,West,24,292.46,90.66
+2024-02-14,1,Cascade Backpack,Accessories,West,8,407.9,89.74
+2024-02-14,1,Vertex Keyboard,Electronics,West,7,585.61,105.41
+2024-02-14,1,Solstice Blanket,Home,West,9,385.29,100.17
+2024-02-14,2,Aurora Desk Lamp,Home,Central,14,470.25,131.67
+2024-02-14,2,Nimbus Mug,Kitchen,Central,25,300.19,93.06
+2024-02-14,2,Cascade Backpack,Accessories,Central,8,390.11,85.83
+2024-02-14,2,Vertex Keyboard,Electronics,Central,7,584.01,105.12
+2024-02-14,2,Solstice Blanket,Home,Central,8,339.36,88.23
+2024-02-14,3,Aurora Desk Lamp,Home,East,12,421.18,117.93
+2024-02-14,3,Nimbus Mug,Kitchen,East,23,281.09,87.14
+2024-02-14,3,Cascade Backpack,Accessories,East,7,338.34,74.43
+2024-02-14,3,Vertex Keyboard,Electronics,East,6,536.33,96.54
+2024-02-14,3,Solstice Blanket,Home,East,8,326.43,84.87
+2024-02-15,1,Aurora Desk Lamp,Home,West,13,451.03,126.29
+2024-02-15,1,Nimbus Mug,Kitchen,West,23,274.89,85.21
+2024-02-15,1,Cascade Backpack,Accessories,West,8,377.48,83.05
+2024-02-15,1,Vertex Keyboard,Electronics,West,7,606.43,109.16
+2024-02-15,1,Solstice Blanket,Home,West,8,322.77,83.92
+2024-02-15,2,Aurora Desk Lamp,Home,Central,12,421.79,118.1
+2024-02-15,2,Nimbus Mug,Kitchen,Central,23,281.77,87.35
+2024-02-15,2,Cascade Backpack,Accessories,Central,8,378.43,83.26
+2024-02-15,2,Vertex Keyboard,Electronics,Central,7,591.67,106.5
+2024-02-15,2,Solstice Blanket,Home,Central,8,316.99,82.42
+2024-02-15,3,Aurora Desk Lamp,Home,East,12,418.01,117.04
+2024-02-15,3,Nimbus Mug,Kitchen,East,22,268.6,83.26
+2024-02-15,3,Cascade Backpack,Accessories,East,7,332.52,73.15
+2024-02-15,3,Vertex Keyboard,Electronics,East,5,489.16,88.05
+2024-02-15,3,Solstice Blanket,Home,East,7,284.07,73.86
+2024-02-16,1,Aurora Desk Lamp,Home,West,13,443.55,124.19
+2024-02-16,1,Nimbus Mug,Kitchen,West,22,266.47,82.61
+2024-02-16,1,Cascade Backpack,Accessories,West,7,324.83,71.46
+2024-02-16,1,Vertex Keyboard,Electronics,West,6,512.81,92.31
+2024-02-16,1,Solstice Blanket,Home,West,7,298.24,77.54
+2024-02-16,2,Aurora Desk Lamp,Home,Central,11,384.76,107.73
+2024-02-16,2,Nimbus Mug,Kitchen,Central,22,258.61,80.17
+2024-02-16,2,Cascade Backpack,Accessories,Central,7,329.23,72.43
+2024-02-16,2,Vertex Keyboard,Electronics,Central,6,524.83,94.47
+2024-02-16,2,Solstice Blanket,Home,Central,7,309.81,80.55
+2024-02-16,3,Aurora Desk Lamp,Home,East,11,374.46,104.85
+2024-02-16,3,Nimbus Mug,Kitchen,East,20,245.92,76.24
+2024-02-16,3,Cascade Backpack,Accessories,East,6,306.56,67.44
+2024-02-16,3,Vertex Keyboard,Electronics,East,5,442.16,79.59
+2024-02-16,3,Solstice Blanket,Home,East,6,256.5,66.69
+2024-02-17,1,Aurora Desk Lamp,Home,West,12,404.93,113.38
+2024-02-17,1,Nimbus Mug,Kitchen,West,21,253.75,78.66
+2024-02-17,1,Cascade Backpack,Accessories,West,7,327.92,72.14
+2024-02-17,1,Vertex Keyboard,Electronics,West,6,507.48,91.35
+2024-02-17,1,Solstice Blanket,Home,West,7,300.2,78.05
+2024-02-17,2,Aurora Desk Lamp,Home,Central,10,355.54,99.55
+2024-02-17,2,Nimbus Mug,Kitchen,Central,21,247.08,76.6
+2024-02-17,2,Cascade Backpack,Accessories,Central,6,304.79,67.05
+2024-02-17,2,Vertex Keyboard,Electronics,Central,5,485.14,87.33
+2024-02-17,2,Solstice Blanket,Home,Central,7,278.29,72.36
+2024-02-17,3,Aurora Desk Lamp,Home,East,10,340.48,95.33
+2024-02-17,3,Nimbus Mug,Kitchen,East,19,224.98,69.74
+2024-02-17,3,Cascade Backpack,Accessories,East,6,295.87,65.09
+2024-02-17,3,Vertex Keyboard,Electronics,East,5,425.6,76.61
+2024-02-17,3,Solstice Blanket,Home,East,6,265.46,69.02
+2024-02-18,1,Aurora Desk Lamp,Home,West,11,390.44,109.32
+2024-02-18,1,Nimbus Mug,Kitchen,West,21,248.22,76.95
+2024-02-18,1,Cascade Backpack,Accessories,West,7,329.93,72.59
+2024-02-18,1,Vertex Keyboard,Electronics,West,6,520.58,93.71
+2024-02-18,1,Solstice Blanket,Home,West,7,297.42,77.33
+2024-02-18,2,Aurora Desk Lamp,Home,Central,10,356.45,99.81
+2024-02-18,2,Nimbus Mug,Kitchen,Central,19,233.67,72.44
+2024-02-18,2,Cascade Backpack,Accessories,Central,6,294.73,64.84
+2024-02-18,2,Vertex Keyboard,Electronics,Central,6,507.93,91.43
+2024-02-18,2,Solstice Blanket,Home,Central,6,270.1,70.23
+2024-02-18,3,Aurora Desk Lamp,Home,East,11,362.45,101.48
+2024-02-18,3,Nimbus Mug,Kitchen,East,19,231.15,71.66
+2024-02-18,3,Cascade Backpack,Accessories,East,6,299.06,65.79
+2024-02-18,3,Vertex Keyboard,Electronics,East,5,470.08,84.61
+2024-02-18,3,Solstice Blanket,Home,East,6,266.75,69.35
+2024-02-19,1,Aurora Desk Lamp,Home,West,13,453.59,127.0
+2024-02-19,1,Nimbus Mug,Kitchen,West,22,260.93,80.89
+2024-02-19,1,Cascade Backpack,Accessories,West,7,332.93,73.25
+2024-02-19,1,Vertex Keyboard,Electronics,West,6,524.27,94.37
+2024-02-19,1,Solstice Blanket,Home,West,7,292.26,75.99
+2024-02-19,2,Aurora Desk Lamp,Home,Central,12,393.91,110.29
+2024-02-19,2,Nimbus Mug,Kitchen,Central,22,265.48,82.3
+2024-02-19,2,Cascade Backpack,Accessories,Central,7,331.04,72.83
+2024-02-19,2,Vertex Keyboard,Electronics,Central,6,500.72,90.13
+2024-02-19,2,Solstice Blanket,Home,Central,7,303.96,79.03
+2024-02-19,3,Aurora Desk Lamp,Home,East,12,395.37,110.7
+2024-02-19,3,Nimbus Mug,Kitchen,East,19,225.62,69.94
+2024-02-19,3,Cascade Backpack,Accessories,East,6,308.5,67.87
+2024-02-19,3,Vertex Keyboard,Electronics,East,5,480.13,86.42
+2024-02-19,3,Solstice Blanket,Home,East,7,280.67,72.97
+2024-02-20,1,Aurora Desk Lamp,Home,West,14,469.95,131.59
+2024-02-20,1,Nimbus Mug,Kitchen,West,23,270.38,83.82
+2024-02-20,1,Cascade Backpack,Accessories,West,7,355.92,78.3
+2024-02-20,1,Vertex Keyboard,Electronics,West,6,542.3,97.61
+2024-02-20,1,Solstice Blanket,Home,West,8,348.91,90.72
+2024-02-20,2,Aurora Desk Lamp,Home,Central,12,423.93,118.7
+2024-02-20,2,Nimbus Mug,Kitchen,Central,24,291.04,90.22
+2024-02-20,2,Cascade Backpack,Accessories,Central,8,369.68,81.33
+2024-02-20,2,Vertex Keyboard,Electronics,Central,7,583.8,105.08
+2024-02-20,2,Solstice Blanket,Home,Central,8,318.32,82.76
+2024-02-20,3,Aurora Desk Lamp,Home,East,12,401.8,112.51
+2024-02-20,3,Nimbus Mug,Kitchen,East,22,261.86,81.18
+2024-02-20,3,Cascade Backpack,Accessories,East,7,332.18,73.08
+2024-02-20,3,Vertex Keyboard,Electronics,East,6,523.04,94.15
+2024-02-20,3,Solstice Blanket,Home,East,7,291.19,75.71
+2024-02-21,1,Aurora Desk Lamp,Home,West,15,495.59,138.76
+2024-02-21,1,Nimbus Mug,Kitchen,West,24,293.43,90.96
+2024-02-21,1,Cascade Backpack,Accessories,West,8,396.28,87.18
+2024-02-21,1,Vertex Keyboard,Electronics,West,7,615.23,110.74
+2024-02-21,1,Solstice Blanket,Home,West,8,335.42,87.21
+2024-02-21,2,Aurora Desk Lamp,Home,Central,13,447.28,125.24
+2024-02-21,2,Nimbus Mug,Kitchen,Central,22,266.7,82.68
+2024-02-21,2,Cascade Backpack,Accessories,Central,7,334.8,73.66
+2024-02-21,2,Vertex Keyboard,Electronics,Central,6,544.89,98.08
+2024-02-21,2,Solstice Blanket,Home,Central,8,331.85,86.28
+2024-02-21,3,Aurora Desk Lamp,Home,East,11,382.97,107.23
+2024-02-21,3,Nimbus Mug,Kitchen,East,20,240.39,74.52
+2024-02-21,3,Cascade Backpack,Accessories,East,7,320.27,70.46
+2024-02-21,3,Vertex Keyboard,Electronics,East,6,519.73,93.55
+2024-02-21,3,Solstice Blanket,Home,East,7,278.28,72.35
+2024-02-22,1,Aurora Desk Lamp,Home,West,12,410.47,114.93
+2024-02-22,1,Nimbus Mug,Kitchen,West,24,287.54,89.14
+2024-02-22,1,Cascade Backpack,Accessories,West,8,363.01,79.86
+2024-02-22,1,Vertex Keyboard,Electronics,West,6,525.15,94.53
+2024-02-22,1,Solstice Blanket,Home,West,8,329.77,85.74
+2024-02-22,2,Aurora Desk Lamp,Home,Central,13,430.36,120.5
+2024-02-22,2,Nimbus Mug,Kitchen,Central,23,281.34,87.22
+2024-02-22,2,Cascade Backpack,Accessories,Central,7,354.13,77.91
+2024-02-22,2,Vertex Keyboard,Electronics,Central,6,544.41,97.99
+2024-02-22,2,Solstice Blanket,Home,Central,7,286.22,74.42
+2024-02-22,3,Aurora Desk Lamp,Home,East,11,381.7,106.88
+2024-02-22,3,Nimbus Mug,Kitchen,East,21,246.15,76.31
+2024-02-22,3,Cascade Backpack,Accessories,East,7,325.14,71.53
+2024-02-22,3,Vertex Keyboard,Electronics,East,6,491.28,88.43
+2024-02-22,3,Solstice Blanket,Home,East,7,283.09,73.6
+2024-02-23,1,Aurora Desk Lamp,Home,West,12,406.77,113.9
+2024-02-23,1,Nimbus Mug,Kitchen,West,22,263.13,81.57
+2024-02-23,1,Cascade Backpack,Accessories,West,7,341.64,75.16
+2024-02-23,1,Vertex Keyboard,Electronics,West,6,508.22,91.48
+2024-02-23,1,Solstice Blanket,Home,West,7,314.27,81.71
+2024-02-23,2,Aurora Desk Lamp,Home,Central,11,381.17,106.73
+2024-02-23,2,Nimbus Mug,Kitchen,Central,19,233.95,72.53
+2024-02-23,2,Cascade Backpack,Accessories,Central,7,324.8,71.46
+2024-02-23,2,Vertex Keyboard,Electronics,Central,6,519.1,93.44
+2024-02-23,2,Solstice Blanket,Home,Central,6,271.58,70.61
+2024-02-23,3,Aurora Desk Lamp,Home,East,10,330.54,92.55
+2024-02-23,3,Nimbus Mug,Kitchen,East,19,225.55,69.92
+2024-02-23,3,Cascade Backpack,Accessories,East,6,294.85,64.87
+2024-02-23,3,Vertex Keyboard,Electronics,East,5,476.94,85.85
+2024-02-23,3,Solstice Blanket,Home,East,6,259.73,67.53
+2024-02-24,1,Aurora Desk Lamp,Home,West,11,390.3,109.28
+2024-02-24,1,Nimbus Mug,Kitchen,West,21,256.1,79.39
+2024-02-24,1,Cascade Backpack,Accessories,West,6,292.44,64.34
+2024-02-24,1,Vertex Keyboard,Electronics,West,5,477.52,85.95
+2024-02-24,1,Solstice Blanket,Home,West,7,295.22,76.76
+2024-02-24,2,Aurora Desk Lamp,Home,Central,10,355.16,99.45
+2024-02-24,2,Nimbus Mug,Kitchen,Central,19,232.5,72.08
+2024-02-24,2,Cascade Backpack,Accessories,Central,6,305.89,67.3
+2024-02-24,2,Vertex Keyboard,Electronics,Central,5,440.1,79.22
+2024-02-24,2,Solstice Blanket,Home,Central,6,265.31,68.98
+2024-02-24,3,Aurora Desk Lamp,Home,East,10,339.68,95.11
+2024-02-24,3,Nimbus Mug,Kitchen,East,17,206.54,64.03
+2024-02-24,3,Cascade Backpack,Accessories,East,6,265.19,58.34
+2024-02-24,3,Vertex Keyboard,Electronics,East,5,400.86,72.15
+2024-02-24,3,Solstice Blanket,Home,East,6,259.42,67.45
+2024-02-25,1,Aurora Desk Lamp,Home,West,11,377.88,105.81
+2024-02-25,1,Nimbus Mug,Kitchen,West,19,232.16,71.97
+2024-02-25,1,Cascade Backpack,Accessories,West,7,333.56,73.38
+2024-02-25,1,Vertex Keyboard,Electronics,West,5,477.59,85.97
+2024-02-25,1,Solstice Blanket,Home,West,6,270.87,70.43
+2024-02-25,2,Aurora Desk Lamp,Home,Central,12,397.5,111.3
+2024-02-25,2,Nimbus Mug,Kitchen,Central,21,252.18,78.18
+2024-02-25,2,Cascade Backpack,Accessories,Central,6,282.34,62.11
+2024-02-25,2,Vertex Keyboard,Electronics,Central,5,449.7,80.95
+2024-02-25,2,Solstice Blanket,Home,Central,7,276.35,71.85
+2024-02-25,3,Aurora Desk Lamp,Home,East,11,362.87,101.6
+2024-02-25,3,Nimbus Mug,Kitchen,East,19,229.06,71.01
+2024-02-25,3,Cascade Backpack,Accessories,East,6,279.83,61.56
+2024-02-25,3,Vertex Keyboard,Electronics,East,5,450.58,81.1
+2024-02-25,3,Solstice Blanket,Home,East,6,237.6,61.78
+2024-02-26,1,Aurora Desk Lamp,Home,West,13,457.48,128.09
+2024-02-26,1,Nimbus Mug,Kitchen,West,22,267.57,82.95
+2024-02-26,1,Cascade Backpack,Accessories,West,7,344.24,75.73
+2024-02-26,1,Vertex Keyboard,Electronics,West,6,541.07,97.39
+2024-02-26,1,Solstice Blanket,Home,West,8,316.72,82.35
+2024-02-26,2,Aurora Desk Lamp,Home,Central,13,426.74,119.49
+2024-02-26,2,Nimbus Mug,Kitchen,Central,22,269.4,83.52
+2024-02-26,2,Cascade Backpack,Accessories,Central,7,326.79,71.89
+2024-02-26,2,Vertex Keyboard,Electronics,Central,6,530.07,95.41
+2024-02-26,2,Solstice Blanket,Home,Central,7,290.14,75.44
+2024-02-26,3,Aurora Desk Lamp,Home,East,11,389.77,109.14
+2024-02-26,3,Nimbus Mug,Kitchen,East,19,226.48,70.21
+2024-02-26,3,Cascade Backpack,Accessories,East,6,291.79,64.19
+2024-02-26,3,Vertex Keyboard,Electronics,East,6,496.1,89.3
+2024-02-26,3,Solstice Blanket,Home,East,7,276.37,71.86
+2024-02-27,1,Aurora Desk Lamp,Home,West,13,448.29,125.52
+2024-02-27,1,Nimbus Mug,Kitchen,West,24,290.2,89.96
+2024-02-27,1,Cascade Backpack,Accessories,West,8,387.45,85.24
+2024-02-27,1,Vertex Keyboard,Electronics,West,7,612.84,110.31
+2024-02-27,1,Solstice Blanket,Home,West,8,328.35,85.37
+2024-02-27,2,Aurora Desk Lamp,Home,Central,12,421.22,117.94
+2024-02-27,2,Nimbus Mug,Kitchen,Central,23,273.19,84.69
+2024-02-27,2,Cascade Backpack,Accessories,Central,7,356.5,78.43
+2024-02-27,2,Vertex Keyboard,Electronics,Central,6,541.48,97.47
+2024-02-27,2,Solstice Blanket,Home,Central,8,331.17,86.1
+2024-02-27,3,Aurora Desk Lamp,Home,East,12,423.99,118.72
+2024-02-27,3,Nimbus Mug,Kitchen,East,21,248.0,76.88
+2024-02-27,3,Cascade Backpack,Accessories,East,6,310.27,68.26
+2024-02-27,3,Vertex Keyboard,Electronics,East,6,546.5,98.37
+2024-02-27,3,Solstice Blanket,Home,East,7,312.18,81.17
+2024-02-28,1,Aurora Desk Lamp,Home,West,14,479.84,134.35
+2024-02-28,1,Nimbus Mug,Kitchen,West,25,295.43,91.58
+2024-02-28,1,Cascade Backpack,Accessories,West,8,383.61,84.4
+2024-02-28,1,Vertex Keyboard,Electronics,West,7,583.64,105.06
+2024-02-28,1,Solstice Blanket,Home,West,9,361.92,94.1
+2024-02-28,2,Aurora Desk Lamp,Home,Central,13,442.38,123.87
+2024-02-28,2,Nimbus Mug,Kitchen,Central,26,310.13,96.14
+2024-02-28,2,Cascade Backpack,Accessories,Central,7,346.03,76.13
+2024-02-28,2,Vertex Keyboard,Electronics,Central,6,564.18,101.55
+2024-02-28,2,Solstice Blanket,Home,Central,8,331.74,86.25
+2024-02-28,3,Aurora Desk Lamp,Home,East,12,412.01,115.36
+2024-02-28,3,Nimbus Mug,Kitchen,East,21,255.92,79.33
+2024-02-28,3,Cascade Backpack,Accessories,East,7,354.47,77.98
+2024-02-28,3,Vertex Keyboard,Electronics,East,6,521.8,93.92
+2024-02-28,3,Solstice Blanket,Home,East,7,289.24,75.2
+2024-02-29,1,Aurora Desk Lamp,Home,West,14,478.07,133.86
+2024-02-29,1,Nimbus Mug,Kitchen,West,25,305.26,94.63
+2024-02-29,1,Cascade Backpack,Accessories,West,7,358.84,-28.71
+2024-02-29,1,Vertex Keyboard,Electronics,West,7,594.73,107.05
+2024-02-29,1,Solstice Blanket,Home,West,8,316.31,82.24
+2024-02-29,2,Aurora Desk Lamp,Home,Central,13,436.68,122.27
+2024-02-29,2,Nimbus Mug,Kitchen,Central,23,280.26,86.88
+2024-02-29,2,Cascade Backpack,Accessories,Central,8,360.48,-28.84
+2024-02-29,2,Vertex Keyboard,Electronics,Central,6,540.1,97.22
+2024-02-29,2,Solstice Blanket,Home,Central,8,341.52,88.8
+2024-02-29,3,Aurora Desk Lamp,Home,East,12,396.27,110.96
+2024-02-29,3,Nimbus Mug,Kitchen,East,22,262.37,81.33
+2024-02-29,3,Cascade Backpack,Accessories,East,7,323.78,-25.9
+2024-02-29,3,Vertex Keyboard,Electronics,East,6,523.58,94.24
+2024-02-29,3,Solstice Blanket,Home,East,7,313.61,81.54
+2024-03-01,1,Aurora Desk Lamp,Home,West,12,410.54,114.95
+2024-03-01,1,Nimbus Mug,Kitchen,West,24,284.77,88.28
+2024-03-01,1,Cascade Backpack,Accessories,West,7,358.11,-28.65
+2024-03-01,1,Vertex Keyboard,Electronics,West,6,543.69,97.86
+2024-03-01,1,Solstice Blanket,Home,West,8,320.41,83.31
+2024-03-01,2,Aurora Desk Lamp,Home,Central,13,431.15,120.72
+2024-03-01,2,Nimbus Mug,Kitchen,Central,22,264.03,81.85
+2024-03-01,2,Cascade Backpack,Accessories,Central,7,345.71,-27.66
+2024-03-01,2,Vertex Keyboard,Electronics,Central,6,541.87,97.54
+2024-03-01,2,Solstice Blanket,Home,Central,7,310.51,80.73
+2024-03-01,3,Aurora Desk Lamp,Home,East,12,398.28,111.52
+2024-03-01,3,Nimbus Mug,Kitchen,East,21,253.76,78.66
+2024-03-01,3,Cascade Backpack,Accessories,East,6,301.71,-24.14
+2024-03-01,3,Vertex Keyboard,Electronics,East,5,477.78,86.0
+2024-03-01,3,Solstice Blanket,Home,East,6,269.66,70.11
+2024-03-02,1,Aurora Desk Lamp,Home,West,11,387.09,108.38
+2024-03-02,1,Nimbus Mug,Kitchen,West,21,250.19,77.56
+2024-03-02,1,Cascade Backpack,Accessories,West,7,326.07,-26.09
+2024-03-02,1,Vertex Keyboard,Electronics,West,6,550.77,99.14
+2024-03-02,1,Solstice Blanket,Home,West,8,322.25,83.79
+2024-03-02,2,Aurora Desk Lamp,Home,Central,11,368.7,103.24
+2024-03-02,2,Nimbus Mug,Kitchen,Central,20,238.59,73.96
+2024-03-02,2,Cascade Backpack,Accessories,Central,6,305.84,-24.47
+2024-03-02,2,Vertex Keyboard,Electronics,Central,6,495.46,89.18
+2024-03-02,2,Solstice Blanket,Home,Central,7,290.97,75.65
+2024-03-02,3,Aurora Desk Lamp,Home,East,11,373.82,104.67
+2024-03-02,3,Nimbus Mug,Kitchen,East,20,240.04,74.41
+2024-03-02,3,Cascade Backpack,Accessories,East,6,309.09,-24.73
+2024-03-02,3,Vertex Keyboard,Electronics,East,5,441.52,79.47
+2024-03-02,3,Solstice Blanket,Home,East,6,263.13,68.41
+2024-03-03,1,Aurora Desk Lamp,Home,West,12,406.71,113.88
+2024-03-03,1,Nimbus Mug,Kitchen,West,24,285.77,88.59
+2024-03-03,1,Cascade Backpack,Accessories,West,7,331.88,-26.55
+2024-03-03,1,Vertex Keyboard,Electronics,West,6,555.2,99.94
+2024-03-03,1,Solstice Blanket,Home,West,7,294.51,76.57
+2024-03-03,2,Aurora Desk Lamp,Home,Central,12,398.02,111.45
+2024-03-03,2,Nimbus Mug,Kitchen,Central,22,265.18,82.2
+2024-03-03,2,Cascade Backpack,Accessories,Central,7,342.51,-27.4
+2024-03-03,2,Vertex Keyboard,Electronics,Central,5,487.41,87.73
+2024-03-03,2,Solstice Blanket,Home,Central,8,315.26,81.97
+2024-03-03,3,Aurora Desk Lamp,Home,East,11,363.36,101.74
+2024-03-03,3,Nimbus Mug,Kitchen,East,20,242.85,75.29
+2024-03-03,3,Cascade Backpack,Accessories,East,6,303.47,-24.28
+2024-03-03,3,Vertex Keyboard,Electronics,East,5,481.02,86.58
+2024-03-03,3,Solstice Blanket,Home,East,6,263.4,68.48
+2024-03-04,1,Aurora Desk Lamp,Home,West,14,487.22,136.42
+2024-03-04,1,Nimbus Mug,Kitchen,West,24,283.28,87.82
+2024-03-04,1,Cascade Backpack,Accessories,West,7,358.76,-28.7
+2024-03-04,1,Vertex Keyboard,Electronics,West,6,560.06,100.81
+2024-03-04,1,Solstice Blanket,Home,West,8,336.55,87.5
+2024-03-04,2,Aurora Desk Lamp,Home,Central,13,445.06,124.62
+2024-03-04,2,Nimbus Mug,Kitchen,Central,24,283.54,87.9
+2024-03-04,2,Cascade Backpack,Accessories,Central,8,370.4,-29.63
+2024-03-04,2,Vertex Keyboard,Electronics,Central,7,582.87,104.92
+2024-03-04,2,Solstice Blanket,Home,Central,8,322.57,83.87
+2024-03-04,3,Aurora Desk Lamp,Home,East,12,405.96,113.67
+2024-03-04,3,Nimbus Mug,Kitchen,East,22,260.54,80.77
+2024-03-04,3,Cascade Backpack,Accessories,East,7,338.33,-27.07
+2024-03-04,3,Vertex Keyboard,Electronics,East,6,547.26,98.51
+2024-03-04,3,Solstice Blanket,Home,East,7,279.89,72.77
+2024-03-05,1,Aurora Desk Lamp,Home,West,16,530.82,148.63
+2024-03-05,1,Nimbus Mug,Kitchen,West,28,332.21,102.99
+2024-03-05,1,Cascade Backpack,Accessories,West,9,408.37,-32.67
+2024-03-05,1,Vertex Keyboard,Electronics,West,7,655.15,117.93
+2024-03-05,1,Solstice Blanket,Home,West,9,373.3,97.06
+2024-03-05,2,Aurora Desk Lamp,Home,Central,14,464.69,130.11
+2024-03-05,2,Nimbus Mug,Kitchen,Central,27,323.64,100.33
+2024-03-05,2,Cascade Backpack,Accessories,Central,8,376.4,-30.11
+2024-03-05,2,Vertex Keyboard,Electronics,Central,7,654.85,117.87
+2024-03-05,2,Solstice Blanket,Home,Central,8,344.27,89.51
+2024-03-05,3,Aurora Desk Lamp,Home,East,13,438.81,122.87
+2024-03-05,3,Nimbus Mug,Kitchen,East,23,277.7,86.09
+2024-03-05,3,Cascade Backpack,Accessories,East,8,375.82,-30.07
+2024-03-05,3,Vertex Keyboard,Electronics,East,7,594.02,106.92
+2024-03-05,3,Solstice Blanket,Home,East,8,339.98,88.4
+2024-03-06,1,Aurora Desk Lamp,Home,West,16,557.91,156.22
+2024-03-06,1,Nimbus Mug,Kitchen,West,27,318.22,98.65
+2024-03-06,1,Cascade Backpack,Accessories,West,9,413.18,-33.05
+2024-03-06,1,Vertex Keyboard,Electronics,West,7,642.14,115.59
+2024-03-06,1,Solstice Blanket,Home,West,10,406.53,105.7
+2024-03-06,2,Aurora Desk Lamp,Home,Central,15,519.1,145.35
+2024-03-06,2,Nimbus Mug,Kitchen,Central,25,294.5,91.29
+2024-03-06,2,Cascade Backpack,Accessories,Central,8,400.65,-32.05
+2024-03-06,2,Vertex Keyboard,Electronics,Central,7,616.87,111.04
+2024-03-06,2,Solstice Blanket,Home,Central,9,372.34,96.81
+2024-03-06,3,Aurora Desk Lamp,Home,East,14,474.85,132.96
+2024-03-06,3,Nimbus Mug,Kitchen,East,24,283.56,87.9
+2024-03-06,3,Cascade Backpack,Accessories,East,8,372.68,-29.81
+2024-03-06,3,Vertex Keyboard,Electronics,East,7,609.08,109.64
+2024-03-06,3,Solstice Blanket,Home,East,8,315.45,82.02
+2024-03-07,1,Aurora Desk Lamp,Home,West,15,499.04,139.73
+2024-03-07,1,Nimbus Mug,Kitchen,West,27,328.65,101.88
+2024-03-07,1,Cascade Backpack,Accessories,West,9,420.64,-33.65
+2024-03-07,1,Vertex Keyboard,Electronics,West,7,614.85,110.67
+2024-03-07,1,Solstice Blanket,Home,West,9,378.81,98.49
+2024-03-07,2,Aurora Desk Lamp,Home,Central,15,495.2,138.66
+2024-03-07,2,Nimbus Mug,Kitchen,Central,24,291.48,90.36
+2024-03-07,2,Cascade Backpack,Accessories,Central,8,404.67,-32.37
+2024-03-07,2,Vertex Keyboard,Electronics,Central,7,623.92,112.3
+2024-03-07,2,Solstice Blanket,Home,Central,9,357.24,92.88
+2024-03-07,3,Aurora Desk Lamp,Home,East,12,417.31,116.85
+2024-03-07,3,Nimbus Mug,Kitchen,East,23,270.1,83.73
+2024-03-07,3,Cascade Backpack,Accessories,East,8,364.59,-29.17
+2024-03-07,3,Vertex Keyboard,Electronics,East,6,571.17,102.81
+2024-03-07,3,Solstice Blanket,Home,East,7,304.02,79.05
+2024-03-08,1,Aurora Desk Lamp,Home,West,13,436.83,122.31
+2024-03-08,1,Nimbus Mug,Kitchen,West,24,284.43,88.17
+2024-03-08,1,Cascade Backpack,Accessories,West,8,390.18,-31.21
+2024-03-08,1,Vertex Keyboard,Electronics,West,7,597.13,107.48
+2024-03-08,1,Solstice Blanket,Home,West,8,321.28,83.53
+2024-03-08,2,Aurora Desk Lamp,Home,Central,12,417.56,116.92
+2024-03-08,2,Nimbus Mug,Kitchen,Central,22,268.95,83.37
+2024-03-08,2,Cascade Backpack,Accessories,Central,7,338.25,-27.06
+2024-03-08,2,Vertex Keyboard,Electronics,Central,6,543.21,97.78
+2024-03-08,2,Solstice Blanket,Home,Central,8,331.64,86.23
+2024-03-08,3,Aurora Desk Lamp,Home,East,12,421.05,117.89
+2024-03-08,3,Nimbus Mug,Kitchen,East,20,237.66,73.67
+2024-03-08,3,Cascade Backpack,Accessories,East,7,334.53,-26.76
+2024-03-08,3,Vertex Keyboard,Electronics,East,5,488.01,87.84
+2024-03-08,3,Solstice Blanket,Home,East,7,307.55,79.96
+2024-03-09,1,Aurora Desk Lamp,Home,West,13,444.17,124.37
+2024-03-09,1,Nimbus Mug,Kitchen,West,24,287.26,89.05
+2024-03-09,1,Cascade Backpack,Accessories,West,7,338.32,-27.07
+2024-03-09,1,Vertex Keyboard,Electronics,West,6,577.88,104.02
+2024-03-09,1,Solstice Blanket,Home,West,7,308.62,80.24
+2024-03-09,2,Aurora Desk Lamp,Home,Central,11,386.17,108.13
+2024-03-09,2,Nimbus Mug,Kitchen,Central,21,256.73,79.59
+2024-03-09,2,Cascade Backpack,Accessories,Central,7,328.23,-26.26
+2024-03-09,2,Vertex Keyboard,Electronics,Central,6,554.35,99.78
+2024-03-09,2,Solstice Blanket,Home,Central,7,294.45,76.56
+2024-03-09,3,Aurora Desk Lamp,Home,East,12,400.95,112.27
+2024-03-09,3,Nimbus Mug,Kitchen,East,21,255.25,79.13
+2024-03-09,3,Cascade Backpack,Accessories,East,6,303.62,-24.29
+2024-03-09,3,Vertex Keyboard,Electronics,East,6,494.03,88.93
+2024-03-09,3,Solstice Blanket,Home,East,6,265.73,69.09
+2024-03-10,1,Aurora Desk Lamp,Home,West,14,467.73,130.96
+2024-03-10,1,Nimbus Mug,Kitchen,West,24,286.94,88.95
+2024-03-10,1,Cascade Backpack,Accessories,West,7,352.81,-28.22
+2024-03-10,1,Vertex Keyboard,Electronics,West,6,577.83,104.01
+2024-03-10,1,Solstice Blanket,Home,West,8,325.17,84.55
+2024-03-10,2,Aurora Desk Lamp,Home,Central,12,400.83,112.23
+2024-03-10,2,Nimbus Mug,Kitchen,Central,24,282.27,87.5
+2024-03-10,2,Cascade Backpack,Accessories,Central,7,330.2,-26.42
+2024-03-10,2,Vertex Keyboard,Electronics,Central,6,561.18,101.01
+2024-03-10,2,Solstice Blanket,Home,Central,8,323.59,84.13
+2024-03-10,3,Aurora Desk Lamp,Home,East,12,397.33,111.25
+2024-03-10,3,Nimbus Mug,Kitchen,East,22,259.31,80.39
+2024-03-10,3,Cascade Backpack,Accessories,East,6,307.09,-24.57
+2024-03-10,3,Vertex Keyboard,Electronics,East,6,524.68,94.44
+2024-03-10,3,Solstice Blanket,Home,East,7,287.43,74.73
+2024-03-11,1,Aurora Desk Lamp,Home,West,14,461.55,129.23
+2024-03-11,1,Nimbus Mug,Kitchen,West,24,291.3,90.3
+2024-03-11,1,Cascade Backpack,Accessories,West,8,361.68,-28.93
+2024-03-11,1,Vertex Keyboard,Electronics,West,7,596.61,107.39
+2024-03-11,1,Solstice Blanket,Home,West,8,343.53,89.32
+2024-03-11,2,Aurora Desk Lamp,Home,Central,13,433.02,121.25
+2024-03-11,2,Nimbus Mug,Kitchen,Central,26,307.02,95.18
+2024-03-11,2,Cascade Backpack,Accessories,Central,7,349.46,-27.96
+2024-03-11,2,Vertex Keyboard,Electronics,Central,6,549.65,98.94
+2024-03-11,2,Solstice Blanket,Home,Central,8,336.13,87.39
+2024-03-11,3,Aurora Desk Lamp,Home,East,12,407.55,114.11
+2024-03-11,3,Nimbus Mug,Kitchen,East,23,274.44,85.08
+2024-03-11,3,Cascade Backpack,Accessories,East,7,323.25,-25.86
+2024-03-11,3,Vertex Keyboard,Electronics,East,6,559.59,100.73
+2024-03-11,3,Solstice Blanket,Home,East,7,303.91,79.02
+2024-03-12,1,Aurora Desk Lamp,Home,West,15,520.32,145.69
+2024-03-12,1,Nimbus Mug,Kitchen,West,26,308.2,95.54
+2024-03-12,1,Cascade Backpack,Accessories,West,9,424.86,-33.99
+2024-03-12,1,Vertex Keyboard,Electronics,West,8,678.24,122.08
+2024-03-12,1,Solstice Blanket,Home,West,9,383.74,99.77
+2024-03-12,2,Aurora Desk Lamp,Home,Central,15,515.88,144.45
+2024-03-12,2,Nimbus Mug,Kitchen,Central,25,297.12,92.11
+2024-03-12,2,Cascade Backpack,Accessories,Central,9,415.15,-33.21
+2024-03-12,2,Vertex Keyboard,Electronics,Central,7,650.6,117.11
+2024-03-12,2,Solstice Blanket,Home,Central,9,361.01,93.86
+2024-03-12,3,Aurora Desk Lamp,Home,East,12,417.76,116.97
+2024-03-12,3,Nimbus Mug,Kitchen,East,25,295.97,91.75
+2024-03-12,3,Cascade Backpack,Accessories,East,8,382.53,-30.6
+2024-03-12,3,Vertex Keyboard,Electronics,East,7,597.38,107.53
+2024-03-12,3,Solstice Blanket,Home,East,8,326.81,84.97
+2024-03-13,1,Aurora Desk Lamp,Home,West,16,545.38,152.71
+2024-03-13,1,Nimbus Mug,Kitchen,West,27,324.98,100.74
+2024-03-13,1,Cascade Backpack,Accessories,West,9,415.31,-33.22
+2024-03-13,1,Vertex Keyboard,Electronics,West,8,692.79,124.7
+2024-03-13,1,Solstice Blanket,Home,West,9,378.91,98.52
+2024-03-13,2,Aurora Desk Lamp,Home,Central,15,497.37,139.26
+2024-03-13,2,Nimbus Mug,Kitchen,Central,26,310.2,96.16
+2024-03-13,2,Cascade Backpack,Accessories,Central,9,416.34,-33.31
+2024-03-13,2,Vertex Keyboard,Electronics,Central,7,618.43,111.32
+2024-03-13,2,Solstice Blanket,Home,Central,9,369.68,96.12
+2024-03-13,3,Aurora Desk Lamp,Home,East,13,437.63,122.54
+2024-03-13,3,Nimbus Mug,Kitchen,East,23,279.67,86.7
+2024-03-13,3,Cascade Backpack,Accessories,East,8,371.92,-29.75
+2024-03-13,3,Vertex Keyboard,Electronics,East,6,553.91,99.7
+2024-03-13,3,Solstice Blanket,Home,East,8,345.89,89.93
+2024-03-14,1,Aurora Desk Lamp,Home,West,14,468.19,131.09
+2024-03-14,1,Nimbus Mug,Kitchen,West,25,302.62,93.81
+2024-03-14,1,Cascade Backpack,Accessories,West,9,418.36,-33.47
+2024-03-14,1,Vertex Keyboard,Electronics,West,7,599.63,107.93
+2024-03-14,1,Solstice Blanket,Home,West,8,345.74,89.89
+2024-03-14,2,Aurora Desk Lamp,Home,Central,15,494.4,138.43
+2024-03-14,2,Nimbus Mug,Kitchen,Central,25,302.89,93.9
+2024-03-14,2,Cascade Backpack,Accessories,Central,8,392.27,-31.38
+2024-03-14,2,Vertex Keyboard,Electronics,Central,7,618.16,111.27
+2024-03-14,2,Solstice Blanket,Home,Central,9,361.91,94.1
+2024-03-14,3,Aurora Desk Lamp,Home,East,13,434.12,121.55
+2024-03-14,3,Nimbus Mug,Kitchen,East,21,252.17,78.17
+2024-03-14,3,Cascade Backpack,Accessories,East,7,331.37,-26.51
+2024-03-14,3,Vertex Keyboard,Electronics,East,6,535.54,96.4
+2024-03-14,3,Solstice Blanket,Home,East,8,320.86,83.42
+2024-03-15,1,Aurora Desk Lamp,Home,West,13,443.23,124.11
+2024-03-15,1,Nimbus Mug,Kitchen,West,24,293.88,91.1
+2024-03-15,1,Cascade Backpack,Accessories,West,7,340.63,-27.25
+2024-03-15,1,Vertex Keyboard,Electronics,West,6,564.1,101.54
+2024-03-15,1,Solstice Blanket,Home,West,8,316.64,82.33
+2024-03-15,2,Aurora Desk Lamp,Home,Central,13,430.89,120.65
+2024-03-15,2,Nimbus Mug,Kitchen,Central,22,258.18,80.03
+2024-03-15,2,Cascade Backpack,Accessories,Central,7,322.91,-25.83
+2024-03-15,2,Vertex Keyboard,Electronics,Central,6,550.65,99.12
+2024-03-15,2,Solstice Blanket,Home,Central,7,286.57,74.51
+2024-03-15,3,Aurora Desk Lamp,Home,East,12,411.07,115.1
+2024-03-15,3,Nimbus Mug,Kitchen,East,21,251.09,77.84
+2024-03-15,3,Cascade Backpack,Accessories,East,7,329.95,-26.4
+2024-03-15,3,Vertex Keyboard,Electronics,East,6,492.52,88.65
+2024-03-15,3,Solstice Blanket,Home,East,7,280.75,72.99
+2024-03-16,1,Aurora Desk Lamp,Home,West,12,417.75,116.97
+2024-03-16,1,Nimbus Mug,Kitchen,West,23,275.45,85.39
+2024-03-16,1,Cascade Backpack,Accessories,West,7,315.25,-25.22
+2024-03-16,1,Vertex Keyboard,Electronics,West,6,493.7,88.87
+2024-03-16,1,Solstice Blanket,Home,West,7,307.94,80.06
+2024-03-16,2,Aurora Desk Lamp,Home,Central,12,406.18,113.73
+2024-03-16,2,Nimbus Mug,Kitchen,Central,21,252.18,78.18
+2024-03-16,2,Cascade Backpack,Accessories,Central,6,311.44,-24.92
+2024-03-16,2,Vertex Keyboard,Electronics,Central,6,491.83,88.53
+2024-03-16,2,Solstice Blanket,Home,Central,7,304.1,79.07
+2024-03-16,3,Aurora Desk Lamp,Home,East,11,369.89,103.57
+2024-03-16,3,Nimbus Mug,Kitchen,East,18,212.92,66.01
+2024-03-16,3,Cascade Backpack,Accessories,East,6,295.88,-23.67
+2024-03-16,3,Vertex Keyboard,Electronics,East,5,457.21,82.3
+2024-03-16,3,Solstice Blanket,Home,East,6,272.82,70.93
+2024-03-17,1,Aurora Desk Lamp,Home,West,12,409.29,114.6
+2024-03-17,1,Nimbus Mug,Kitchen,West,23,275.59,85.43
+2024-03-17,1,Cascade Backpack,Accessories,West,7,327.66,-26.21
+2024-03-17,1,Vertex Keyboard,Electronics,West,6,502.03,90.37
+2024-03-17,1,Solstice Blanket,Home,West,8,317.51,82.55
+2024-03-17,2,Aurora Desk Lamp,Home,Central,12,391.42,109.6
+2024-03-17,2,Nimbus Mug,Kitchen,Central,21,252.99,78.43
+2024-03-17,2,Cascade Backpack,Accessories,Central,6,299.39,-23.95
+2024-03-17,2,Vertex Keyboard,Electronics,Central,6,523.79,94.28
+2024-03-17,2,Solstice Blanket,Home,Central,7,284.33,73.93
+2024-03-17,3,Aurora Desk Lamp,Home,East,10,353.0,98.84
+2024-03-17,3,Nimbus Mug,Kitchen,East,19,229.52,71.15
+2024-03-17,3,Cascade Backpack,Accessories,East,6,285.67,-22.85
+2024-03-17,3,Vertex Keyboard,Electronics,East,6,490.5,88.29
+2024-03-17,3,Solstice Blanket,Home,East,7,280.51,72.93
+2024-03-18,1,Aurora Desk Lamp,Home,West,13,439.95,123.19
+2024-03-18,1,Nimbus Mug,Kitchen,West,24,283.99,88.04
+2024-03-18,1,Cascade Backpack,Accessories,West,8,367.67,-29.41
+2024-03-18,1,Vertex Keyboard,Electronics,West,6,560.01,100.8
+2024-03-18,1,Solstice Blanket,Home,West,7,309.24,80.4
+2024-03-18,2,Aurora Desk Lamp,Home,Central,12,402.81,112.79
+2024-03-18,2,Nimbus Mug,Kitchen,Central,24,287.01,88.97
+2024-03-18,2,Cascade Backpack,Accessories,Central,7,352.82,-28.23
+2024-03-18,2,Vertex Keyboard,Electronics,Central,6,544.25,97.97
+2024-03-18,2,Solstice Blanket,Home,Central,8,325.5,84.63
+2024-03-18,3,Aurora Desk Lamp,Home,East,11,378.9,106.09
+2024-03-18,3,Nimbus Mug,Kitchen,East,20,235.39,72.97
+2024-03-18,3,Cascade Backpack,Accessories,East,7,315.11,-25.21
+2024-03-18,3,Vertex Keyboard,Electronics,East,6,511.16,92.01
+2024-03-18,3,Solstice Blanket,Home,East,6,269.39,70.04
+2024-03-19,1,Aurora Desk Lamp,Home,West,15,494.35,138.42
+2024-03-19,1,Nimbus Mug,Kitchen,West,26,313.88,97.3
+2024-03-19,1,Cascade Backpack,Accessories,West,8,405.46,-32.44
+2024-03-19,1,Vertex Keyboard,Electronics,West,7,628.46,113.12
+2024-03-19,1,Solstice Blanket,Home,West,9,360.27,93.67
+2024-03-19,2,Aurora Desk Lamp,Home,Central,12,424.96,118.99
+2024-03-19,2,Nimbus Mug,Kitchen,Central,23,276.29,85.65
+2024-03-19,2,Cascade Backpack,Accessories,Central,7,350.83,-28.07
+2024-03-19,2,Vertex Keyboard,Electronics,Central,6,563.21,101.38
+2024-03-19,2,Solstice Blanket,Home,Central,8,317.91,82.66
+2024-03-19,3,Aurora Desk Lamp,Home,East,12,392.9,110.01
+2024-03-19,3,Nimbus Mug,Kitchen,East,21,249.92,77.47
+2024-03-19,3,Cascade Backpack,Accessories,East,7,327.98,-26.24
+2024-03-19,3,Vertex Keyboard,Electronics,East,6,507.25,91.31
+2024-03-19,3,Solstice Blanket,Home,East,7,309.84,80.56
+2024-03-20,1,Aurora Desk Lamp,Home,West,15,500.79,140.22
+2024-03-20,1,Nimbus Mug,Kitchen,West,24,290.39,90.02
+2024-03-20,1,Cascade Backpack,Accessories,West,8,371.52,-29.72
+2024-03-20,1,Vertex Keyboard,Electronics,West,7,636.09,114.5
+2024-03-20,1,Solstice Blanket,Home,West,9,374.42,97.35
+2024-03-20,2,Aurora Desk Lamp,Home,Central,14,461.44,129.2
+2024-03-20,2,Nimbus Mug,Kitchen,Central,23,277.23,85.94
+2024-03-20,2,Cascade Backpack,Accessories,Central,7,355.17,-28.41
+2024-03-20,2,Vertex Keyboard,Electronics,Central,6,541.24,97.42
+2024-03-20,2,Solstice Blanket,Home,Central,7,313.32,81.46
+2024-03-20,3,Aurora Desk Lamp,Home,East,13,430.48,120.53
+2024-03-20,3,Nimbus Mug,Kitchen,East,21,251.64,78.01
+2024-03-20,3,Cascade Backpack,Accessories,East,7,333.56,-26.68
+2024-03-20,3,Vertex Keyboard,Electronics,East,6,510.3,91.85
+2024-03-20,3,Solstice Blanket,Home,East,7,290.57,75.55
+2024-03-21,1,Aurora Desk Lamp,Home,West,14,484.32,135.61
+2024-03-21,1,Nimbus Mug,Kitchen,West,25,305.94,94.84
+2024-03-21,1,Cascade Backpack,Accessories,West,7,344.2,-27.54
+2024-03-21,1,Vertex Keyboard,Electronics,West,7,583.12,104.96
+2024-03-21,1,Solstice Blanket,Home,West,8,328.41,85.39
+2024-03-21,2,Aurora Desk Lamp,Home,Central,13,436.54,122.23
+2024-03-21,2,Nimbus Mug,Kitchen,Central,23,281.19,87.17
+2024-03-21,2,Cascade Backpack,Accessories,Central,8,369.21,-29.54
+2024-03-21,2,Vertex Keyboard,Electronics,Central,6,569.08,102.43
+2024-03-21,2,Solstice Blanket,Home,Central,8,321.61,83.62
+2024-03-21,3,Aurora Desk Lamp,Home,East,11,388.95,108.91
+2024-03-21,3,Nimbus Mug,Kitchen,East,21,249.94,77.48
+2024-03-21,3,Cascade Backpack,Accessories,East,7,318.83,-25.51
+2024-03-21,3,Vertex Keyboard,Electronics,East,6,511.13,92.0
+2024-03-21,3,Solstice Blanket,Home,East,7,282.04,73.33
+2024-03-22,1,Aurora Desk Lamp,Home,West,12,420.92,117.86
+2024-03-22,1,Nimbus Mug,Kitchen,West,21,247.93,76.86
+2024-03-22,1,Cascade Backpack,Accessories,West,7,320.47,-25.64
+2024-03-22,1,Vertex Keyboard,Electronics,West,6,499.05,89.83
+2024-03-22,1,Solstice Blanket,Home,West,7,294.24,76.5
+2024-03-22,2,Aurora Desk Lamp,Home,Central,12,399.79,111.94
+2024-03-22,2,Nimbus Mug,Kitchen,Central,20,239.91,74.37
+2024-03-22,2,Cascade Backpack,Accessories,Central,6,297.7,-23.82
+2024-03-22,2,Vertex Keyboard,Electronics,Central,6,489.53,88.11
+2024-03-22,2,Solstice Blanket,Home,Central,6,272.93,70.96
+2024-03-22,3,Aurora Desk Lamp,Home,East,11,372.59,104.33
+2024-03-22,3,Nimbus Mug,Kitchen,East,20,245.22,76.02
+2024-03-22,3,Cascade Backpack,Accessories,East,6,294.5,-23.56
+2024-03-22,3,Vertex Keyboard,Electronics,East,5,429.34,77.28
+2024-03-22,3,Solstice Blanket,Home,East,6,272.07,70.74
+2024-03-23,1,Aurora Desk Lamp,Home,West,12,406.01,113.68
+2024-03-23,1,Nimbus Mug,Kitchen,West,22,263.03,81.54
+2024-03-23,1,Cascade Backpack,Accessories,West,7,325.04,-26.0
+2024-03-23,1,Vertex Keyboard,Electronics,West,6,508.2,91.48
+2024-03-23,1,Solstice Blanket,Home,West,7,277.51,72.15
+2024-03-23,2,Aurora Desk Lamp,Home,Central,11,374.85,104.96
+2024-03-23,2,Nimbus Mug,Kitchen,Central,20,235.02,72.86
+2024-03-23,2,Cascade Backpack,Accessories,Central,6,287.09,-22.97
+2024-03-23,2,Vertex Keyboard,Electronics,Central,5,480.37,86.47
+2024-03-23,2,Solstice Blanket,Home,Central,7,285.72,74.29
+2024-03-23,3,Aurora Desk Lamp,Home,East,10,330.69,92.59
+2024-03-23,3,Nimbus Mug,Kitchen,East,17,209.81,65.04
+2024-03-23,3,Cascade Backpack,Accessories,East,6,264.77,-21.18
+2024-03-23,3,Vertex Keyboard,Electronics,East,5,438.72,78.97
+2024-03-23,3,Solstice Blanket,Home,East,6,252.1,65.55
+2024-03-24,1,Aurora Desk Lamp,Home,West,12,415.79,116.42
+2024-03-24,1,Nimbus Mug,Kitchen,West,21,254.8,78.99
+2024-03-24,1,Cascade Backpack,Accessories,West,7,316.05,-25.28
+2024-03-24,1,Vertex Keyboard,Electronics,West,6,489.81,88.17
+2024-03-24,1,Solstice Blanket,Home,West,7,293.85,76.4
+2024-03-24,2,Aurora Desk Lamp,Home,Central,12,395.6,110.77
+2024-03-24,2,Nimbus Mug,Kitchen,Central,21,253.7,78.65
+2024-03-24,2,Cascade Backpack,Accessories,Central,7,316.75,-25.34
+2024-03-24,2,Vertex Keyboard,Electronics,Central,5,466.21,83.92
+2024-03-24,2,Solstice Blanket,Home,Central,6,265.73,69.09
+2024-03-24,3,Aurora Desk Lamp,Home,East,10,334.67,93.71
+2024-03-24,3,Nimbus Mug,Kitchen,East,19,228.78,70.92
+2024-03-24,3,Cascade Backpack,Accessories,East,6,285.7,-22.86
+2024-03-24,3,Vertex Keyboard,Electronics,East,5,470.82,84.75
+2024-03-24,3,Solstice Blanket,Home,East,6,242.97,63.17
+2024-03-25,1,Aurora Desk Lamp,Home,West,12,412.12,115.39
+2024-03-25,1,Nimbus Mug,Kitchen,West,23,270.39,83.82
+2024-03-25,1,Cascade Backpack,Accessories,West,7,358.04,-28.64
+2024-03-25,1,Vertex Keyboard,Electronics,West,6,549.3,98.87
+2024-03-25,1,Solstice Blanket,Home,West,8,328.67,85.45
+2024-03-25,2,Aurora Desk Lamp,Home,Central,11,387.45,108.49
+2024-03-25,2,Nimbus Mug,Kitchen,Central,21,250.63,77.69
+2024-03-25,2,Cascade Backpack,Accessories,Central,7,345.5,-27.64
+2024-03-25,2,Vertex Keyboard,Electronics,Central,6,556.86,100.24
+2024-03-25,2,Solstice Blanket,Home,Central,7,312.46,81.24
+2024-03-25,3,Aurora Desk Lamp,Home,East,11,382.27,107.04
+2024-03-25,3,Nimbus Mug,Kitchen,East,21,254.01,78.74
+2024-03-25,3,Cascade Backpack,Accessories,East,7,324.94,-25.99
+2024-03-25,3,Vertex Keyboard,Electronics,East,6,494.37,88.99
+2024-03-25,3,Solstice Blanket,Home,East,7,284.88,74.07
+2024-03-26,1,Aurora Desk Lamp,Home,West,13,458.78,128.46
+2024-03-26,1,Nimbus Mug,Kitchen,West,23,280.13,86.84
+2024-03-26,1,Cascade Backpack,Accessories,West,8,387.39,-30.99
+2024-03-26,1,Vertex Keyboard,Electronics,West,7,617.64,111.18
+2024-03-26,1,Solstice Blanket,Home,West,8,327.79,85.23
+2024-03-26,2,Aurora Desk Lamp,Home,Central,13,449.06,125.74
+2024-03-26,2,Nimbus Mug,Kitchen,Central,23,272.3,84.41
+2024-03-26,2,Cascade Backpack,Accessories,Central,7,335.83,-26.87
+2024-03-26,2,Vertex Keyboard,Electronics,Central,6,552.9,99.52
+2024-03-26,2,Solstice Blanket,Home,Central,7,314.06,81.65
+2024-03-26,3,Aurora Desk Lamp,Home,East,12,396.85,111.12
+2024-03-26,3,Nimbus Mug,Kitchen,East,23,274.43,85.07
+2024-03-26,3,Cascade Backpack,Accessories,East,7,349.02,-27.92
+2024-03-26,3,Vertex Keyboard,Electronics,East,6,546.37,98.35
+2024-03-26,3,Solstice Blanket,Home,East,7,285.94,74.34
+2024-03-27,1,Aurora Desk Lamp,Home,West,13,450.14,126.04
+2024-03-27,1,Nimbus Mug,Kitchen,West,26,309.26,95.87
+2024-03-27,1,Cascade Backpack,Accessories,West,8,373.72,-29.9
+2024-03-27,1,Vertex Keyboard,Electronics,West,7,610.41,109.87
+2024-03-27,1,Solstice Blanket,Home,West,9,363.18,94.43
+2024-03-27,2,Aurora Desk Lamp,Home,Central,14,470.62,131.77
+2024-03-27,2,Nimbus Mug,Kitchen,Central,24,292.39,90.64
+2024-03-27,2,Cascade Backpack,Accessories,Central,8,391.96,-31.36
+2024-03-27,2,Vertex Keyboard,Electronics,Central,7,609.32,109.68
+2024-03-27,2,Solstice Blanket,Home,Central,8,342.98,89.17
+2024-03-27,3,Aurora Desk Lamp,Home,East,13,430.85,120.64
+2024-03-27,3,Nimbus Mug,Kitchen,East,22,263.58,81.71
+2024-03-27,3,Cascade Backpack,Accessories,East,7,358.91,-28.71
+2024-03-27,3,Vertex Keyboard,Electronics,East,6,542.99,97.74
+2024-03-27,3,Solstice Blanket,Home,East,7,289.92,75.38
+2024-03-28,1,Aurora Desk Lamp,Home,West,13,433.53,121.39
+2024-03-28,1,Nimbus Mug,Kitchen,West,26,312.65,96.92
+2024-03-28,1,Cascade Backpack,Accessories,West,8,388.27,-31.06
+2024-03-28,1,Vertex Keyboard,Electronics,West,7,578.75,104.17
+2024-03-28,1,Solstice Blanket,Home,West,8,352.81,91.73
+2024-03-28,2,Aurora Desk Lamp,Home,Central,13,449.92,125.98
+2024-03-28,2,Nimbus Mug,Kitchen,Central,25,297.4,92.19
+2024-03-28,2,Cascade Backpack,Accessories,Central,8,378.5,-30.28
+2024-03-28,2,Vertex Keyboard,Electronics,Central,6,533.04,95.95
+2024-03-28,2,Solstice Blanket,Home,Central,7,313.3,81.46
+2024-03-28,3,Aurora Desk Lamp,Home,East,13,431.45,120.81
+2024-03-28,3,Nimbus Mug,Kitchen,East,20,245.51,76.11
+2024-03-28,3,Cascade Backpack,Accessories,East,7,336.99,-26.96
+2024-03-28,3,Vertex Keyboard,Electronics,East,6,525.46,94.58
+2024-03-28,3,Solstice Blanket,Home,East,7,309.96,80.59
+2024-03-29,1,Aurora Desk Lamp,Home,West,13,453.63,127.02
+2024-03-29,1,Nimbus Mug,Kitchen,West,24,282.4,87.54
+2024-03-29,1,Cascade Backpack,Accessories,West,7,343.27,-27.46
+2024-03-29,1,Vertex Keyboard,Electronics,West,6,510.63,91.91
+2024-03-29,1,Solstice Blanket,Home,West,8,333.52,86.72
+2024-03-29,2,Aurora Desk Lamp,Home,Central,12,396.24,110.95
+2024-03-29,2,Nimbus Mug,Kitchen,Central,20,244.41,75.77
+2024-03-29,2,Cascade Backpack,Accessories,Central,7,326.72,-26.14
+2024-03-29,2,Vertex Keyboard,Electronics,Central,6,501.55,90.28
+2024-03-29,2,Solstice Blanket,Home,Central,7,307.17,79.86
+2024-03-29,3,Aurora Desk Lamp,Home,East,11,371.68,104.07
+2024-03-29,3,Nimbus Mug,Kitchen,East,20,235.6,73.04
+2024-03-29,3,Cascade Backpack,Accessories,East,6,297.08,-23.77
+2024-03-29,3,Vertex Keyboard,Electronics,East,5,487.81,87.81
+2024-03-29,3,Solstice Blanket,Home,East,6,263.53,68.52
+2024-03-30,1,Aurora Desk Lamp,Home,West,12,406.39,113.79
+2024-03-30,1,Nimbus Mug,Kitchen,West,23,272.46,84.46
+2024-03-30,1,Cascade Backpack,Accessories,West,7,339.11,-27.13
+2024-03-30,1,Vertex Keyboard,Electronics,West,6,493.34,88.8
+2024-03-30,1,Solstice Blanket,Home,West,7,286.31,74.44
+2024-03-30,2,Aurora Desk Lamp,Home,Central,12,405.23,113.46
+2024-03-30,2,Nimbus Mug,Kitchen,Central,21,249.85,77.45
+2024-03-30,2,Cascade Backpack,Accessories,Central,6,305.16,-24.41
+2024-03-30,2,Vertex Keyboard,Electronics,Central,6,502.72,90.49
+2024-03-30,2,Solstice Blanket,Home,Central,7,283.15,73.62
+2024-03-30,3,Aurora Desk Lamp,Home,East,11,369.58,103.48
+2024-03-30,3,Nimbus Mug,Kitchen,East,19,230.21,71.36
+2024-03-30,3,Cascade Backpack,Accessories,East,6,304.12,-24.33
+2024-03-30,3,Vertex Keyboard,Electronics,East,5,442.22,79.6
+2024-03-30,3,Solstice Blanket,Home,East,6,246.09,63.98
+2024-03-31,1,Aurora Desk Lamp,Home,West,13,431.32,120.77
+2024-03-31,1,Nimbus Mug,Kitchen,West,23,275.55,85.42
+2024-03-31,1,Cascade Backpack,Accessories,West,7,357.62,-28.61
+2024-03-31,1,Vertex Keyboard,Electronics,West,6,513.86,92.49
+2024-03-31,1,Solstice Blanket,Home,West,7,302.22,78.58
+2024-03-31,2,Aurora Desk Lamp,Home,Central,11,379.69,106.31
+2024-03-31,2,Nimbus Mug,Kitchen,Central,23,272.06,84.34
+2024-03-31,2,Cascade Backpack,Accessories,Central,7,344.11,-27.53
+2024-03-31,2,Vertex Keyboard,Electronics,Central,6,549.02,98.82
+2024-03-31,2,Solstice Blanket,Home,Central,7,301.93,78.5
+2024-03-31,3,Aurora Desk Lamp,Home,East,11,378.63,106.02
+2024-03-31,3,Nimbus Mug,Kitchen,East,19,231.55,71.78
+2024-03-31,3,Cascade Backpack,Accessories,East,6,288.56,-23.08
+2024-03-31,3,Vertex Keyboard,Electronics,East,5,454.15,81.75
+2024-03-31,3,Solstice Blanket,Home,East,6,268.52,69.82
+2024-04-01,1,Aurora Desk Lamp,Home,West,14,471.24,131.95
+2024-04-01,1,Nimbus Mug,Kitchen,West,26,306.55,95.03
+2024-04-01,1,Cascade Backpack,Accessories,West,8,398.89,-31.91
+2024-04-01,1,Vertex Keyboard,Electronics,West,7,602.53,108.46
+2024-04-01,1,Solstice Blanket,Home,West,8,331.8,86.27
+2024-04-01,2,Aurora Desk Lamp,Home,Central,12,419.44,117.44
+2024-04-01,2,Nimbus Mug,Kitchen,Central,25,297.07,92.09
+2024-04-01,2,Cascade Backpack,Accessories,Central,8,374.61,-29.97
+2024-04-01,2,Vertex Keyboard,Electronics,Central,6,555.93,100.07
+2024-04-01,2,Solstice Blanket,Home,Central,8,318.87,82.91
+2024-04-01,3,Aurora Desk Lamp,Home,East,13,425.67,119.19
+2024-04-01,3,Nimbus Mug,Kitchen,East,22,262.46,81.36
+2024-04-01,3,Cascade Backpack,Accessories,East,7,333.42,-26.67
+2024-04-01,3,Vertex Keyboard,Electronics,East,5,487.61,87.77
+2024-04-01,3,Solstice Blanket,Home,East,7,281.85,73.28
+2024-04-02,1,Aurora Desk Lamp,Home,West,15,502.55,140.71
+2024-04-02,1,Nimbus Mug,Kitchen,West,15,181.19,56.17
+2024-04-02,1,Cascade Backpack,Accessories,West,8,394.43,-31.55
+2024-04-02,1,Vertex Keyboard,Electronics,West,7,603.22,108.58
+2024-04-02,1,Solstice Blanket,Home,West,9,377.55,98.16
+2024-04-02,2,Aurora Desk Lamp,Home,Central,14,484.34,135.61
+2024-04-02,2,Nimbus Mug,Kitchen,Central,14,165.21,51.22
+2024-04-02,2,Cascade Backpack,Accessories,Central,8,372.47,-29.8
+2024-04-02,2,Vertex Keyboard,Electronics,Central,7,653.99,117.72
+2024-04-02,2,Solstice Blanket,Home,Central,9,363.09,94.4
+2024-04-02,3,Aurora Desk Lamp,Home,East,13,430.85,120.64
+2024-04-02,3,Nimbus Mug,Kitchen,East,13,159.59,49.47
+2024-04-02,3,Cascade Backpack,Accessories,East,8,377.12,-30.17
+2024-04-02,3,Vertex Keyboard,Electronics,East,6,549.15,98.85
+2024-04-02,3,Solstice Blanket,Home,East,7,306.58,79.71
+2024-04-03,1,Aurora Desk Lamp,Home,West,15,519.68,145.51
+2024-04-03,1,Nimbus Mug,Kitchen,West,15,184.31,57.14
+2024-04-03,1,Cascade Backpack,Accessories,West,8,401.58,-32.13
+2024-04-03,1,Vertex Keyboard,Electronics,West,8,667.57,120.16
+2024-04-03,1,Solstice Blanket,Home,West,9,377.01,98.02
+2024-04-03,2,Aurora Desk Lamp,Home,Central,15,515.91,144.45
+2024-04-03,2,Nimbus Mug,Kitchen,Central,15,185.02,57.36
+2024-04-03,2,Cascade Backpack,Accessories,Central,8,379.65,-30.37
+2024-04-03,2,Vertex Keyboard,Electronics,Central,7,660.03,118.81
+2024-04-03,2,Solstice Blanket,Home,Central,8,346.22,90.02
+2024-04-03,3,Aurora Desk Lamp,Home,East,14,471.92,132.14
+2024-04-03,3,Nimbus Mug,Kitchen,East,14,171.51,53.17
+2024-04-03,3,Cascade Backpack,Accessories,East,8,368.28,-29.46
+2024-04-03,3,Vertex Keyboard,Electronics,East,6,578.08,104.05
+2024-04-03,3,Solstice Blanket,Home,East,8,324.38,84.34
+2024-04-04,1,Aurora Desk Lamp,Home,West,14,488.62,136.81
+2024-04-04,1,Nimbus Mug,Kitchen,West,15,177.27,54.95
+2024-04-04,1,Cascade Backpack,Accessories,West,8,393.21,-31.46
+2024-04-04,1,Vertex Keyboard,Electronics,West,7,622.37,112.03
+2024-04-04,1,Solstice Blanket,Home,West,9,371.18,96.51
+2024-04-04,2,Aurora Desk Lamp,Home,Central,15,503.85,141.08
+2024-04-04,2,Nimbus Mug,Kitchen,Central,14,167.07,51.79
+2024-04-04,2,Cascade Backpack,Accessories,Central,8,370.47,-29.64
+2024-04-04,2,Vertex Keyboard,Electronics,Central,7,630.54,113.5
+2024-04-04,2,Solstice Blanket,Home,Central,8,331.42,86.17
+2024-04-04,3,Aurora Desk Lamp,Home,East,13,435.66,121.99
+2024-04-04,3,Nimbus Mug,Kitchen,East,13,160.85,49.87
+2024-04-04,3,Cascade Backpack,Accessories,East,7,340.1,-27.21
+2024-04-04,3,Vertex Keyboard,Electronics,East,6,556.22,100.12
+2024-04-04,3,Solstice Blanket,Home,East,8,344.78,89.64
+2024-04-05,1,Aurora Desk Lamp,Home,West,13,444.37,124.42
+2024-04-05,1,Nimbus Mug,Kitchen,West,13,151.6,46.99
+2024-04-05,1,Cascade Backpack,Accessories,West,8,400.79,-32.06
+2024-04-05,1,Vertex Keyboard,Electronics,West,7,581.99,104.76
+2024-04-05,1,Solstice Blanket,Home,West,8,333.65,86.75
+2024-04-05,2,Aurora Desk Lamp,Home,Central,13,455.2,127.45
+2024-04-05,2,Nimbus Mug,Kitchen,Central,12,150.0,46.5
+2024-04-05,2,Cascade Backpack,Accessories,Central,8,371.03,-29.68
+2024-04-05,2,Vertex Keyboard,Electronics,Central,6,546.05,98.29
+2024-04-05,2,Solstice Blanket,Home,Central,8,343.79,89.38
+2024-04-05,3,Aurora Desk Lamp,Home,East,13,428.93,120.1
+2024-04-05,3,Nimbus Mug,Kitchen,East,11,134.88,41.81
+2024-04-05,3,Cascade Backpack,Accessories,East,7,329.48,-26.36
+2024-04-05,3,Vertex Keyboard,Electronics,East,6,525.19,94.53
+2024-04-05,3,Solstice Blanket,Home,East,7,309.11,80.37
+2024-04-06,1,Aurora Desk Lamp,Home,West,13,441.39,123.59
+2024-04-06,1,Nimbus Mug,Kitchen,West,13,154.92,48.03
+2024-04-06,1,Cascade Backpack,Accessories,West,8,364.84,-29.19
+2024-04-06,1,Vertex Keyboard,Electronics,West,6,576.59,103.79
+2024-04-06,1,Solstice Blanket,Home,West,8,327.38,85.12
+2024-04-06,2,Aurora Desk Lamp,Home,Central,13,443.49,124.18
+2024-04-06,2,Nimbus Mug,Kitchen,Central,12,142.44,44.16
+2024-04-06,2,Cascade Backpack,Accessories,Central,7,331.49,-26.52
+2024-04-06,2,Vertex Keyboard,Electronics,Central,6,508.97,91.61
+2024-04-06,2,Solstice Blanket,Home,Central,7,312.37,81.22
+2024-04-06,3,Aurora Desk Lamp,Home,East,12,401.25,112.35
+2024-04-06,3,Nimbus Mug,Kitchen,East,11,137.65,42.67
+2024-04-06,3,Cascade Backpack,Accessories,East,7,314.71,-25.18
+2024-04-06,3,Vertex Keyboard,Electronics,East,6,510.95,91.97
+2024-04-06,3,Solstice Blanket,Home,East,7,276.86,71.98
+2024-04-07,1,Aurora Desk Lamp,Home,West,14,465.98,130.47
+2024-04-07,1,Nimbus Mug,Kitchen,West,13,156.42,48.49
+2024-04-07,1,Cascade Backpack,Accessories,West,7,339.32,-27.15
+2024-04-07,1,Vertex Keyboard,Electronics,West,6,569.35,102.48
+2024-04-07,1,Solstice Blanket,Home,West,8,346.4,90.06
+2024-04-07,2,Aurora Desk Lamp,Home,Central,12,409.74,114.73
+2024-04-07,2,Nimbus Mug,Kitchen,Central,13,157.86,48.94
+2024-04-07,2,Cascade Backpack,Accessories,Central,7,340.08,-27.21
+2024-04-07,2,Vertex Keyboard,Electronics,Central,6,572.4,103.03
+2024-04-07,2,Solstice Blanket,Home,Central,8,325.64,84.67
+2024-04-07,3,Aurora Desk Lamp,Home,East,11,384.44,107.64
+2024-04-07,3,Nimbus Mug,Kitchen,East,12,138.25,42.86
+2024-04-07,3,Cascade Backpack,Accessories,East,7,317.33,-25.39
+2024-04-07,3,Vertex Keyboard,Electronics,East,6,496.44,89.36
+2024-04-07,3,Solstice Blanket,Home,East,7,289.0,75.14
+2024-04-08,1,Aurora Desk Lamp,Home,West,14,465.83,130.43
+2024-04-08,1,Nimbus Mug,Kitchen,West,13,159.95,49.58
+2024-04-08,1,Cascade Backpack,Accessories,West,9,411.84,-32.95
+2024-04-08,1,Vertex Keyboard,Electronics,West,7,657.41,118.33
+2024-04-08,1,Solstice Blanket,Home,West,9,361.87,94.09
+2024-04-08,2,Aurora Desk Lamp,Home,Central,14,489.78,137.14
+2024-04-08,2,Nimbus Mug,Kitchen,Central,14,169.29,52.48
+2024-04-08,2,Cascade Backpack,Accessories,Central,8,398.41,-31.87
+2024-04-08,2,Vertex Keyboard,Electronics,Central,7,604.92,108.89
+2024-04-08,2,Solstice Blanket,Home,Central,8,347.39,90.32
+2024-04-08,3,Aurora Desk Lamp,Home,East,12,420.51,117.74
+2024-04-08,3,Nimbus Mug,Kitchen,East,13,160.26,49.68
+2024-04-08,3,Cascade Backpack,Accessories,East,7,347.09,-27.77
+2024-04-08,3,Vertex Keyboard,Electronics,East,6,562.21,101.2
+2024-04-08,3,Solstice Blanket,Home,East,8,317.62,82.58
+2024-04-09,1,Aurora Desk Lamp,Home,West,16,532.67,149.15
+2024-04-09,1,Nimbus Mug,Kitchen,West,16,190.69,59.11
+2024-04-09,1,Cascade Backpack,Accessories,West,9,438.07,-35.05
+2024-04-09,1,Vertex Keyboard,Electronics,West,8,692.28,124.61
+2024-04-09,1,Solstice Blanket,Home,West,10,411.6,107.02
+2024-04-09,2,Aurora Desk Lamp,Home,Central,15,526.68,147.47
+2024-04-09,2,Nimbus Mug,Kitchen,Central,15,182.46,56.56
+2024-04-09,2,Cascade Backpack,Accessories,Central,9,408.09,-32.65
+2024-04-09,2,Vertex Keyboard,Electronics,Central,7,616.6,110.99
+2024-04-09,2,Solstice Blanket,Home,Central,8,343.39,89.28
+2024-04-09,3,Aurora Desk Lamp,Home,East,13,451.41,126.4
+2024-04-09,3,Nimbus Mug,Kitchen,East,14,171.9,53.29
+2024-04-09,3,Cascade Backpack,Accessories,East,7,355.31,-28.42
+2024-04-09,3,Vertex Keyboard,Electronics,East,6,571.21,102.82
+2024-04-09,3,Solstice Blanket,Home,East,8,323.72,84.17
+2024-04-10,1,Aurora Desk Lamp,Home,West,15,526.55,147.43
+2024-04-10,1,Nimbus Mug,Kitchen,West,15,181.89,56.39
+2024-04-10,1,Cascade Backpack,Accessories,West,9,430.74,-34.46
+2024-04-10,1,Vertex Keyboard,Electronics,West,7,633.55,114.04
+2024-04-10,1,Solstice Blanket,Home,West,10,417.31,108.5
+2024-04-10,2,Aurora Desk Lamp,Home,Central,14,480.15,134.44
+2024-04-10,2,Nimbus Mug,Kitchen,Central,15,184.14,57.08
+2024-04-10,2,Cascade Backpack,Accessories,Central,9,413.32,-33.07
+2024-04-10,2,Vertex Keyboard,Electronics,Central,8,688.19,123.87
+2024-04-10,2,Solstice Blanket,Home,Central,9,386.85,100.58
+2024-04-10,3,Aurora Desk Lamp,Home,East,13,454.88,127.37
+2024-04-10,3,Nimbus Mug,Kitchen,East,15,175.4,54.38
+2024-04-10,3,Cascade Backpack,Accessories,East,8,371.27,-29.7
+2024-04-10,3,Vertex Keyboard,Electronics,East,7,588.6,105.95
+2024-04-10,3,Solstice Blanket,Home,East,8,334.75,87.03
+2024-04-11,1,Aurora Desk Lamp,Home,West,15,506.27,141.75
+2024-04-11,1,Nimbus Mug,Kitchen,West,16,188.29,58.37
+2024-04-11,1,Cascade Backpack,Accessories,West,8,397.06,-31.77
+2024-04-11,1,Vertex Keyboard,Electronics,West,8,670.51,120.69
+2024-04-11,1,Solstice Blanket,Home,West,8,345.43,89.81
+2024-04-11,2,Aurora Desk Lamp,Home,Central,15,500.54,140.15
+2024-04-11,2,Nimbus Mug,Kitchen,Central,14,168.94,52.37
+2024-04-11,2,Cascade Backpack,Accessories,Central,8,389.73,-31.18
+2024-04-11,2,Vertex Keyboard,Electronics,Central,7,641.95,115.55
+2024-04-11,2,Solstice Blanket,Home,Central,9,362.78,94.32
+2024-04-11,3,Aurora Desk Lamp,Home,East,14,465.05,130.21
+2024-04-11,3,Nimbus Mug,Kitchen,East,12,145.69,45.16
+2024-04-11,3,Cascade Backpack,Accessories,East,8,372.86,-29.83
+2024-04-11,3,Vertex Keyboard,Electronics,East,6,567.51,102.15
+2024-04-11,3,Solstice Blanket,Home,East,8,316.65,82.33
+2024-04-12,1,Aurora Desk Lamp,Home,West,13,456.64,127.86
+2024-04-12,1,Nimbus Mug,Kitchen,West,13,156.5,48.52
+2024-04-12,1,Cascade Backpack,Accessories,West,7,358.73,-28.7
+2024-04-12,1,Vertex Keyboard,Electronics,West,6,554.59,99.83
+2024-04-12,1,Solstice Blanket,Home,West,9,359.69,93.52
+2024-04-12,2,Aurora Desk Lamp,Home,Central,12,424.91,118.97
+2024-04-12,2,Nimbus Mug,Kitchen,Central,13,159.19,49.35
+2024-04-12,2,Cascade Backpack,Accessories,Central,8,373.35,-29.87
+2024-04-12,2,Vertex Keyboard,Electronics,Central,6,548.64,98.75
+2024-04-12,2,Solstice Blanket,Home,Central,8,341.02,88.67
+2024-04-12,3,Aurora Desk Lamp,Home,East,11,384.66,107.7
+2024-04-12,3,Nimbus Mug,Kitchen,East,12,149.28,46.28
+2024-04-12,3,Cascade Backpack,Accessories,East,7,345.87,-27.67
+2024-04-12,3,Vertex Keyboard,Electronics,East,6,544.1,97.94
+2024-04-12,3,Solstice Blanket,Home,East,7,299.11,77.77
+2024-04-13,1,Aurora Desk Lamp,Home,West,13,451.88,126.53
+2024-04-13,1,Nimbus Mug,Kitchen,West,12,145.97,45.25
+2024-04-13,1,Cascade Backpack,Accessories,West,8,368.65,-29.49
+2024-04-13,1,Vertex Keyboard,Electronics,West,6,571.55,102.88
+2024-04-13,1,Solstice Blanket,Home,West,7,308.35,80.17
+2024-04-13,2,Aurora Desk Lamp,Home,Central,11,382.71,107.16
+2024-04-13,2,Nimbus Mug,Kitchen,Central,12,140.11,43.43
+2024-04-13,2,Cascade Backpack,Accessories,Central,7,351.69,-28.14
+2024-04-13,2,Vertex Keyboard,Electronics,Central,6,522.88,94.12
+2024-04-13,2,Solstice Blanket,Home,Central,7,311.97,81.11
+2024-04-13,3,Aurora Desk Lamp,Home,East,12,396.97,111.15
+2024-04-13,3,Nimbus Mug,Kitchen,East,11,128.18,39.74
+2024-04-13,3,Cascade Backpack,Accessories,East,6,292.81,-23.43
+2024-04-13,3,Vertex Keyboard,Electronics,East,5,487.7,87.79
+2024-04-13,3,Solstice Blanket,Home,East,6,260.51,67.73
+2024-04-14,1,Aurora Desk Lamp,Home,West,14,464.16,129.97
+2024-04-14,1,Nimbus Mug,Kitchen,West,13,151.58,46.99
+2024-04-14,1,Cascade Backpack,Accessories,West,7,329.48,-26.36
+2024-04-14,1,Vertex Keyboard,Electronics,West,6,522.65,94.08
+2024-04-14,1,Solstice Blanket,Home,West,7,310.28,80.67
+2024-04-14,2,Aurora Desk Lamp,Home,Central,12,398.33,111.53
+2024-04-14,2,Nimbus Mug,Kitchen,Central,13,153.5,47.58
+2024-04-14,2,Cascade Backpack,Accessories,Central,7,345.72,-27.66
+2024-04-14,2,Vertex Keyboard,Electronics,Central,6,540.39,97.27
+2024-04-14,2,Solstice Blanket,Home,Central,8,324.12,84.27
+2024-04-14,3,Aurora Desk Lamp,Home,East,12,397.47,111.29
+2024-04-14,3,Nimbus Mug,Kitchen,East,11,129.38,40.11
+2024-04-14,3,Cascade Backpack,Accessories,East,6,305.18,-24.41
+2024-04-14,3,Vertex Keyboard,Electronics,East,5,461.57,83.08
+2024-04-14,3,Solstice Blanket,Home,East,7,283.67,73.75
+2024-04-15,1,Aurora Desk Lamp,Home,West,13,454.62,127.29
+2024-04-15,1,Nimbus Mug,Kitchen,West,14,173.83,53.89
+2024-04-15,1,Cascade Backpack,Accessories,West,7,356.23,-28.5
+2024-04-15,1,Vertex Keyboard,Electronics,West,6,566.1,101.9
+2024-04-15,1,Solstice Blanket,Home,West,8,336.03,87.37
+2024-04-15,2,Aurora Desk Lamp,Home,Central,12,416.51,116.62
+2024-04-15,2,Nimbus Mug,Kitchen,Central,13,159.78,49.53
+2024-04-15,2,Cascade Backpack,Accessories,Central,7,357.46,-28.6
+2024-04-15,2,Vertex Keyboard,Electronics,Central,6,550.55,99.1
+2024-04-15,2,Solstice Blanket,Home,Central,8,347.95,90.47
+2024-04-15,3,Aurora Desk Lamp,Home,East,12,408.63,114.42
+2024-04-15,3,Nimbus Mug,Kitchen,East,13,151.87,47.08
+2024-04-15,3,Cascade Backpack,Accessories,East,7,326.24,-26.1
+2024-04-15,3,Vertex Keyboard,Electronics,East,6,550.65,99.12
+2024-04-15,3,Solstice Blanket,Home,East,7,292.25,75.98
+2024-04-16,1,Aurora Desk Lamp,Home,West,15,512.11,143.39
+2024-04-16,1,Nimbus Mug,Kitchen,West,14,165.23,51.22
+2024-04-16,1,Cascade Backpack,Accessories,West,8,401.59,-32.13
+2024-04-16,1,Vertex Keyboard,Electronics,West,7,643.94,115.91
+2024-04-16,1,Solstice Blanket,Home,West,8,349.17,90.78
+2024-04-16,2,Aurora Desk Lamp,Home,Central,13,450.13,126.04
+2024-04-16,2,Nimbus Mug,Kitchen,Central,14,170.84,52.96
+2024-04-16,2,Cascade Backpack,Accessories,Central,8,393.71,-31.5
+2024-04-16,2,Vertex Keyboard,Electronics,Central,7,586.62,105.59
+2024-04-16,2,Solstice Blanket,Home,Central,9,361.64,94.03
+2024-04-16,3,Aurora Desk Lamp,Home,East,14,464.27,130.0
+2024-04-16,3,Nimbus Mug,Kitchen,East,13,154.82,47.99
+2024-04-16,3,Cascade Backpack,Accessories,East,7,358.13,-28.65
+2024-04-16,3,Vertex Keyboard,Electronics,East,6,528.01,95.04
+2024-04-16,3,Solstice Blanket,Home,East,8,339.14,88.18
+2024-04-17,1,Aurora Desk Lamp,Home,West,15,501.44,140.4
+2024-04-17,1,Nimbus Mug,Kitchen,West,15,184.85,57.3
+2024-04-17,1,Cascade Backpack,Accessories,West,8,403.45,-32.28
+2024-04-17,1,Vertex Keyboard,Electronics,West,7,605.69,109.02
+2024-04-17,1,Solstice Blanket,Home,West,8,347.03,90.23
+2024-04-17,2,Aurora Desk Lamp,Home,Central,14,488.92,136.9
+2024-04-17,2,Nimbus Mug,Kitchen,Central,13,158.15,49.03
+2024-04-17,2,Cascade Backpack,Accessories,Central,8,401.97,-32.16
+2024-04-17,2,Vertex Keyboard,Electronics,Central,6,563.22,101.38
+2024-04-17,2,Solstice Blanket,Home,Central,8,350.86,91.22
+2024-04-17,3,Aurora Desk Lamp,Home,East,13,434.11,121.55
+2024-04-17,3,Nimbus Mug,Kitchen,East,12,142.48,44.17
+2024-04-17,3,Cascade Backpack,Accessories,East,8,365.98,-29.28
+2024-04-17,3,Vertex Keyboard,Electronics,East,7,582.67,104.88
+2024-04-17,3,Solstice Blanket,Home,East,8,317.02,82.43
+2024-04-18,1,Aurora Desk Lamp,Home,West,13,452.19,126.61
+2024-04-18,1,Nimbus Mug,Kitchen,West,14,165.22,51.22
+2024-04-18,1,Cascade Backpack,Accessories,West,8,383.82,-30.71
+2024-04-18,1,Vertex Keyboard,Electronics,West,6,566.03,101.88
+2024-04-18,1,Solstice Blanket,Home,West,8,327.77,85.22
+2024-04-18,2,Aurora Desk Lamp,Home,Central,14,475.94,133.26
+2024-04-18,2,Nimbus Mug,Kitchen,Central,13,160.9,49.88
+2024-04-18,2,Cascade Backpack,Accessories,Central,7,359.41,-28.75
+2024-04-18,2,Vertex Keyboard,Electronics,Central,6,557.01,100.26
+2024-04-18,2,Solstice Blanket,Home,Central,8,333.6,86.73
+2024-04-18,3,Aurora Desk Lamp,Home,East,13,431.69,120.87
+2024-04-18,3,Nimbus Mug,Kitchen,East,12,147.95,45.87
+2024-04-18,3,Cascade Backpack,Accessories,East,7,316.42,-25.31
+2024-04-18,3,Vertex Keyboard,Electronics,East,6,507.42,91.33
+2024-04-18,3,Solstice Blanket,Home,East,8,317.95,82.67
+2024-04-19,1,Aurora Desk Lamp,Home,West,13,427.33,119.65
+2024-04-19,1,Nimbus Mug,Kitchen,West,13,152.92,47.41
+2024-04-19,1,Cascade Backpack,Accessories,West,7,343.74,-27.5
+2024-04-19,1,Vertex Keyboard,Electronics,West,6,542.59,97.67
+2024-04-19,1,Solstice Blanket,Home,West,8,328.46,85.4
+2024-04-19,2,Aurora Desk Lamp,Home,Central,12,414.72,116.12
+2024-04-19,2,Nimbus Mug,Kitchen,Central,12,148.95,46.18
+2024-04-19,2,Cascade Backpack,Accessories,Central,7,324.99,-26.0
+2024-04-19,2,Vertex Keyboard,Electronics,Central,6,549.09,98.84
+2024-04-19,2,Solstice Blanket,Home,Central,7,277.7,72.2
+2024-04-19,3,Aurora Desk Lamp,Home,East,11,366.01,102.48
+2024-04-19,3,Nimbus Mug,Kitchen,East,11,130.3,40.39
+2024-04-19,3,Cascade Backpack,Accessories,East,7,314.7,-25.18
+2024-04-19,3,Vertex Keyboard,Electronics,East,5,465.89,83.86
+2024-04-19,3,Solstice Blanket,Home,East,6,262.23,68.18
+2024-04-20,1,Aurora Desk Lamp,Home,West,12,400.83,112.23
+2024-04-20,1,Nimbus Mug,Kitchen,West,12,139.37,43.21
+2024-04-20,1,Cascade Backpack,Accessories,West,6,301.33,-24.11
+2024-04-20,1,Vertex Keyboard,Electronics,West,6,502.09,90.38
+2024-04-20,1,Solstice Blanket,Home,West,7,304.63,79.2
+2024-04-20,2,Aurora Desk Lamp,Home,Central,12,407.67,114.15
+2024-04-20,2,Nimbus Mug,Kitchen,Central,10,125.91,39.03
+2024-04-20,2,Cascade Backpack,Accessories,Central,6,307.8,-24.62
+2024-04-20,2,Vertex Keyboard,Electronics,Central,6,513.41,92.41
+2024-04-20,2,Solstice Blanket,Home,Central,7,278.45,72.4
+2024-04-20,3,Aurora Desk Lamp,Home,East,10,349.15,97.76
+2024-04-20,3,Nimbus Mug,Kitchen,East,10,115.44,35.79
+2024-04-20,3,Cascade Backpack,Accessories,East,6,301.25,-24.1
+2024-04-20,3,Vertex Keyboard,Electronics,East,5,441.57,79.48
+2024-04-20,3,Solstice Blanket,Home,East,6,244.15,63.48
+2024-04-21,1,Aurora Desk Lamp,Home,West,12,405.34,113.5
+2024-04-21,1,Nimbus Mug,Kitchen,West,13,151.25,46.89
+2024-04-21,1,Cascade Backpack,Accessories,West,7,333.34,-26.67
+2024-04-21,1,Vertex Keyboard,Electronics,West,5,489.46,88.1
+2024-04-21,1,Solstice Blanket,Home,West,7,313.8,81.59
+2024-04-21,2,Aurora Desk Lamp,Home,Central,11,383.43,107.36
+2024-04-21,2,Nimbus Mug,Kitchen,Central,11,132.01,40.92
+2024-04-21,2,Cascade Backpack,Accessories,Central,6,296.25,-23.7
+2024-04-21,2,Vertex Keyboard,Electronics,Central,5,460.71,82.93
+2024-04-21,2,Solstice Blanket,Home,Central,7,302.03,78.53
+2024-04-21,3,Aurora Desk Lamp,Home,East,10,347.3,97.24
+2024-04-21,3,Nimbus Mug,Kitchen,East,10,121.97,37.81
+2024-04-21,3,Cascade Backpack,Accessories,East,6,289.34,-23.15
+2024-04-21,3,Vertex Keyboard,Electronics,East,5,456.19,82.11
+2024-04-21,3,Solstice Blanket,Home,East,7,275.95,71.75
+2024-04-22,1,Aurora Desk Lamp,Home,West,14,461.96,129.35
+2024-04-22,1,Nimbus Mug,Kitchen,West,12,144.14,44.68
+2024-04-22,1,Cascade Backpack,Accessories,West,7,330.72,-26.46
+2024-04-22,1,Vertex Keyboard,Electronics,West,6,554.85,99.87
+2024-04-22,1,Solstice Blanket,Home,West,8,322.21,83.77
+2024-04-22,2,Aurora Desk Lamp,Home,Central,13,426.61,119.45
+2024-04-22,2,Nimbus Mug,Kitchen,Central,12,140.59,43.58
+2024-04-22,2,Cascade Backpack,Accessories,Central,7,352.78,-28.22
+2024-04-22,2,Vertex Keyboard,Electronics,Central,6,511.02,91.98
+2024-04-22,2,Solstice Blanket,Home,Central,7,296.44,77.07
+2024-04-22,3,Aurora Desk Lamp,Home,East,11,386.88,108.33
+2024-04-22,3,Nimbus Mug,Kitchen,East,12,143.13,44.37
+2024-04-22,3,Cascade Backpack,Accessories,East,6,298.24,-23.86
+2024-04-22,3,Vertex Keyboard,Electronics,East,5,460.12,82.82
+2024-04-22,3,Solstice Blanket,Home,East,6,269.6,70.09
+2024-04-23,1,Aurora Desk Lamp,Home,West,14,474.34,132.82
+2024-04-23,1,Nimbus Mug,Kitchen,West,14,166.91,51.74
+2024-04-23,1,Cascade Backpack,Accessories,West,8,397.92,-31.83
+2024-04-23,1,Vertex Keyboard,Electronics,West,7,580.27,104.45
+2024-04-23,1,Solstice Blanket,Home,West,8,329.45,85.66
+2024-04-23,2,Aurora Desk Lamp,Home,Central,13,449.97,125.99
+2024-04-23,2,Nimbus Mug,Kitchen,Central,13,161.85,50.17
+2024-04-23,2,Cascade Backpack,Accessories,Central,7,353.75,-28.3
+2024-04-23,2,Vertex Keyboard,Electronics,Central,7,598.96,107.81
+2024-04-23,2,Solstice Blanket,Home,Central,8,332.47,86.44
+2024-04-23,3,Aurora Desk Lamp,Home,East,13,435.82,122.03
+2024-04-23,3,Nimbus Mug,Kitchen,East,13,152.18,47.18
+2024-04-23,3,Cascade Backpack,Accessories,East,7,312.52,-25.0
+2024-04-23,3,Vertex Keyboard,Electronics,East,6,499.27,89.87
+2024-04-23,3,Solstice Blanket,Home,East,7,299.5,77.87
+2024-04-24,1,Aurora Desk Lamp,Home,West,14,464.64,130.1
+2024-04-24,1,Nimbus Mug,Kitchen,West,14,164.95,51.13
+2024-04-24,1,Cascade Backpack,Accessories,West,8,405.15,-32.41
+2024-04-24,1,Vertex Keyboard,Electronics,West,7,631.88,113.74
+2024-04-24,1,Solstice Blanket,Home,West,9,362.74,94.31
+2024-04-24,2,Aurora Desk Lamp,Home,Central,13,454.05,127.13
+2024-04-24,2,Nimbus Mug,Kitchen,Central,13,151.06,46.83
+2024-04-24,2,Cascade Backpack,Accessories,Central,8,392.97,-31.44
+2024-04-24,2,Vertex Keyboard,Electronics,Central,7,588.85,105.99
+2024-04-24,2,Solstice Blanket,Home,Central,8,330.29,85.87
+2024-04-24,3,Aurora Desk Lamp,Home,East,12,415.62,116.37
+2024-04-24,3,Nimbus Mug,Kitchen,East,12,148.29,45.97
+2024-04-24,3,Cascade Backpack,Accessories,East,7,319.36,-25.55
+2024-04-24,3,Vertex Keyboard,Electronics,East,6,508.45,91.52
+2024-04-24,3,Solstice Blanket,Home,East,8,319.36,83.03
+2024-04-25,1,Aurora Desk Lamp,Home,West,14,486.08,136.1
+2024-04-25,1,Nimbus Mug,Kitchen,West,14,169.0,52.39
+2024-04-25,1,Cascade Backpack,Accessories,West,8,391.99,-31.36
+2024-04-25,1,Vertex Keyboard,Electronics,West,7,606.36,109.14
+2024-04-25,1,Solstice Blanket,Home,West,8,350.26,91.07
+2024-04-25,2,Aurora Desk Lamp,Home,Central,13,454.66,127.3
+2024-04-25,2,Nimbus Mug,Kitchen,Central,13,160.37,49.71
+2024-04-25,2,Cascade Backpack,Accessories,Central,7,354.08,-28.33
+2024-04-25,2,Vertex Keyboard,Electronics,Central,6,553.4,99.61
+2024-04-25,2,Solstice Blanket,Home,Central,7,313.6,81.54
+2024-04-25,3,Aurora Desk Lamp,Home,East,12,393.82,110.27
+2024-04-25,3,Nimbus Mug,Kitchen,East,11,135.28,41.94
+2024-04-25,3,Cascade Backpack,Accessories,East,7,335.44,-26.84
+2024-04-25,3,Vertex Keyboard,Electronics,East,6,551.68,99.3
+2024-04-25,3,Solstice Blanket,Home,East,7,300.92,78.24
+2024-04-26,1,Aurora Desk Lamp,Home,West,12,418.01,117.04
+2024-04-26,1,Nimbus Mug,Kitchen,West,12,149.73,46.42
+2024-04-26,1,Cascade Backpack,Accessories,West,7,338.8,-27.1
+2024-04-26,1,Vertex Keyboard,Electronics,West,6,563.32,101.4
+2024-04-26,1,Solstice Blanket,Home,West,7,309.5,80.47
+2024-04-26,2,Aurora Desk Lamp,Home,Central,12,400.31,112.09
+2024-04-26,2,Nimbus Mug,Kitchen,Central,12,139.68,43.3
+2024-04-26,2,Cascade Backpack,Accessories,Central,7,329.9,-26.39
+2024-04-26,2,Vertex Keyboard,Electronics,Central,6,499.43,89.9
+2024-04-26,2,Solstice Blanket,Home,Central,7,312.96,81.37
+2024-04-26,3,Aurora Desk Lamp,Home,East,11,390.61,109.37
+2024-04-26,3,Nimbus Mug,Kitchen,East,10,125.62,38.94
+2024-04-26,3,Cascade Backpack,Accessories,East,6,283.44,-22.68
+2024-04-26,3,Vertex Keyboard,Electronics,East,5,472.83,85.11
+2024-04-26,3,Solstice Blanket,Home,East,7,294.48,76.57
+2024-04-27,1,Aurora Desk Lamp,Home,West,12,395.88,110.85
+2024-04-27,1,Nimbus Mug,Kitchen,West,12,148.42,46.01
+2024-04-27,1,Cascade Backpack,Accessories,West,7,313.18,-25.05
+2024-04-27,1,Vertex Keyboard,Electronics,West,6,548.23,98.68
+2024-04-27,1,Solstice Blanket,Home,West,7,305.68,79.48
+2024-04-27,2,Aurora Desk Lamp,Home,Central,12,414.25,115.99
+2024-04-27,2,Nimbus Mug,Kitchen,Central,11,131.34,40.72
+2024-04-27,2,Cascade Backpack,Accessories,Central,7,318.07,-25.45
+2024-04-27,2,Vertex Keyboard,Electronics,Central,6,499.91,89.98
+2024-04-27,2,Solstice Blanket,Home,Central,7,282.74,73.51
+2024-04-27,3,Aurora Desk Lamp,Home,East,10,354.08,99.14
+2024-04-27,3,Nimbus Mug,Kitchen,East,11,126.31,39.16
+2024-04-27,3,Cascade Backpack,Accessories,East,6,308.17,-24.65
+2024-04-27,3,Vertex Keyboard,Electronics,East,5,448.58,80.74
+2024-04-27,3,Solstice Blanket,Home,East,6,262.39,68.22
+2024-04-28,1,Aurora Desk Lamp,Home,West,13,435.95,122.07
+2024-04-28,1,Nimbus Mug,Kitchen,West,12,146.75,45.49
+2024-04-28,1,Cascade Backpack,Accessories,West,7,330.03,-26.4
+2024-04-28,1,Vertex Keyboard,Electronics,West,6,563.59,101.45
+2024-04-28,1,Solstice Blanket,Home,West,7,301.8,78.47
+2024-04-28,2,Aurora Desk Lamp,Home,Central,12,401.86,112.52
+2024-04-28,2,Nimbus Mug,Kitchen,Central,11,137.18,42.53
+2024-04-28,2,Cascade Backpack,Accessories,Central,7,344.65,-27.57
+2024-04-28,2,Vertex Keyboard,Electronics,Central,5,479.34,86.28
+2024-04-28,2,Solstice Blanket,Home,Central,7,297.72,77.41
+2024-04-28,3,Aurora Desk Lamp,Home,East,11,370.56,103.76
+2024-04-28,3,Nimbus Mug,Kitchen,East,11,128.78,39.92
+2024-04-28,3,Cascade Backpack,Accessories,East,6,282.29,-22.58
+2024-04-28,3,Vertex Keyboard,Electronics,East,5,447.93,80.63
+2024-04-28,3,Solstice Blanket,Home,East,6,254.93,66.28
+2024-04-29,1,Aurora Desk Lamp,Home,West,14,484.46,135.65
+2024-04-29,1,Nimbus Mug,Kitchen,West,13,152.47,47.27
+2024-04-29,1,Cascade Backpack,Accessories,West,8,396.91,-31.75
+2024-04-29,1,Vertex Keyboard,Electronics,West,7,603.25,108.59
+2024-04-29,1,Solstice Blanket,Home,West,9,357.66,92.99
+2024-04-29,2,Aurora Desk Lamp,Home,Central,14,462.38,129.47
+2024-04-29,2,Nimbus Mug,Kitchen,Central,14,164.14,50.88
+2024-04-29,2,Cascade Backpack,Accessories,Central,8,363.34,-29.07
+2024-04-29,2,Vertex Keyboard,Electronics,Central,51,4503.99,810.72
+2024-04-29,2,Solstice Blanket,Home,Central,8,322.71,83.91
+2024-04-29,3,Aurora Desk Lamp,Home,East,12,391.79,109.7
+2024-04-29,3,Nimbus Mug,Kitchen,East,12,143.81,44.58
+2024-04-29,3,Cascade Backpack,Accessories,East,7,333.28,-26.66
+2024-04-29,3,Vertex Keyboard,Electronics,East,5,485.98,87.48
+2024-04-29,3,Solstice Blanket,Home,East,7,294.29,76.51

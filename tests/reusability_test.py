@@ -49,10 +49,10 @@ def export_temp_preview(file_name: str, clean_df: pd.DataFrame) -> None:
 
 
 def main() -> None:
-    kaggle_raw = pd.read_csv(PROJECT_ROOT / "data" / "train.csv")
-    kaggle_clean = load_and_clean_data(kaggle_raw)
-    print_test_result("Kaggle Store Item Demand", kaggle_clean)
-    export_temp_preview("temp_kaggle_clean_preview.csv", kaggle_clean)
+    sample_raw = pd.read_csv(PROJECT_ROOT / "data" / "sample_sales.csv")
+    sample_clean = load_and_clean_data(sample_raw)
+    print_test_result("Bundled demo dataset", sample_clean)
+    export_temp_preview("temp_sample_clean_preview.csv", sample_clean)
 
     walmart_path = PROJECT_ROOT / "data" / "walmart.xlsx"
     if not walmart_path.exists():
