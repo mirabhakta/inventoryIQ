@@ -12,7 +12,9 @@ from utils.forecasting import (
     FEATURE_REGRESSION_LAGS,
     FEATURE_REGRESSION_ROLLING_WINDOWS,
     LIGHTGBM_LAGS,
+    LIGHTGBM_METHOD,
     LIGHTGBM_ROLLING_WINDOWS,
+    MAX_FUTURE_DAYS,
     SIMPLE_FUTURE_METHOD,
     add_mase_to_results,
     build_lightgbm_future_forecast,
@@ -23,6 +25,7 @@ from utils.forecasting import (
     run_lightgbm_global_lag,
     run_naive_baseline,
     run_rolling_average_baseline,
+    validate_future_days,
 )
 
 
@@ -134,33 +137,61 @@ def run_forecast_pipeline(df: pd.DataFrame, horizon_days: int = DEFAULT_HORIZON_
     }
 
 
-def get_future_forecast(df: pd.DataFrame, future_days: int = DEFAULT_FUTURE_DAYS, fast: bool = False) -> dict:
+def get_future_forecast_frame(
+    df: pd.DataFrame,
+    future_days: int = DEFAULT_FUTURE_DAYS,
+    fast: bool = False,
+) -> tuple[pd.DataFrame, str]:
     """
-    Generates a forward-looking forecast using LightGBM trained
-    on all available data. Used for the dashboard forecast chart.
+    Generate a future forecast and return the raw export frame plus the method
+    that produced it.
 
-    Args:
-        df: Clean retail DataFrame (retail_clean.csv schema)
-        future_days: Number of days to project forward (default 30)
-
-    Returns:
-        dict with keys: forecast_records, future_days, method
+    LightGBM is used whenever the uploaded history has enough rows to support at
+    least one lag and rolling window feature. Short datasets fall back to the
+    simple last-value forecast.
     """
+    validate_future_days(future_days)
+
     if fast:
-        forecast_df = build_simple_future_forecast(df, future_days=future_days)
-        return {
-            "method": SIMPLE_FUTURE_METHOD,
-            "future_days": future_days,
-            "forecast_records": forecast_df.to_dict(orient="records"),
-        }
+        return (
+            build_simple_future_forecast(df, future_days=future_days),
+            SIMPLE_FUTURE_METHOD,
+        )
 
-    try:
-        forecast_df = build_lightgbm_future_forecast(df, future_days=future_days)
-        method = "lightgbm_global_lag"
-    except ValueError:
-        forecast_df = build_simple_future_forecast(df, future_days=future_days)
-        method = SIMPLE_FUTURE_METHOD
+    prepared = prepare_forecast_input(df)
+    group_cols = ["store", "item"]
+    lags, windows = choose_lightgbm_features(prepared, group_cols)
 
+    if lags and windows:
+        try:
+            frame = build_lightgbm_future_forecast(
+                prepared,
+                future_days=future_days,
+                group_cols=group_cols,
+                lags=lags,
+                rolling_windows=windows,
+            )
+            return frame, LIGHTGBM_METHOD
+        except ValueError:
+            pass
+
+    return (
+        build_simple_future_forecast(prepared, future_days=future_days),
+        SIMPLE_FUTURE_METHOD,
+    )
+
+
+def get_future_forecast(
+    df: pd.DataFrame, future_days: int = DEFAULT_FUTURE_DAYS, fast: bool = False
+) -> dict:
+    """
+    Generate a forward-looking forecast for the dashboard chart.
+
+    Returns a JSON-ready dict with the method, horizon, and one record per
+    series per future day. Use ``get_future_forecast_frame`` when the caller
+    needs the DataFrame for aggregation.
+    """
+    forecast_df, method = get_future_forecast_frame(df, future_days=future_days, fast=fast)
     return {
         "method": method,
         "future_days": future_days,

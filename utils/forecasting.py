@@ -10,6 +10,7 @@ import pandas as pd
 DEFAULT_GROUP_COLS = ["store", "item"]
 DEFAULT_TARGET_COL = "sales"
 DEFAULT_DATE_COL = "date"
+MAX_FUTURE_DAYS = 180
 LIGHTGBM_METHOD = "lightgbm_global_lag"
 SIMPLE_FUTURE_METHOD = "simple_last_value_future"
 FEATURE_REGRESSION_METHOD = "feature_based_regression"
@@ -32,6 +33,13 @@ class ForecastArtifact:
     method_name: str
     forecast_df: pd.DataFrame
     metrics: dict[str, float]
+
+
+# Category: Validation helpers
+# Summary: Rejects forecast horizons outside the supported range before any model work starts.
+def validate_future_days(future_days: int) -> None:
+    if not 1 <= future_days <= MAX_FUTURE_DAYS:
+        raise ValueError(f"future_days must be between 1 and {MAX_FUTURE_DAYS}.")
 
 
 # Category: Validation helpers
@@ -780,8 +788,7 @@ def build_lightgbm_future_forecast(
     rolling_windows: list[int] | None = None,
 ) -> pd.DataFrame:
     """Train LightGBM on all known rows and produce future-dated CSV rows."""
-    if future_days <= 0:
-        raise ValueError("future_days must be positive.")
+    validate_future_days(future_days)
 
     groups = group_cols or DEFAULT_GROUP_COLS
     lag_values = lags or LIGHTGBM_LAGS
@@ -824,8 +831,7 @@ def build_simple_future_forecast(
     date_col: str = DEFAULT_DATE_COL,
 ) -> pd.DataFrame:
     """Andrew Garcia Leopold: build a fast fallback forecast for small uploaded datasets."""
-    if future_days <= 0:
-        raise ValueError("future_days must be positive.")
+    validate_future_days(future_days)
 
     groups = group_cols or DEFAULT_GROUP_COLS
     prepared = prepare_forecast_input(df, groups, target_col, date_col)
