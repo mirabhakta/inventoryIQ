@@ -27,7 +27,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SAMPLE_CSV_PATH = PROJECT_ROOT / "data" / "sample_sales.csv"
 

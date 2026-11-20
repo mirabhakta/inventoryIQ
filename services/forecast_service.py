@@ -14,7 +14,6 @@ from utils.forecasting import (
     LIGHTGBM_LAGS,
     LIGHTGBM_METHOD,
     LIGHTGBM_ROLLING_WINDOWS,
-    MAX_FUTURE_DAYS,
     SIMPLE_FUTURE_METHOD,
     add_mase_to_results,
     build_lightgbm_future_forecast,
@@ -27,7 +26,6 @@ from utils.forecasting import (
     run_rolling_average_baseline,
     validate_future_days,
 )
-
 
 DEFAULT_HORIZON_DAYS = 90
 DEFAULT_FUTURE_DAYS = 30

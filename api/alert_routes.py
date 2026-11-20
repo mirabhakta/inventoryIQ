@@ -14,7 +14,6 @@ from models.alerter import run_all_alerts
 from utils.filters import filter_retail_frame
 from utils.processor import load_and_clean_data
 
-
 router = APIRouter(prefix="/alerts", tags=["alerts"])
 
 

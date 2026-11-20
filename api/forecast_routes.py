@@ -11,14 +11,13 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 
 from api.dependencies import uploaded_frame
 from services.forecast_service import (
-    MAX_FUTURE_DAYS,
     get_future_forecast,
     run_forecast_pipeline,
     shape_fast_kpi_payload,
 )
 from utils.filters import filter_retail_frame
+from utils.forecasting import MAX_FUTURE_DAYS
 from utils.processor import load_and_clean_data
-
 
 router = APIRouter(prefix="/forecast", tags=["forecast"])
 

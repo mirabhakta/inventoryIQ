@@ -11,7 +11,6 @@ from pydantic import BaseModel, Field
 
 from utils.ai_summary import SummaryUnavailable, generate_summary
 
-
 router = APIRouter(tags=["ai"])
 
 

@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def compute_trend(df: pd.DataFrame) -> str:
     """
     Determines trend direction: increasing, flat, or declining

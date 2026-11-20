@@ -1,7 +1,8 @@
 import pandas as pd
 import pytest
 
-from services.forecast_service import MAX_FUTURE_DAYS, get_future_forecast
+from services.forecast_service import get_future_forecast
+from utils.forecasting import MAX_FUTURE_DAYS
 
 
 def medium_dataset() -> pd.DataFrame:

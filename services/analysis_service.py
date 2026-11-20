@@ -13,7 +13,6 @@ import pandas as pd
 from models.alerter import run_all_alerts
 from services.forecast_service import get_future_forecast_frame, run_forecast_pipeline
 
-
 logger = logging.getLogger(__name__)
 
 

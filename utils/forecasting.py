@@ -6,7 +6,6 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-
 DEFAULT_GROUP_COLS = ["store", "item"]
 DEFAULT_TARGET_COL = "sales"
 DEFAULT_DATE_COL = "date"
@@ -418,7 +417,7 @@ def _build_regression_training_frame(
     for window in rolling_windows:
         featured[f"rolling_mean_{window}"] = shifted_target.groupby(
             [featured[col] for col in group_cols]
-        ).transform(lambda series: series.rolling(window=window, min_periods=1).mean())
+        ).transform(lambda series, w=window: series.rolling(window=w, min_periods=1).mean())
 
     categorical_cols = [*group_cols, "day_of_week", "month"]
     numeric_cols = [
@@ -515,7 +514,7 @@ def _recursive_regression_predictions(
         date_predictions["prediction"] = predictions
         prediction_frames.append(date_predictions)
 
-        for key, prediction in zip(keys, predictions):
+        for key, prediction in zip(keys, predictions, strict=True):
             histories.setdefault(key, []).append(float(prediction))
 
     return pd.concat(prediction_frames, ignore_index=True)
@@ -542,10 +541,10 @@ def _build_lightgbm_training_frame(
     featured["_shifted_target"] = grouped_target.shift(1)
     for window in rolling_windows:
         featured[f"rolling_mean_{window}"] = featured.groupby(group_cols)["_shifted_target"].transform(
-            lambda series: series.rolling(window=window, min_periods=1).mean()
+            lambda series, w=window: series.rolling(window=w, min_periods=1).mean()
         )
         featured[f"rolling_std_{window}"] = featured.groupby(group_cols)["_shifted_target"].transform(
-            lambda series: series.rolling(window=window, min_periods=2).std()
+            lambda series, w=window: series.rolling(window=w, min_periods=2).std()
         )
 
     feature_cols = [
@@ -711,7 +710,7 @@ def _recursive_lightgbm_predictions(
         date_predictions["prediction"] = predictions
         prediction_frames.append(date_predictions)
 
-        for key, prediction in zip(keys, predictions):
+        for key, prediction in zip(keys, predictions, strict=True):
             histories.setdefault(key, []).append(float(prediction))
 
     return pd.concat(prediction_frames, ignore_index=True)

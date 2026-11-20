@@ -7,10 +7,9 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 
 from api.dependencies import uploaded_frame
 from services.analysis_service import analyze_retail_data
-from services.forecast_service import MAX_FUTURE_DAYS
 from utils.filters import filter_retail_frame
+from utils.forecasting import MAX_FUTURE_DAYS
 from utils.processor import load_and_clean_data
-
 
 router = APIRouter(tags=["analysis"])
 

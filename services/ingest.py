@@ -12,7 +12,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # 10 MB
 MAX_UPLOAD_ROWS = 50_000
 

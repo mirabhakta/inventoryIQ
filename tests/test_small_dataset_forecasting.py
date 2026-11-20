@@ -1,13 +1,10 @@
-import sys
-from pathlib import Path
-
 import pandas as pd
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
-
-from services.forecast_service import get_future_forecast, run_forecast_pipeline, shape_fast_kpi_payload
+from services.forecast_service import (
+    get_future_forecast,
+    run_forecast_pipeline,
+    shape_fast_kpi_payload,
+)
 
 
 def small_forecast_dataset() -> pd.DataFrame:

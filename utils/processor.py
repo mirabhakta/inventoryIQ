@@ -1,9 +1,9 @@
-import pandas as pd
-from difflib import get_close_matches
 import re
+from difflib import get_close_matches
+
+import pandas as pd
 
 from utils.schema import COLUMN_ALIASES, OPTIONAL_COLUMNS, SCHEMA
-
 
 FILTER_OPTION_KEYS = ["stores", "categories", "regions", "start_date", "end_date"]
 
