@@ -1,45 +1,38 @@
 """FastAPI routes for the alert engine.
 
-Thin routes - all business logic lives in models/alerter.py.
+Thin routes: upload handling lives in ``api.dependencies``, filtering in
+``utils.filters``, and detection in ``models.alerter``.
 """
 
 from __future__ import annotations
 
-import io
-from typing import List
-
 import pandas as pd
-from fastapi import APIRouter, HTTPException, UploadFile, File, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 
+from api.dependencies import uploaded_frame
 from models.alerter import run_all_alerts
+from utils.filters import filter_retail_frame
 from utils.processor import load_and_clean_data
+
 
 router = APIRouter(prefix="/alerts", tags=["alerts"])
 
 
 @router.post("/run")
 async def run_alerts(
-    file: UploadFile = File(...),
-    anomaly_std: float = 2.0,
-    decline_pct: float = 0.20,
-    margin_floor: float = 0.0,
-    store: List[int] = Query(default=[]),
-    category: List[str] = Query(default=[]),
+    df: pd.DataFrame = Depends(uploaded_frame),
+    anomaly_std: float = Query(default=2.0, gt=0, le=10),
+    decline_pct: float = Query(default=0.20, ge=0, le=1),
+    margin_floor: float = Query(default=0.0, ge=-1, le=1),
+    store: list[str] = Query(default=[]),
+    category: list[str] = Query(default=[]),
+    region: list[str] = Query(default=[]),
 ):
     try:
-        contents = await file.read()
-        df = pd.read_csv(io.BytesIO(contents))
-    except Exception:
-        raise HTTPException(status_code=400, detail="Could not parse uploaded file as CSV.")
-
-    try:
-        df = load_and_clean_data(df)
-        if store:
-            df = df[df['store_id'].isin(store)]
-        if category:
-            df = df[df['category'].isin(category)]
-    except Exception as e:
-        raise HTTPException(status_code=422, detail=str(e))
+        cleaned = load_and_clean_data(df)
+        cleaned = filter_retail_frame(cleaned, store, category, region)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
     thresholds = {
         "anomaly_std": anomaly_std,
@@ -48,9 +41,9 @@ async def run_alerts(
     }
 
     try:
-        alerts_df = run_all_alerts(df, thresholds=thresholds)
-    except Exception as e:
-        raise HTTPException(status_code=422, detail=str(e))
+        alerts_df = run_all_alerts(cleaned, thresholds=thresholds)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
     if alerts_df.empty:
         return {"alerts": [], "total": 0}
