@@ -420,6 +420,7 @@ function OverviewTab({ analysis, benchmark, horizonLabel, isFiltering, onSummary
           history={analysis.history}
           forecast={analysis.forecast}
           benchmark={benchmark}
+          benchmarkNote={analysis.benchmark_note}
           isFiltering={isFiltering}
         />
         <AlertPanel alerts={alerts.items} total={alertTotal} />

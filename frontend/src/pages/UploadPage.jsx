@@ -4,6 +4,7 @@ import { analyzeDataset, parseApiError } from '../api/client'
 import './UploadPage.css'
 
 const MAX_UPLOAD_BYTES = 10 * 1024 * 1024
+const MAX_UPLOAD_ROWS = 200_000
 
 function UploadPage() {
   const navigate = useNavigate()
@@ -28,7 +29,7 @@ function UploadPage() {
       return
     }
     if (file.size > MAX_UPLOAD_BYTES) {
-      setError('That file is larger than the 10 MB demo limit. Upload a smaller sample.')
+      setError('That file is larger than the 10 MB limit. Filter to a recent date range or a subset of stores/products and try again.')
       setUploadedFile(null)
       return
     }
@@ -91,6 +92,12 @@ function UploadPage() {
       error.includes('API') ||
       error.includes('Network') ||
       error.includes('reach'))
+
+  const showSizeHint =
+    error &&
+    (error.includes('rows') ||
+      error.includes('MB') ||
+      error.toLowerCase().includes('larger'))
 
   return (
     <div className="upload-page">
@@ -193,6 +200,11 @@ function UploadPage() {
                 </p>
               </div>
 
+              <p className="upload-limit-note">
+                Up to 10 MB and {MAX_UPLOAD_ROWS.toLocaleString()} rows per file. For larger
+                exports, filter to a recent date range or a subset of stores/products.
+              </p>
+
               <label
                 htmlFor="upload-input"
                 className={`upload-dropzone ${isDragging ? 'dragging' : ''} ${uploadedFile ? 'success' : ''}`}
@@ -235,6 +247,12 @@ function UploadPage() {
                   {showBackendHint && (
                     <p className="upload-error-hint">Make sure the backend server is running.</p>
                   )}
+                  {showSizeHint && (
+                    <p className="upload-error-hint">
+                      Tip: filter your export to the last 12 months, or select a subset of
+                      stores and products, then try again.
+                    </p>
+                  )}
                 </div>
               )}
 
@@ -250,7 +268,7 @@ function UploadPage() {
               <div className="upload-reassurance">
                 <span>✓ Auto column detection</span>
                 <span>✓ No formatting needed</span>
-                <span>✓ CSV &amp; Excel supported</span>
+                <span>✓ Up to 200k rows</span>
               </div>
             </>
           )}

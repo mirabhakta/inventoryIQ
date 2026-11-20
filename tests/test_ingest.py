@@ -83,10 +83,10 @@ def test_rejects_files_over_the_row_limit(monkeypatch) -> None:
     monkeypatch.setattr(ingest, "MAX_UPLOAD_ROWS", 2)
     contents = csv_bytes("Order Date,Sales\n2024-01-01,1\n2024-01-02,2\n2024-01-03,3\n")
 
-    with pytest.raises(UploadTooLarge, match="2 rows"):
+    with pytest.raises(UploadTooLarge, match="3 rows.*2 rows.*Filter"):
         read_tabular_upload("sales.csv", contents)
 
 
 def test_limits_are_reported_in_megabytes_and_rows() -> None:
     assert MAX_UPLOAD_BYTES == 10 * 1024 * 1024
-    assert MAX_UPLOAD_ROWS == 50_000
+    assert MAX_UPLOAD_ROWS == 200_000

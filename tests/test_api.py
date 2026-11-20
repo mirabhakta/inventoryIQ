@@ -170,6 +170,15 @@ def test_forecast_benchmark_runs_with_filters() -> None:
     assert "winner" in body
     assert body["comparison_table"]
 
+
+def test_forecast_benchmark_rejects_large_uploads(monkeypatch) -> None:
+    monkeypatch.setattr("api.forecast_routes.MAX_BENCHMARK_ROWS", 10)
+
+    response = client.post("/forecast/run", files=csv_upload(sample_frame()))
+
+    assert response.status_code == 422
+    assert "limited to" in response.json()["detail"]
+
 SUMMARY_PAYLOAD = {
     "trend": "increasing",
     "winner_model": "lightgbm_global_lag",

@@ -3,7 +3,7 @@ from fastapi.testclient import TestClient
 
 from api import analyze_routes
 from main import app
-from services import dataset_cache
+from services import analysis_service, dataset_cache
 
 client = TestClient(app)
 
@@ -29,6 +29,27 @@ def retail_frame(periods: int = 120) -> pd.DataFrame:
                     }
                 )
     return pd.DataFrame(rows)
+
+
+def large_frame(rows: int = 60_000) -> pd.DataFrame:
+    stores, products = 10, 10
+    days = rows // (stores * products)
+    dates = pd.date_range("2024-01-01", periods=days, freq="D")
+    records = []
+    for store in range(1, stores + 1):
+        for product in range(1, products + 1):
+            for index, current_date in enumerate(dates):
+                records.append(
+                    {
+                        "Order Date": current_date,
+                        "Store": store,
+                        "Product": f"Item {product}",
+                        "Category": "Home" if product <= 5 else "Kitchen",
+                        "Region": "West" if store <= 5 else "East",
+                        "Sales": 100 + (index % 20),
+                    }
+                )
+    return pd.DataFrame(records)
 
 
 def upload(frame: pd.DataFrame) -> dict:
@@ -103,6 +124,27 @@ def test_analyze_includes_the_benchmark_by_default() -> None:
     assert body["benchmark"]["table"]
     assert body["kpis"]["mae"] is not None
     assert body["kpis"]["winner_model"] == body["benchmark"]["winner"]
+    assert body["benchmark_note"] is None
+
+
+def test_analyze_skips_the_benchmark_for_large_datasets(monkeypatch) -> None:
+    monkeypatch.setattr(analysis_service, "MAX_BENCHMARK_ROWS", 10)
+
+    body = analyze(retail_frame(), future_days=7)
+
+    assert body["benchmark"] is None
+    assert body["kpis"]["mae"] is None
+    assert "skipped" in body["benchmark_note"].lower()
+
+
+def test_analyze_accepts_a_60k_row_upload_and_skips_the_benchmark() -> None:
+    body = analyze(large_frame(), future_days=7, include_benchmark="true")
+
+    assert body["meta"]["row_count"] == 60_000
+    assert body["meta"]["stores"] == list(range(1, 11))
+    assert body["benchmark"] is None
+    assert "skipped" in body["benchmark_note"].lower()
+    assert body["forecast"]["total"] > 0
 
 
 def test_analyze_rejects_horizon_over_the_cap() -> None:

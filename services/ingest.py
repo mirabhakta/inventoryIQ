@@ -13,7 +13,7 @@ from pathlib import Path
 import pandas as pd
 
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # 10 MB
-MAX_UPLOAD_ROWS = 50_000
+MAX_UPLOAD_ROWS = 200_000
 
 SUPPORTED_SUFFIXES = {".csv", ".xlsx"}
 
@@ -68,7 +68,12 @@ def read_tabular_upload(filename: str | None, contents: bytes) -> pd.DataFrame:
 
     if len(contents) > MAX_UPLOAD_BYTES:
         limit_mb = MAX_UPLOAD_BYTES // (1024 * 1024)
-        raise UploadTooLarge(f"File is larger than the {limit_mb} MB limit.")
+        actual_mb = len(contents) / (1024 * 1024)
+        raise UploadTooLarge(
+            f"This file is {actual_mb:.1f} MB, but the demo supports up to {limit_mb} MB "
+            "per upload. Filter to a recent date range or a subset of stores/products "
+            "and try again."
+        )
 
     suffix = Path(filename or "").suffix.lower()
     if suffix == ".xls":
@@ -85,8 +90,9 @@ def read_tabular_upload(filename: str | None, contents: bytes) -> pd.DataFrame:
 
     if len(frame) > MAX_UPLOAD_ROWS:
         raise UploadTooLarge(
-            f"File has more than {MAX_UPLOAD_ROWS:,} rows. "
-            "Upload a smaller sample for this demo."
+            f"This file has {len(frame):,} rows, but the demo supports up to "
+            f"{MAX_UPLOAD_ROWS:,} rows per upload. Filter to a recent date range or "
+            "a subset of stores/products and try again."
         )
 
     return frame
