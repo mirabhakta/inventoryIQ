@@ -3,13 +3,12 @@
 ## Running Locally
 
 ```bash
-git clone https://github.com/jybarra7/latech_InventoryIQ
-cd latech_InventoryIQ
+git clone https://github.com/mirabhakta/inventoryIQ.git
+cd inventoryIQ
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-pip install fastapi uvicorn python-multipart
-# add GEMINI_API_KEY to your .env locally
+# add GEMINI_API_KEY to your .env locally (see .env.example)
 uvicorn main:app --reload
 # interactive docs at http://localhost:8000/docs
 ```
@@ -27,6 +26,7 @@ uvicorn main:app --reload
 | POST | `/alerts/run` | Runs all 3 alert detectors, returns severity-sorted alerts |
 
 All POST endpoints accept a retail CSV uploaded as multipart form data.
+A ready-to-upload example is available at `data/sample_sales.csv`.
 
 ---
 
@@ -89,7 +89,9 @@ Request: multipart form upload of retail CSV + optional `?future_days=30`
 }
 ```
 
-> **Note:** `winner_model` and `mae` currently require `/forecast/run` to be called first — known issue, needs a small wiring fix.
+> **Note:** `/forecast/kpis` returns a fast summary without training a model
+> (`winner_model: "fast_upload_summary"`, `mae: null`). Call `/forecast/run` for
+> the benchmark and accuracy metrics.
 
 ---
 

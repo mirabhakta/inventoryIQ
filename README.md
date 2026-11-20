@@ -1,4 +1,4 @@
-# inventoryIQ - AI-Powered Retail Forecasting Engine
+# InventoryIQ — AI-Powered Retail Forecasting Engine
 LA Tech Rising | Spring 2026 | Mentor: Ritesh Verma
 
 A reusable retail forecasting engine that ingests historical sales data, forecasts future demand, flags unusual patterns, and generates plain-English summaries using the Gemini API.
@@ -8,12 +8,12 @@ A reusable retail forecasting engine that ingests historical sales data, forecas
 | Role | Name | Primary Ownership |
 |------|------|-------------------|
 | Project Lead · Architecture & Infrastructure | Mira Bhakta | System design, model selection, testing suite, CI/CD, deployment, cross-role debugging |
-| Co-Project Lead · Alerting Engine · Forecasting Co-Owner | James Ybarra | `models/alerter.py`, `models/forecaster.py` (co-owner) |
+| Co-Project Lead · Alerting Engine · Forecasting Co-Owner | James Ybarra | `models/alerter.py`, `utils/forecasting.py` (co-owner) |
 | Data Preparation & Schema Mapping · Dashboard Support | Andrew Garcia Leopold | `utils/processor.py` - schema mapping + derived fields |
 | Data Preparation (Derived Fields) · AI Insights Support | Krisna Vega | `utils/trend.py` + derived fields in `processor.py` |
-| Forecasting Engine · Alerting Co-Owner | Alberto Barboza | `models/forecaster.py`, `models/alerter.py` (co-owner) |
-| AI Insights & Reporting · Dashboard Support | Sarah Abdeen | `utils/ai_summary.py` + AI Summary panel in `app.py` |
-| Dashboard & Visualization · Integration Lead | Justin Hernandez | `app.py` — all views, sidebar, filters, layout, loading states |
+| Forecasting Engine · Alerting Co-Owner | Alberto Barboza | `utils/forecasting.py`, `models/alerter.py` (co-owner) |
+| AI Insights & Reporting · Dashboard Support | Sarah Abdeen | `utils/ai_summary.py` + dashboard AI summary panel |
+| Dashboard & Visualization · Integration Lead | Justin Hernandez | `frontend/src/pages/DashboardPage.jsx` — views, sidebar, filters, layout, loading states |
 
 
 ## Tech Stack
@@ -37,12 +37,24 @@ A reusable retail forecasting engine that ingests historical sales data, forecas
 - Axios
 - Recharts
 
+## Repository Layout
+
+```
+api/         FastAPI route layer
+services/    Forecast orchestration and response shaping
+models/      Alert engine
+utils/       Cleaning, schema mapping, forecasting, Gemini summary
+frontend/    React + Vite dashboard
+data/        Small demo dataset (regenerate with scripts/)
+tests/       Backend pytest suite
+```
+
 ## Local Setup
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/jybarra7/latech_InventoryIQ
-cd latech_InventoryIQ
+git clone https://github.com/mirabhakta/inventoryIQ.git
+cd inventoryIQ
 ```
 
 ### 2. Set up the backend
@@ -56,7 +68,7 @@ Activate the virtual environment:
 
 **Windows PowerShell**
 ```powershell
-venv\Scripts\Activate
+venv\Scripts\Activate.ps1
 ```
 
 **macOS/Linux**
@@ -70,7 +82,11 @@ Install backend dependencies:
 pip install -r requirements.txt
 ```
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root (start from the committed template):
+
+```bash
+cp .env.example .env
+```
 
 ```env
 GEMINI_API_KEY=your_api_key_here
@@ -86,18 +102,28 @@ The backend should start at:
 - `http://localhost:8000`
 - API docs: `http://localhost:8000/docs`
 
+Run the backend tests:
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
 ### 3. Set up the frontend
 
 Open a second terminal and run:
 
 ```bash
 cd frontend
-npm install
+npm ci
 npm run dev
 ```
 
 The frontend should start at:
 - `http://localhost:5173`
+
+If the API is not running on `localhost:8000`, copy `frontend/.env.example` to
+`frontend/.env.local` and change `VITE_API_BASE_URL`.
 
 ## Running the App
 
@@ -114,6 +140,19 @@ cd frontend
 npm run dev
 ```
 
+## Try the Demo
+
+Upload **`data/sample_sales.csv`** on the upload page. It contains 1,800 rows
+across three stores and five products, with a planted demand decline, a
+low-margin product, and a one-day sales spike so the dashboard and alert panel
+have real signals to show.
+
+Regenerate it at any time with:
+
+```bash
+python scripts/generate_sample_data.py
+```
+
 ## Features
 - Upload any retail sales CSV and get an analysis-ready dashboard
 - Schema mapping and clean dataset export for downstream pipeline stages
@@ -123,6 +162,10 @@ npm run dev
 - Interactive filters by date range, category, store, and region
 
 ## Security
-Never commit your .env file. It is excluded from version control via .gitignore.
-If a key is accidentally exposed, revoke it immediately in the Gemini console 
-and generate a new one.
+Never commit your `.env` file. It is excluded from version control via `.gitignore`.
+Start from `.env.example` instead. If a key is accidentally exposed, revoke it
+immediately in the Gemini console and generate a new one.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
