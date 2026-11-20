@@ -11,8 +11,8 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 
 from api.dependencies import uploaded_frame
 from models.alerter import run_all_alerts
+from services.dataset_cache import get_cleaned_frame
 from utils.filters import filter_retail_frame
-from utils.processor import load_and_clean_data
 
 router = APIRouter(prefix="/alerts", tags=["alerts"])
 
@@ -28,7 +28,7 @@ async def run_alerts(
     region: list[str] = Query(default=[]),
 ):
     try:
-        cleaned = load_and_clean_data(df)
+        cleaned = get_cleaned_frame(df)
         cleaned = filter_retail_frame(cleaned, store, category, region)
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc

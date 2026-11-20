@@ -10,6 +10,7 @@ import pandas as pd
 from fastapi import APIRouter, Depends, HTTPException, Query
 
 from api.dependencies import uploaded_frame
+from services.dataset_cache import get_cleaned_frame
 from services.forecast_service import (
     get_future_forecast,
     run_forecast_pipeline,
@@ -17,7 +18,6 @@ from services.forecast_service import (
 )
 from utils.filters import filter_retail_frame
 from utils.forecasting import MAX_FUTURE_DAYS
-from utils.processor import load_and_clean_data
 
 router = APIRouter(prefix="/forecast", tags=["forecast"])
 
@@ -29,7 +29,7 @@ def _clean_and_filter(
     regions: list[str],
 ) -> pd.DataFrame:
     try:
-        cleaned = load_and_clean_data(df)
+        cleaned = get_cleaned_frame(df)
         return filter_retail_frame(cleaned, stores, categories, regions)
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
