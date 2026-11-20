@@ -3,6 +3,8 @@ LA Tech Rising | Spring 2026 | Mentor: Ritesh Verma
 
 A reusable retail forecasting engine that ingests historical sales data, forecasts future demand, flags unusual patterns, and generates plain-English summaries using the Gemini API.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mirabhakta/inventoryIQ)
+
 ## Team
 
 | Role | Name | Primary Ownership |

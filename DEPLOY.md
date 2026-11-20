@@ -31,7 +31,9 @@ Everything needed is in the repository:
 
 ### Blueprint (recommended)
 
-1. Render Dashboard → **New** → **Blueprint**.
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mirabhakta/inventoryIQ)
+
+1. Render Dashboard → **New** → **Blueprint** (the button above starts the same flow).
 2. Connect `mirabhakta/inventoryIQ`. Render reads `render.yaml`.
 3. When prompted, set:
    - **`GEMINI_API_KEY`** — your key (secret).
