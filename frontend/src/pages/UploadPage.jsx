@@ -54,6 +54,7 @@ function UploadPage() {
 
   function handleInputChange(event) {
     handleFile(event.target.files[0])
+    event.target.value = ''
   }
 
   async function handleContinue() {

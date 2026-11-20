@@ -46,8 +46,8 @@ function LandingPage() {
           </div>
           <div className="landing-stat-divider" />
           <div className="landing-stat">
-            <span className="landing-stat-number">Live</span>
-            <span className="landing-stat-label">Real-time Alerts</span>
+            <span className="landing-stat-number">Auto</span>
+            <span className="landing-stat-label">Risk Alerts</span>
           </div>
           <div className="landing-stat-divider" />
           <div className="landing-stat">
@@ -84,14 +84,14 @@ function LandingPage() {
           <div className="landing-card-icon-wrap" style={{backgroundColor: '#fce8e6'}}>
             <span>🚨</span>
           </div>
-          <h3>Live Risk Alerts</h3>
-          <p>Automatic anomaly detection flags sales spikes, declines, and margin issues in real time.</p>
+          <h3>Automated Risk Alerts</h3>
+          <p>Automatic anomaly detection flags sales spikes, declines, and margin issues on every analysis.</p>
         </div>
       </div>
 
       {/* Footer */}
       <footer className="landing-footer">
-        <p>© 2025 InventoryIQ</p>
+        <p>© 2026 InventoryIQ</p>
       </footer>
 
     </div>
