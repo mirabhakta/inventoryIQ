@@ -26,13 +26,14 @@ class SummaryRequest(BaseModel):
 
 class SummaryResponse(BaseModel):
     summary: str
+    model: str | None = None
 
 
 @router.post("/summary", response_model=SummaryResponse)
 def create_summary(payload: SummaryRequest) -> SummaryResponse:
     try:
-        summary = generate_summary(payload.model_dump())
+        result = generate_summary(payload.model_dump())
     except SummaryUnavailable as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
 
-    return SummaryResponse(summary=summary)
+    return SummaryResponse(summary=result.text, model=result.model)

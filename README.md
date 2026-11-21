@@ -5,6 +5,8 @@ A reusable retail forecasting engine that ingests historical sales data, forecas
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mirabhakta/inventoryIQ)
 
+**Live demo:** [inventory-iq-dun.vercel.app](https://inventory-iq-dun.vercel.app/) · **API docs:** [inventoryiq-api.onrender.com/docs](https://inventoryiq-api.onrender.com/docs)
+
 ## Team
 
 | Role | Name | Primary Ownership |

@@ -31,7 +31,7 @@ def get_allowed_origins() -> list[str]:
 app = FastAPI(
     title="InventoryIQ",
     description="AI-powered retail forecasting engine",
-    version="1.1.0",
+    version="1.1.1",
 )
 
 app.add_middleware(

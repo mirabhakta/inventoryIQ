@@ -5,6 +5,23 @@ from __future__ import annotations
 import pandas as pd
 
 
+def normalize_store_id(value) -> str:
+    """
+    Canonicalize store identifiers for comparisons.
+
+    CSVs often produce float IDs (``1.0``) while the browser sends the string
+    ``"1"``. Text IDs are preserved as-is.
+    """
+    text = str(value).strip()
+    try:
+        number = float(text)
+    except (TypeError, ValueError):
+        return text
+    if number.is_integer():
+        return str(int(number))
+    return text
+
+
 def filter_retail_frame(
     df: pd.DataFrame,
     stores: list[str] | None = None,
@@ -14,15 +31,15 @@ def filter_retail_frame(
     """
     Apply the dashboard filters to a cleaned frame.
 
-    Store IDs are compared as strings so numeric and text IDs work with the
-    same query contract. Raises ``ValueError`` when a filter is unavailable or
-    selects no rows.
+    Store IDs are normalized so numeric and text IDs work with the same query
+    contract. Raises ``ValueError`` when a filter is unavailable or selects no
+    rows.
     """
     filtered = df
 
     if stores:
-        wanted_stores = {str(store) for store in stores}
-        filtered = filtered[filtered["store_id"].astype(str).isin(wanted_stores)]
+        wanted_stores = {normalize_store_id(store) for store in stores}
+        filtered = filtered[filtered["store_id"].map(normalize_store_id).isin(wanted_stores)]
 
     if categories:
         filtered = filtered[filtered["category"].isin(categories)]
