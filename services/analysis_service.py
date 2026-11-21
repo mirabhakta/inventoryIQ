@@ -15,6 +15,7 @@ from services.forecast_service import (
     get_aggregate_future_forecast_frame,
     run_forecast_pipeline,
 )
+from utils.filters import normalize_store_id
 
 logger = logging.getLogger(__name__)
 
@@ -33,8 +34,11 @@ def _money(value) -> float:
 
 
 def _store_sort_key(value):
-    text = str(value)
-    return (0, int(text)) if text.isdigit() else (1, text.lower())
+    text = normalize_store_id(value)
+    try:
+        return (0, int(text))
+    except ValueError:
+        return (1, text.lower())
 
 
 def _date_range(cleaned: pd.DataFrame) -> dict | None:

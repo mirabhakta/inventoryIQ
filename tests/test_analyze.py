@@ -137,6 +137,16 @@ def test_analyze_skips_the_benchmark_for_large_datasets(monkeypatch) -> None:
     assert "skipped" in body["benchmark_note"].lower()
 
 
+def test_analyze_accepts_float_store_ids_in_filters() -> None:
+    frame = retail_frame()
+    frame["Store"] = frame["Store"].astype(float)
+
+    body = analyze(frame, future_days=7, include_benchmark="false", store=["1"])
+
+    assert body["meta"]["row_count"] == 240
+    assert body["kpis"]["total_sales"] == 34600.0
+
+
 def test_analyze_accepts_a_60k_row_upload_and_skips_the_benchmark() -> None:
     body = analyze(large_frame(), future_days=7, include_benchmark="true")
 

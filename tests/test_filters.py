@@ -1,7 +1,8 @@
 import pandas as pd
 import pytest
 
-from utils.filters import filter_retail_frame
+from services.analysis_service import _store_sort_key
+from utils.filters import filter_retail_frame, normalize_store_id
 
 
 def frame() -> pd.DataFrame:
@@ -14,6 +15,44 @@ def frame() -> pd.DataFrame:
             "sales": [10.0, 20.0, 30.0, 40.0],
         }
     )
+
+
+@pytest.mark.parametrize(
+    ("raw", "normalized"),
+    [
+        (1, "1"),
+        (1.0, "1"),
+        ("1.0", "1"),
+        (" 2 ", "2"),
+        ("001", "1"),
+        ("A", "A"),
+        ("store-a", "store-a"),
+    ],
+)
+def test_normalize_store_id(raw, normalized) -> None:
+    assert normalize_store_id(raw) == normalized
+
+
+def test_filters_float_store_ids_using_string_query_values() -> None:
+    data = frame()
+    data["store_id"] = [1.0, 2.0, 1.0, 2.0]
+
+    filtered = filter_retail_frame(data, stores=["1"])
+
+    assert list(filtered["sales"]) == [10.0, 30.0]
+
+
+def test_filters_string_store_ids() -> None:
+    data = frame()
+    data["store_id"] = ["A", "B", "A", "B"]
+
+    filtered = filter_retail_frame(data, stores=["A"])
+
+    assert list(filtered["sales"]) == [10.0, 30.0]
+
+
+def test_store_sort_handles_float_ids_naturally() -> None:
+    assert sorted([10.0, 2.0, 1.0], key=_store_sort_key) == [1.0, 2.0, 10.0]
 
 
 def test_filters_by_store_using_string_query_values() -> None:
