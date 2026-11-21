@@ -23,6 +23,7 @@ A ready-to-upload example is available at `data/sample_sales.csv`.
 - File endpoints accept `multipart/form-data` with a field named `file`.
 - Supported formats: `.csv` and `.xlsx`. Limits: **10 MB** and **200,000 rows**.
 - Filters are repeatable query parameters: `store`, `category`, `region`.
+- Store IDs are normalized, so `1` and `1.0` select the same store.
 - CORS is an explicit allowlist, not a wildcard. Set `ALLOWED_ORIGINS` to the
   comma-separated browser origins that may call the API.
 - Error responses use FastAPI's `{"detail": "..."}` shape:
@@ -131,6 +132,9 @@ daily-total series. This keeps the dashboard fast on large uploads; use
 The four-model benchmark runs only for uploads up to **5,000 rows / 50 series**.
 Above that, `benchmark` is `null`, `kpis.mae` is `null`, and `benchmark_note`
 explains why.
+
+If a filter combination matches no rows, the endpoint returns `422`. The
+dashboard reverts the last filter change and shows the validation message.
 
 ---
 
@@ -259,12 +263,18 @@ Request:
 Response:
 
 ```json
-{ "summary": "Sales are holding steady this period. Vertex Keyboard is the top performer..." }
+{
+  "summary": "Sales are holding steady this period. Vertex Keyboard is the top performer...",
+  "model": "gemini-3.8-flash"
+}
 ```
 
-Requires `GEMINI_API_KEY`. Without it, the endpoint returns `503` with
-`GEMINI_API_KEY is not configured.` and the dashboard shows a configuration
-message. `GEMINI_MODEL` can override the default (`gemini-3.8-flash`).
+Requires `GEMINI_API_KEY`. The service strips whitespace and quotes from the key,
+then tries `GEMINI_MODEL` (default `gemini-3.8-flash`) followed by
+`gemini-3.5-flash`, `gemini-3.5-flash-lite`, `gemini-2.5-flash`,
+`gemini-2.5-flash-lite`, and `gemini-2.0-flash`. Auth, quota, and timeout
+failures stop the fallback chain and return a classified `503` message that the
+dashboard displays.
 
 ---
 

@@ -46,7 +46,7 @@ Verify:
 
 ```bash
 curl https://inventoryiq-api.onrender.com/health
-# {"status":"ok","service":"inventoryiq","version":"1.1.0","ai_configured":true}
+# {"status":"ok","service":"inventoryiq","version":"1.1.1","ai_configured":true}
 ```
 
 Then open `https://inventoryiq-api.onrender.com/docs`.
@@ -109,7 +109,24 @@ preview origins only while actively testing them.
 - [ ] Refreshing `/dashboard` does not 404 (Vercel SPA rewrite)
 - [ ] The browser console has no CORS or JavaScript errors
 
-## 5. Rollback
+## 5. Troubleshooting the AI summary
+
+The API strips whitespace/quotes from the key and tries `GEMINI_MODEL` (default
+`gemini-3.8-flash`) before falling back to `gemini-3.5-flash`,
+`gemini-3.5-flash-lite`, `gemini-2.5-flash`, `gemini-2.5-flash-lite`, and
+`gemini-2.0-flash`. The dashboard shows the classified error:
+
+| Message | Action |
+|---|---|
+| `GEMINI_API_KEY is not configured` | Set the secret in Render. |
+| `Gemini rejected the API key` | Re-copy the key without quotes/newlines; verify the Gemini API is enabled for the project. |
+| `Gemini quota is exhausted` | Check the Gemini plan, quota, and billing. |
+| `No configured Gemini model is available` | Set `GEMINI_MODEL` to a model enabled for your key. |
+| `Gemini did not respond in time` | Retry. |
+
+Successful responses include the model used, and the dashboard displays it.
+
+## 6. Rollback
 
 | Platform | Steps |
 |---|---|
