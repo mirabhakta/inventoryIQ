@@ -4,6 +4,7 @@ import pandas as pd
 from fastapi.testclient import TestClient
 
 from main import app
+from utils.ai_summary import SummaryResult, SummaryUnavailable
 
 client = TestClient(app)
 
@@ -202,15 +203,33 @@ def test_summary_requires_configuration(monkeypatch) -> None:
 def test_summary_returns_generated_text(monkeypatch) -> None:
     monkeypatch.setattr(
         "api.summary_routes.generate_summary",
-        lambda payload: "Sales are increasing and the top product leads demand.",
+        lambda payload: SummaryResult(
+            "Sales are increasing and the top product leads demand.",
+            "gemini-3.8-flash",
+        ),
     )
 
     response = client.post("/summary", json=SUMMARY_PAYLOAD)
 
     assert response.status_code == 200
     assert response.json() == {
-        "summary": "Sales are increasing and the top product leads demand."
+        "summary": "Sales are increasing and the top product leads demand.",
+        "model": "gemini-3.8-flash",
     }
+
+
+def test_summary_surfaces_a_classified_failure(monkeypatch) -> None:
+    def fail(payload):
+        raise SummaryUnavailable(
+            "Gemini quota is exhausted or billing is not enabled for this key."
+        )
+
+    monkeypatch.setattr("api.summary_routes.generate_summary", fail)
+
+    response = client.post("/summary", json=SUMMARY_PAYLOAD)
+
+    assert response.status_code == 503
+    assert "quota" in response.json()["detail"]
 
 
 def test_summary_rejects_overlong_fields() -> None:
