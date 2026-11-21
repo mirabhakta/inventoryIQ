@@ -14,9 +14,9 @@ import pandas as pd
 from services.cache import TTLCache
 from utils.processor import load_and_clean_data
 
-# A cleaned dashboard frame can be tens of MB at the upload limit, so keep only
-# two. Payloads are small, so a larger response cache is safe.
-CLEANED_DATASETS: TTLCache[pd.DataFrame] = TTLCache(maxsize=2, ttl_seconds=900)
+# A cleaned dashboard frame can be large at the upload limit, so keep only one.
+# Filter changes reuse the same upload; another file simply evicts the previous.
+CLEANED_DATASETS: TTLCache[pd.DataFrame] = TTLCache(maxsize=1, ttl_seconds=900)
 ANALYSIS_RESULTS: TTLCache[dict] = TTLCache(maxsize=16, ttl_seconds=900)
 
 

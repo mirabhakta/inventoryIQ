@@ -10,6 +10,7 @@ import pandas as pd
 from fastapi import APIRouter, Depends, HTTPException, Query
 
 from api.dependencies import uploaded_frame
+from services.analysis_service import MAX_BENCHMARK_ROWS, MAX_BENCHMARK_SERIES
 from services.dataset_cache import get_cleaned_frame
 from services.forecast_service import (
     get_future_forecast,
@@ -44,6 +45,16 @@ async def run_forecast(
     region: list[str] = Query(default=[]),
 ):
     cleaned = _clean_and_filter(df, store, category, region)
+    series_count = cleaned.groupby(["store_id", "product_id"]).ngroups
+    if len(cleaned) > MAX_BENCHMARK_ROWS or series_count > MAX_BENCHMARK_SERIES:
+        raise HTTPException(
+            status_code=422,
+            detail=(
+                "Model comparison is limited to "
+                f"{MAX_BENCHMARK_ROWS:,} rows and {MAX_BENCHMARK_SERIES} series. "
+                "Use /analyze for a fast forecast on larger datasets."
+            ),
+        )
     try:
         return run_forecast_pipeline(cleaned, horizon_days=horizon_days)
     except ValueError as exc:

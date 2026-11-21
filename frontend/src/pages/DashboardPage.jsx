@@ -87,6 +87,7 @@ function DashboardView({ initialAnalysis, file, fileName }) {
   const kpis = analysis.kpis
   const alerts = analysis.alerts
   const benchmark = analysis.benchmark ?? initialAnalysis.benchmark
+  const benchmarkNote = analysis.benchmark_note ?? initialAnalysis.benchmark_note
   const hasActiveFilters =
     selectedStores.length > 0 ||
     selectedCategories.length > 0 ||
@@ -349,6 +350,7 @@ function DashboardView({ initialAnalysis, file, fileName }) {
             <OverviewTab
               analysis={analysis}
               benchmark={benchmark}
+              benchmarkNote={benchmarkNote}
               horizonLabel={horizon}
               isFiltering={isFiltering}
               onSummary={handleSummary}
@@ -367,7 +369,7 @@ function DashboardView({ initialAnalysis, file, fileName }) {
   )
 }
 
-function OverviewTab({ analysis, benchmark, horizonLabel, isFiltering, onSummary, summaryState }) {
+function OverviewTab({ analysis, benchmark, benchmarkNote, horizonLabel, isFiltering, onSummary, summaryState }) {
   const { kpis, alerts } = analysis
   const alertTotal = alerts.total
   const insight = `Sales are ${kpis.forecast_direction}. ${alertTotal} alert${
@@ -420,6 +422,7 @@ function OverviewTab({ analysis, benchmark, horizonLabel, isFiltering, onSummary
           history={analysis.history}
           forecast={analysis.forecast}
           benchmark={benchmark}
+          benchmarkNote={benchmarkNote}
           isFiltering={isFiltering}
         />
         <AlertPanel alerts={alerts.items} total={alertTotal} />

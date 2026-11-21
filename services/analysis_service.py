@@ -11,9 +11,17 @@ import logging
 import pandas as pd
 
 from models.alerter import run_all_alerts
-from services.forecast_service import get_future_forecast_frame, run_forecast_pipeline
+from services.forecast_service import (
+    get_aggregate_future_forecast_frame,
+    run_forecast_pipeline,
+)
 
 logger = logging.getLogger(__name__)
+
+# The benchmark trains four models and recurses per series. Keep it for small
+# uploads, where it is quick and useful, and skip it for large datasets.
+MAX_BENCHMARK_ROWS = 5_000
+MAX_BENCHMARK_SERIES = 50
 
 
 def _native(value):
@@ -22,6 +30,11 @@ def _native(value):
 
 def _money(value) -> float:
     return round(float(value), 2)
+
+
+def _store_sort_key(value):
+    text = str(value)
+    return (0, int(text)) if text.isdigit() else (1, text.lower())
 
 
 def _date_range(cleaned: pd.DataFrame) -> dict | None:
@@ -128,18 +141,24 @@ def _forecast_direction(forecast_df: pd.DataFrame) -> str:
     return "flat"
 
 
-def _benchmark(filtered: pd.DataFrame) -> dict | None:
+def _benchmark(filtered: pd.DataFrame) -> tuple[dict | None, str | None]:
+    series_count = filtered.groupby(["store_id", "product_id"]).ngroups
+    if len(filtered) > MAX_BENCHMARK_ROWS or series_count > MAX_BENCHMARK_SERIES:
+        return None, (
+            "Model comparison is skipped for large datasets to keep the dashboard responsive."
+        )
+
     try:
         result = run_forecast_pipeline(filtered)
     except (ValueError, ImportError) as exc:
         logger.info("Forecast benchmark unavailable: %s", exc)
-        return None
+        return None, "Model comparison is unavailable for this dataset."
 
     return {
         "winner": result["winner"],
         "metrics": result["metrics"],
         "table": result["comparison_table"],
-    }
+    }, None
 
 
 def analyze_retail_data(
@@ -153,7 +172,9 @@ def analyze_retail_data(
     view. Filter options always describe the full dataset so the sidebar does
     not collapse to the current selection.
     """
-    forecast_df, method = get_future_forecast_frame(filtered, future_days=future_days)
+    forecast_df, method = get_aggregate_future_forecast_frame(
+        filtered, future_days=future_days
+    )
     top_products, bottom_products = _product_rankings(filtered)
     store_totals = _group_totals(filtered, "store_id", "store_id")
     category_totals = _group_totals(filtered, "category", "category")
@@ -165,11 +186,18 @@ def analyze_retail_data(
     alerts_df = run_all_alerts(filtered)
     alerts = alerts_df.to_dict(orient="records") if not alerts_df.empty else []
 
-    benchmark = _benchmark(filtered) if include_benchmark and not filtered.empty else None
+    if include_benchmark and not filtered.empty:
+        benchmark, benchmark_note = _benchmark(filtered)
+    else:
+        benchmark, benchmark_note = None, None
+
     winner_model = benchmark["winner"] if benchmark else None
     metrics = benchmark["metrics"] if benchmark else {}
 
-    stores = sorted([_native(value) for value in cleaned["store_id"].dropna().unique()], key=str)
+    stores = sorted(
+        [_native(value) for value in cleaned["store_id"].dropna().unique()],
+        key=_store_sort_key,
+    )
     categories = sorted(str(value) for value in cleaned["category"].dropna().unique())
     regions = (
         sorted(str(value) for value in cleaned["region"].dropna().unique())
@@ -214,5 +242,6 @@ def analyze_retail_data(
             "direction": direction,
         },
         "benchmark": benchmark,
+        "benchmark_note": benchmark_note,
         "alerts": {"items": alerts, "total": len(alerts)},
     }

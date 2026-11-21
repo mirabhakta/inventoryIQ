@@ -46,7 +46,7 @@ Verify:
 
 ```bash
 curl https://inventoryiq-api.onrender.com/health
-# {"status":"ok","service":"inventoryiq","version":"1.0.0","ai_configured":true}
+# {"status":"ok","service":"inventoryiq","version":"1.1.0","ai_configured":true}
 ```
 
 Then open `https://inventoryiq-api.onrender.com/docs`.
@@ -101,6 +101,8 @@ preview origins only while actively testing them.
 - [ ] Landing page loads over HTTPS
 - [ ] `data/sample_sales.csv` uploads and the dashboard shows `$674K` total revenue
 - [ ] The forecast panel says **90-day LightGBM forecast** and shows MAE
+- [ ] A larger upload (e.g., 60,000 rows) also loads; the forecast panel shows the
+      benchmark-skipped note instead of MAE
 - [ ] The alert panel shows 7 alerts; opening it shows all 7
 - [ ] A store filter changes the KPIs (`Store 1` → `$236K`)
 - [ ] **AI Summary** returns a generated paragraph (requires the key)
@@ -119,8 +121,11 @@ code and configuration.
 
 ## Free-tier limits and expectations
 
-- **Memory:** 512 MB. The upload limit is 10 MB / 50,000 rows; very wide datasets can
-  still be memory-heavy. Keep the demo dataset small.
+- **Memory:** 512 MB. The upload limit is 10 MB / 200,000 rows; very wide datasets can
+  still be memory-heavy. Keep the demo dataset reasonably scoped.
+- **Large uploads:** the dashboard forecasts the daily total and skips the
+  four-model benchmark above 5,000 rows / 50 series; the UI shows a note instead
+  of MAE. This keeps a 200k-row upload around a few seconds on one CPU.
 - **Cold starts:** Free Render services sleep. Expect a slow first request.
 - **No auth:** This is a public portfolio demo. Do not upload confidential data.
 - **Caching:** Cleaned datasets and `/analyze` payloads are cached in process memory

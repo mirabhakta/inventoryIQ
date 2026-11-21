@@ -45,7 +45,7 @@ function buildChartData(history, forecast) {
   return [...byMonth.values()].sort((left, right) => left.month.localeCompare(right.month))
 }
 
-function ForecastChart({ history, forecast, benchmark, isFiltering }) {
+function ForecastChart({ history, forecast, benchmark, benchmarkNote, isFiltering }) {
   const data = buildChartData(history, forecast)
   const methodLabel =
     forecast?.method === 'lightgbm_global_lag' ? 'LightGBM' : 'seasonal baseline'
@@ -62,11 +62,13 @@ function ForecastChart({ history, forecast, benchmark, isFiltering }) {
             {forecast?.total ? ` · projected ${formatCurrency(forecast.total)}` : ''}
           </p>
         </div>
-        {accuracy != null && (
+        {accuracy != null ? (
           <span className="model-chip" title="Mean absolute error on the full-dataset holdout">
             MAE {Number(accuracy).toFixed(1)}
           </span>
-        )}
+        ) : benchmarkNote ? (
+          <span className="model-note">{benchmarkNote}</span>
+        ) : null}
       </div>
 
       <div className="chart-legend">

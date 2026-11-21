@@ -179,6 +179,45 @@ def get_future_forecast_frame(
     )
 
 
+def get_aggregate_future_forecast_frame(
+    df: pd.DataFrame,
+    future_days: int = DEFAULT_FUTURE_DAYS,
+) -> tuple[pd.DataFrame, str]:
+    """
+    Forecast the daily total across all series.
+
+    The dashboard only needs total revenue by month, so a single aggregate
+    series avoids recursive per-store/item work on large uploads.
+    """
+    validate_future_days(future_days)
+
+    prepared = prepare_forecast_input(df)
+    daily = prepared.groupby("date", as_index=False)["sales"].sum()
+    daily["store"] = 0
+    daily["item"] = 0
+
+    group_cols = ["store", "item"]
+    lags, windows = choose_lightgbm_features(daily, group_cols)
+
+    if lags and windows:
+        try:
+            frame = build_lightgbm_future_forecast(
+                daily,
+                future_days=future_days,
+                group_cols=group_cols,
+                lags=lags,
+                rolling_windows=windows,
+            )
+            return frame, LIGHTGBM_METHOD
+        except ValueError:
+            pass
+
+    return (
+        build_simple_future_forecast(daily, future_days=future_days),
+        SIMPLE_FUTURE_METHOD,
+    )
+
+
 def get_future_forecast(
     df: pd.DataFrame, future_days: int = DEFAULT_FUTURE_DAYS, fast: bool = False
 ) -> dict:

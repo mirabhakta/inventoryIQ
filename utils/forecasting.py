@@ -648,7 +648,9 @@ def _fit_lightgbm(
         colsample_bytree=0.9,
         reg_lambda=0.2,
         random_state=42,
-        n_jobs=-1,
+        # One thread is deliberate: the hosted demo runs on a fraction of a
+        # CPU, and spawning os.cpu_count() threads makes training slower.
+        n_jobs=1,
         verbosity=-1,
     )
     model.fit(model_frame[feature_cols], model_frame[target_col].astype(float))

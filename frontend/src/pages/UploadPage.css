@@ -526,3 +526,11 @@
   max-width: 34ch;
   line-height: 1.5;
 }
+
+.upload-limit-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #8a9bb5;
+  line-height: 1.5;
+  margin: -0.25rem 0 0.75rem;
+}
